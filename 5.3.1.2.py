@@ -1,7 +1,7 @@
 #Recursiva
 import math
 
-Iteracoes = int(input("Em quantas iterações deseja calcular Phi? "))
+Recursoes = int(input("Em quantas iterações deseja calcular Phi? "))
 
 def phiCalc(i):
     if i >= 1:
@@ -9,7 +9,7 @@ def phiCalc(i):
     else:
         return 1
 
-Resultado = phiCalc(Iteracoes)
+Resultado = phiCalc(Recursoes)
 
 if Iteracoes >= 1:
-    print ("O valor de Phi em %i iterações é igual a: %f" % (Iteracoes, Resultado))
+    print ("O valor de Phi em %i iterações é igual a: %f" % (Recursoes, Resultado))

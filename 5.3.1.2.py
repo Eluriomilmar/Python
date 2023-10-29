@@ -4,10 +4,10 @@ import math
 Iteracoes = int(input("Em quantas iterações deseja calcular Phi? "))
 
 def phiCalc(i):
-    if i == 1:
-        return 1
+    if i >= 1:
+        return math.sqrt(1 + phiCalc(i - 1))
     else:
-        return math.sqrt(1 + math.sqrt(phiCalc(i - 1)))
+        return 1
 
 Resultado = phiCalc(Iteracoes)
 

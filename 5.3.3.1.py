@@ -22,7 +22,7 @@ def somatorio(n):
     if n == 1:
         return 1
     if n > 1:
-        return fatorial(n) + somatorio(n - 1) #para o somatório de 3, pro exemplo, a função faz 1/3! + 1/2! + 1/1!
+        return fatorial(n) + somatorio(n - 1) #para o somatório de 3, por exemplo, a função faz 1/3! + 1/2! + 1/1!
 
 print("%f" % somatorio(k))
 print("\nFatorial: %f" % fatorial(k))

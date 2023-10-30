@@ -3,17 +3,27 @@
 import math
 
 
-k = int(input("Insira a quantidade de iterações do somatório: "))
-print("A função somatório com fatorial de %i iterações é de: " % k, end=("")) # #Isso é exibido no fim do programa, como a variável "k" é reutilizada, comecei o print aqui
+n = int(input("Insira a quantidade de iterações do somatório: "))
+print("A função somatório com fatorial de %i iterações é de: " % n, end=("")) # #Isso é exibido no fim do programa, como a variável "k" é reutilizada, comecei o print aqui
 
+def fatorial(n):
+    i = 0
+    resultado = 0
+    while i <= n:
+        if i == 0:
+            resultado = 1
+            i = i + 1
+        else:
+            resultado = resultado * (resultado + 1)
+            i = i + 1
+    return resultado
 
-    while k >= 0:
-        if k == 0:
-            fatorial = fatorial * 1
-            fatorial = fatorial - 1
-        elif k == 1:
-            fatorial = fatorial * 1
-            fatorial = fatorial - 1
-        elif k > 1:
-            fatorial = fatorial * fatorial - 1
-            fatorial = fatorial n - 1
+def somatorio(n):
+    soma = 0
+    k = 0
+    while k <= n:
+        soma = soma + (1/fatorial(k))
+        k = k + 1
+    return soma
+
+print("%f" % somatorio(n))

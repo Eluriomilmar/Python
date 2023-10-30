@@ -4,8 +4,7 @@ import math
 
 
 n = int(input("Insira a quantidade de iterações do somatório: "))
-print("A função somatório com fatorial de %i iterações é de: " % n, end=("")) # #Isso é exibido no fim do programa, como a variável "k" é reutilizada, comecei o print aqui
-
+print("A função somatório com fatorial de %i iterações é de: " % n, end=(""))  #Isso é exibido no fim do programa, como a variável "k" é reutilizada, comecei o print aqui
 def fatorial(n):
     i = 0
     resultado = 0

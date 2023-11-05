@@ -1,3 +1,5 @@
+#progrma de verificação de palíndromo
+
 while True:
     try:
         palindromo = str(input("Insira string a ser verificada se é palíndromo: "))

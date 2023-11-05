@@ -19,4 +19,4 @@ def pali_check(palavra):
 pali_check(palindromo)
 
 #também é possível fazer o mesmo exercício usando somente operações de string, definindo len(palavra)
-#e comparando palavra[0:len(palavra)/2-1:0] com palavra[len(palavra)*-1:len(palavra)*-1:-1] ou operação similar
+#e comparando palavra[0:len(palavra)/2-1:0] com palavra[len(palavra)*-1:len(palavra)*-1:-1] ou operação similar.

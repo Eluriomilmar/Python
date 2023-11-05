@@ -8,7 +8,7 @@
 #A parte intermediária do comando define onde é o ponto de parada da exibição da string
 #A parte final define quantos saltos e em qual direção serão dados, sendo possível "saltar" caracteres da string
 
-#Portanto, onde s = "ABCDEFGHI" ...
+#Portanto, onde s = "ABCDEFGHI" ....
 
 s = "ABCDEFGHI"
 

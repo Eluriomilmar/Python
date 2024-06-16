@@ -1,4 +1,2 @@
-import datetime
-hoje = datetime.datetime.now()
-hoje = int(hoje.toordinal())
-print(hoje)
+n = bool(input("coisa: "))
+print(f"{n}")

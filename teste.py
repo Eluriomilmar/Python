@@ -1,2 +1,2 @@
-n = bool(input("coisa: "))
-print(f"{n}")
+import emoji
+print(emoji.emojize("Olá, mundo :sunglasses:", language="alias"))

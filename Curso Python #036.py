@@ -6,6 +6,6 @@ tempo = float(input("Em quantos anos o cliente pretende quitar a dívida? "))
 casa = float(input("Insira o valor da casa: "))
 salario = salario*12
 if casa/tempo > salario*0.3:
-    print(f"O empréstimo de {nome} não foi autorizado, pois {salario/tempo:.2f}% de seu salário ficaria comprometido.")
+    print(f"O empréstimo de {nome} não foi autorizado, pois {(casa/tempo)/(salario)*100:.2f}% de seu salário ficaria comprometido.")
 else:
-    print(f"O empréstimo de {nome} foi aprovado, somente {salario/tempo:.2f} será comprometido!")
+    print(f"O empréstimo de {nome} foi aprovado, somente {(casa/tempo)/(salario)*100:.2f}% será comprometido!")

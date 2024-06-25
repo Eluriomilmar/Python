@@ -12,6 +12,9 @@ while cont == True:
     else:
         lista_impar.append(lista[len(lista)-1])
     var = str(input(("Deseja continuar a execução do programa? (S/N): "))).upper()
+    if var != "S" and var != "N":
+        while var != "S" and var != "N":
+            var = str(input("Insira resposta válida. Deseja continuar a execução do programa? (S/N): ")).upper()
     if var == "S":
         cont = True
     elif var == "N":

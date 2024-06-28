@@ -13,7 +13,7 @@ if trab["cart_trab"] != 0:
     print(f"- O valor do CTPS é {trab["cart_trab"]}")
     print(f"- O valor do salário é igual a {trab["salario"]}")
     if (trab["ano_contrat"] + 30) < (trab["idade"] + 65):
-        print(f"- {trab["nome"]} pode se aposentar em {trab["ano_contrat"] + 30 ")
+        print(f"- {trab["nome"]} pode se aposentar em {trab["ano_contrat"] + 30 }")
     else:
         print(f"- {trab["nome"]} pode se aposentar em {trab["idade"] + 65} ou {trab["idade"] + 60}, a depender do sexo")
 else:

@@ -4,7 +4,7 @@ Ex: n = leiaInt(‘Digite um n: ‘)"""
 def leiaInt(a = "coisa"):
     original = a
     while True:
-        if a.isnumeric() == False:
+        if a.isdigit() == False:
             print("Erro! Insira valor numérico: ", end ="")
             a = str(input(""))
             original = a

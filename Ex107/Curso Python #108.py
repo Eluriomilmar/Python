@@ -1,10 +1,9 @@
-import moeda
-
+from Ex107.UtilidadesCeV import moeda
 
 preco = 1000
 a = 20
 
-moeda.moedaa(moeda.aumentar(preco, a))
-moeda.moedaa(moeda.diminuir(preco, a))
-moeda.moedaa(moeda.dobro(preco))
-moeda.moedaa(moeda.metade(preco))
+moeda.moeda(moeda.aumentar(preco, a))
+moeda.moeda(moeda.diminuir(preco, a))
+moeda.moeda(moeda.dobro(preco))
+moeda.moeda(moeda.metade(preco))

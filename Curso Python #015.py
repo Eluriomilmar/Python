@@ -2,7 +2,7 @@
 try:
     n = int(input("digite um n: "))
 except:
-    n = int(input("O erro encontrado foi {erro.__class__}\nInsira número inteiro válido: "))
+    n = int(input(f"O erro encontrado foi {erro.__cause__}\nInsira número inteiro válido: "))
 else:
     print(f"Você digitou {n}")
 finally:

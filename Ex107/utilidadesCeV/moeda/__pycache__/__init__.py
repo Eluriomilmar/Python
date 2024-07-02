@@ -45,6 +45,5 @@ def metade(n = 1000, format = True):
 def moeda(n):
     print(f"R${n:.2f}".center(20))
 
-def resumo(n):
-    #(f"{moeda(aumentar(n))}\n{moeda(diminuir(n))}\n{moeda(dobro(n))}\n{moeda(metade(n))}")
-    moeda(dobro(n))
+def resumo(n, a):
+    print(f"moeda(aumentar(n)): Aumenta o número {n} em {a}%\nmoeda(diminuir(n, a)): Diminui o número {n} em {a}%\nmoeda(dobro(n)): Dobra o número {n}\nmoeda(metade(n)): Diminui o número {n} pela metade")

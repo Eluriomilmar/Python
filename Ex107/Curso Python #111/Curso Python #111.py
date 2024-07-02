@@ -1,3 +1,3 @@
-from utilidadesCeV.dado  import Ex107
+from utilidadesCeV.moeda import moeda
 
-Ex107.resumo(1000, 20)
+print(moeda.resumo(1000, 20))

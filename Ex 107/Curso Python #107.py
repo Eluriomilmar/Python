@@ -1,8 +1,8 @@
 import moeda
 
 
-preco = float(input("Insira o preço: "))
-a = float(input("Insira em quanto se deseja aumentar ou diminuir o preço: "))
+preco = 1000
+a = 20
 
 print(f"{preco} aumentado em {a}% é igual a: {moeda.aumentar(preco, a)}")
 print(f"{preco} diminuido em {a}% é igual a: {moeda.diminuir(preco, a)}")

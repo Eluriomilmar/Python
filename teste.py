@@ -1,4 +1,6 @@
-a = int(input("digitar coisa: "))
-a = float(a)
-b = 7
-print(f"o valor de a é {a}, o valor de a + b é {a + b}")
+def fatorial(n):
+    if n == 1:
+        return 1
+    return n*(fatorial(n-1))
+
+print(fatorial(5))

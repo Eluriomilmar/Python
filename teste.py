@@ -1,11 +1,6 @@
-def fatorial(n):
-    if n == 1:
-        return 1
-    else:
-        return n * (fatorial(n-1))
+num  = [2, 8, 4, 7]
 
+num.pop()
+num.insert(1,3)
 
-
-n = fatorial(5)
-
-print(f"o dobro do número é igual a {n}")
+print(num)

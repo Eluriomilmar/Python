@@ -5,4 +5,4 @@ from Ex107.UtilidadesCeV import moeda, dado
 n = 1000
 a = 20
 
-moeda.aumentar(n)
+moeda.resumo(n, a)

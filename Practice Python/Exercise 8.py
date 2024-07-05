@@ -1,29 +1,36 @@
 from random import randint
 
+
 def computador():
-    computador = ["Pedra", "Papel", "Tesoura"]
-    a = randint(0,2)
-    return computador[a]
+    oponente = ["Pedra", "Papel", "Tesoura"]
+    a = randint(0, 2)
+    return oponente[a]
+
 
 def jogada():
     while True:
         try:
-            jogada = str(input("Insira Pedra, Papel ou Tesoura: "))
-            if jogada.upper() == "PEDRA" or jogada.upper() == "TESOURA" or jogada.upper() == "PAPEL":
+            joga = str(input("Insira Pedra, Papel ou Tesoura: "))
+            if joga.upper() == "PEDRA" or joga.upper() == "TESOURA" or joga.upper() == "PAPEL":
                 return jogada
             else:
                 raise ValueError
         except:
             print("Únicos valores válidos são Pedra, Papel e Tesoura.")
 
+
 def vitoria(jogada, computador):
     print(f"Você jogou {jogada} e o computador jogou {computador}, você venceu!")
+
 
 def derrota(jogada, computador):
     print(f"Você jogou {jogada} e o computador jogou {computador}, você perdeu!")
 
+
 def empate(jogada, computador):
     print(f"Você jogou {jogada} e o computador jogou {computador}, vocês empataram!")
+
+
 def jogo(jogada, computador):
     if computador.upper() == jogada.upper():
         empate(jogada, computador)
@@ -43,6 +50,7 @@ def jogo(jogada, computador):
             derrota(jogada, computador)
         else:
             vitoria(jogada, computador)
+
 
 def cont():
     while True:

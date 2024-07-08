@@ -1,3 +1,6 @@
+"""Create a program that will play the “cows and bulls” game with the user."""
+
+
 import random
 def computador():
     sorteio = []

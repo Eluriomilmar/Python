@@ -1,10 +1,3 @@
-from random import randint
-
-
-def palpite():
-    return randint(0, 100)
-
-
 def cria_lista():
     lista = []
     for i in range(101):
@@ -22,27 +15,33 @@ def valida_palpite():
         else:
             return a
 
-possibilidades = cria_lista()
-tentativas = 0
-global numero
-anterior = -1
-while True:
-    try:
-        numero = possibilidades[len(possibilidades)//2]
-        if anterior == numero:
-            raise IndexError
-        palpite = valida_palpite()
-        anterior = numero
-        if palpite == "MAIOR":
-            possibilidades = possibilidades[len(possibilidades)//2:]
-            tentativas += 1
-        elif palpite == "MENOR":
-            possibilidades = possibilidades[:len(possibilidades)//2]
-            tentativas += 1
-        else:
-            tentativas += 1
-            print(f"O número que você pensou é {numero}\nForam feitas {tentativas} tentativas até acertar.")
+
+
+def jogo():
+    possibilidades = cria_lista()
+    tentativas = 0
+    global numero
+    anterior = -1
+    while True:
+        try:
+            numero = possibilidades[len(possibilidades) // 2]
+            if anterior == numero:
+                raise IndexError
+            palpite = valida_palpite()
+            anterior = numero
+            if palpite == "MAIOR":
+                possibilidades = possibilidades[len(possibilidades) // 2:]
+                tentativas += 1
+            elif palpite == "MENOR":
+                possibilidades = possibilidades[:len(possibilidades) // 2]
+                tentativas += 1
+            else:
+                tentativas += 1
+                print(f"O número que você pensou é {numero}\nForam feitas {tentativas} tentativas até acertar.")
+                break
+        except IndexError:
+            print("Você está trapaceando! Encerrando o programa.")
             break
-    except IndexError:
-        print("Você está trapaceando! Encerrando o programa.")
-        break
+
+
+jogo()

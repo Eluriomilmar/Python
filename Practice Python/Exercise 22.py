@@ -25,4 +25,6 @@ def cria_dict(trens):
 
 lista = cria_lista("Training_01.txt")
 dicionario = cria_dict(lista)
-print(dicionario)
+for i, j in dicionario.items():
+    if i != "":
+        print(f"{i}: {j}")

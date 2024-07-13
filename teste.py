@@ -1,15 +1,11 @@
-import json
-
-calendario = dict()
-with open("calendario.json", "r") as c:
-    teste = json.load(c)
-print(teste)
-
-nome = str(input("Nome: "))
-ano = str(input("Ano: "))
-dicio = {nome: ano}
-teste.update(dicio)
-print (teste)
-
-with open("calendario.json", "w") as c:
-    json.dump(teste, c)
+frase = "frase aleatória com mais de 4 palavras"
+nova_frase = frase.split(" ")
+palavras = []
+palavras.append(nova_frase[len(nova_frase)-2])
+palavras.append(nova_frase[len(nova_frase)-1])
+nova_frase.pop()
+nova_frase.pop()
+ultima = palavras + nova_frase
+print(ultima)
+ultima = ' '.join(ultima)
+print(ultima)

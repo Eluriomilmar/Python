@@ -1,11 +1,23 @@
-frase = "frase aleatória com mais de 4 palavras"
-nova_frase = frase.split(" ")
-palavras = []
-palavras.append(nova_frase[len(nova_frase)-2])
-palavras.append(nova_frase[len(nova_frase)-1])
-nova_frase.pop()
-nova_frase.pop()
-ultima = palavras + nova_frase
-print(ultima)
-ultima = ' '.join(ultima)
-print(ultima)
+import string
+
+
+filename = input("Insira o nome do arquivo: ")
+try:
+    filehand = open(filename)
+except:
+    print("Arquivo inválido.")
+    exit()
+else:
+    counts = dict()
+    for line in filehand:
+        line = line.rstrip()
+        line = line.translate(line.maketrans("", "", string.punctuation))
+        line = line.lower()
+        words = line.split()
+        for word in words:
+            if word in counts:
+                counts[word] += 1
+            else:
+                counts[word] = 1
+
+print(counts)

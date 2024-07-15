@@ -1,3 +1,6 @@
+"""Write a program that reads the words in words.txt and stores them as keys in a dictionary."""
+
+
 dicio = dict()
 a = input("Insira nome do arquivo: ")
 with open(a, "r") as file:

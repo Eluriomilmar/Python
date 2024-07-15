@@ -1,8 +1,8 @@
-"""Write a program to read through a mail log,
- build a histogram using a dictionary to count how many messages have come from each email address, and print the dictionary."""
+""" Add code to the above program to figure out who has the most messages in the file."""
 
 
 a = input("Insira nome do arquivo aqui: ")
+maximo = None
 dicio = dict()
 with open(a, "r") as arquivo:
     for palavras in arquivo:
@@ -16,3 +16,7 @@ with open(a, "r") as arquivo:
                     dicio[linha[1]] = 1
 for i, k in dicio.items():
     print(f"{i}: {k}")
+    if maximo == None or maximo < k:
+        pessoa = i
+        maximo = k
+print(f"O endereço {pessoa} tem a maior quantidade de mensagens no arquivo, com {maximo} mensagens.")

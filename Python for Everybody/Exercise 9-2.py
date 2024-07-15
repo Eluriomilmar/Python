@@ -1,3 +1,6 @@
+"""Write a program that categorizes each mail message by which day of the week the commit was done. """
+
+
 dicio = dict()
 arquivo = input("Insira o nome do arquivo: ")
 with open(arquivo, "r") as a:

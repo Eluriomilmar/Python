@@ -1,23 +1,8 @@
-import string
+import socket
+import urllib.request
 
-
-filename = input("Insira o nome do arquivo: ")
-try:
-    filehand = open(filename)
-except:
-    print("Arquivo inválido.")
-    exit()
-else:
-    counts = dict()
-    for line in filehand:
-        line = line.rstrip()
-        line = line.translate(line.maketrans("", "", string.punctuation))
-        line = line.lower()
-        words = line.split()
-        for word in words:
-            if word in counts:
-                counts[word] += 1
-            else:
-                counts[word] = 1
-
-print(counts)
+website = "http://data.pr4e.org/romeo.txt"
+website = website.split("/")
+print(website)
+for i in website:
+    print(i, end="/")

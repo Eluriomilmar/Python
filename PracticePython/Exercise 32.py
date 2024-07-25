@@ -7,13 +7,13 @@ def palpite(palavra, tentativa=" ", erros=[], acertos=[]):
         for i in range(len(palavra)):
             print("_", end="")
     tentativa = str(input("\nInsira letra da tentativa: ")).upper()
-    while len(tentativa) > 1:
+    while len(tentativa) > 1 or bool(re.search("[A-Z]", tentativa)) == False:
         try:
             tentativa = str(input("\nInsira letra da tentativa: ")).upper()
             if len(tentativa) > 1:
                 raise ValueError
         except:
-            print("Insira somente um caractere.")
+            print("Insira somente um caractere alfabético.")
     sequencia = 0
     if tentativa in palavra:
         acertos.append(tentativa)

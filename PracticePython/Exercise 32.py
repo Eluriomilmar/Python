@@ -1,4 +1,5 @@
 from random import choice
+import re
 
 
 def palpite(palavra, tentativa=" ", erros=[], acertos=[]):

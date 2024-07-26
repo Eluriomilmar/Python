@@ -2,7 +2,7 @@ from random import choice
 import re
 
 
-def palpite(palavra, tentativa=" ", erros=[], acertos=[], fim = 0):
+def palpite(palavra, tentativa=" ", erros=[], acertos=[], fim=0):
     if tentativa == " ":
         for i in range(len(palavra)):
             print("_", end="")

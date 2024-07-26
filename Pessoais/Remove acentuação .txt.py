@@ -8,11 +8,6 @@ with open("soletrando.txt") as arquivo:
             tudo = tudo.rstrip()
             tudo = tudo.replace(";", "")
             tudo = tudo.replace(".", "")
-            for letras in tudo:
-                if letras in "áàãâéèêíìóúçÁÀÃÊÉÈÊÍÌÓÚÇ":
-                    tudo = ""
-            if tudo == "":
-                continue
             arquivo2.write(tudo)
             arquivo2.write("\n")
         arquivo2.close()

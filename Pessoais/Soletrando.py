@@ -2,7 +2,7 @@ from random import choice
 import re
 
 
-def palpite(palavra, tentativa=" ", erros=[], acertos=[]):
+def palpite(palavra, tentativa=" ", erros=[], acertos=[], fim = 0):
     if tentativa == " ":
         for i in range(len(palavra)):
             print("_", end="")
@@ -15,7 +15,23 @@ def palpite(palavra, tentativa=" ", erros=[], acertos=[]):
         except:
             print("\nInsira somente um caractere alfabético.")
     sequencia = 0
-    if tentativa in palavra:
+    acerto = 0
+    if tentativa == "A":
+        desambiguacao = ["A", "Á", "À", "Ã", "Â"]
+        desambiguacao, acerto, palavra, acertos, sequencia, tentativa, erros, fim = desambig(desambiguacao, acerto, palavra, acertos, sequencia, tentativa, erros, fim)
+    elif tentativa == "E":
+        desambiguacao = ["E", "É", "È", "Ê"]
+        desambiguacao, acerto, palavra, acertos, sequencia, tentativa, erros, fim = desambig(desambiguacao, acerto, palavra, acertos, sequencia, tentativa, erros, fim)
+    elif tentativa == "I":
+        desambiguacao = ["I", "Í", "Ì", "Î", "Ï"]
+        desambiguacao, acerto, palavra, acertos, sequencia, tentativa, erros, fim = desambig(desambiguacao, acerto, palavra, acertos, sequencia, tentativa, erros, fim)
+    elif tentativa == "O":
+        desambiguacao = ["O", "Ó", "Ò", "Ô", "Õ"]
+        desambiguacao, acerto, palavra, acertos, sequencia, tentativa, erros, fim = desambig(desambiguacao, acerto, palavra, acertos, sequencia, tentativa, erros, fim)
+    elif tentativa == "U":
+        desambiguacao = ["U", "Ú", "Ù", "Û"]
+        desambiguacao, acerto, palavra, acertos, sequencia, tentativa, erros, fim = desambig(desambiguacao, acerto, palavra, acertos, sequencia, tentativa, erros, fim)
+    elif tentativa in palavra and len(tentativa) == 1:
         acertos.append(tentativa)
         for i in palavra:
             if i in tentativa or i in acertos:
@@ -23,44 +39,75 @@ def palpite(palavra, tentativa=" ", erros=[], acertos=[]):
                 sequencia += 1
             else:
                 print("_", end="")
-    else:
+    elif acerto == 0:
         erros.append(tentativa)
+        fim += 1
         for i in palavra:
             if i in tentativa or i in acertos:
                 print(i, end="")
                 sequencia += 1
             else:
                 print("_", end="")
-    print(f"\nErros: {erros}")
-    if len(erros) == 0:
+    print(f"\nErros: ", end="")
+    for i in range(len(erros)):
+        if i < len(erros)-1:
+            print(f"{erros[i]}, ", end="")
+        else:
+            print(f"{erros[i]}.")
+    if fim == 0:
         print("o")
-    elif len(erros) == 1:
+    elif fim == 1:
         print(" o")
         print(" |")
-    elif len(erros) == 2:
+    elif fim == 2:
         print(" o")
         print(" |")
         print("/")
-    elif len(erros) == 3:
+    elif fim == 3:
         print(" o")
         print(" |")
         print("/ \\ ")
-    elif len(erros) == 4:
+    elif fim == 4:
         print(" o")
         print("/|")
         print("/ \\ ")
-    if len(erros) == 5:
+    if fim == 5:
         print(" o")
         print("/|\\ ")
         print("/ \\ ")
-    if len(erros) == 6:
+    if fim == 6:
         print(" x")
         print("/|\\ ")
         print("/ \\ ")
         return print(f"Perdeu! Encerrando programa. A palavra era {palavra}")
     if len(palavra) == sequencia:
         return print(f"Venceu! A palavra é {palavra}.\n\nEncerrando programa")
-    return palpite(palavra, tentativa, erros, acertos)
+    print("\n", end="")
+    return palpite(palavra, tentativa, erros, acertos, fim)
+
+
+def desambig(desambiguacao, acerto, palavra, acertos, sequencia, tentativa, erros, fim):
+    for j in desambiguacao:
+        if j in palavra:
+            acerto += 1
+            acertos.append(j)
+            for i in palavra:
+                if i in desambiguacao or i in acertos:
+                    print(i, end="")
+                    sequencia += 1
+                else:
+                    print("_", end="")
+    if acerto == 0:
+        for i in tentativa:
+            erros.append(i)
+        fim += 1
+        for i in palavra:
+            if i in desambiguacao or i in acertos:
+                print(i, end="")
+                sequencia += 1
+            else:
+                print("_", end="")
+    return desambiguacao, acerto, palavra, acertos, sequencia, tentativa, erros, fim
 
 
 def cria_lista(arq):

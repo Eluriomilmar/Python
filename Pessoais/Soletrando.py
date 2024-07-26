@@ -55,7 +55,7 @@ def palpite(palavra, tentativa=" ", erros=[], acertos=[], fim=0):
         else:
             print(f"{erros[i]}.")
     if fim == 0:
-        print("o")
+        print("\n o")
     elif fim == 1:
         print(" o")
         print(" |")
@@ -91,12 +91,13 @@ def desambig(desambiguacao, acerto, palavra, acertos, sequencia, tentativa, erro
         if j in palavra:
             acerto += 1
             acertos.append(j)
-            for i in palavra:
-                if i in desambiguacao or i in acertos:
-                    print(i, end="")
-                    sequencia += 1
-                else:
-                    print("_", end="")
+            if acerto == 1:
+                for i in palavra:
+                    if i in desambiguacao or i in acertos:
+                        print(i, end="")
+                        sequencia += 1
+                    else:
+                        print("_", end="")
     if acerto == 0:
         for i in tentativa:
             erros.append(i)

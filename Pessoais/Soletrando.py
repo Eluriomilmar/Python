@@ -79,9 +79,9 @@ def palpite(palavra, tentativa=" ", erros=[], acertos=[], fim=0):
         print(" x")
         print("/|\\ ")
         print("/ \\ ")
-        return print(f"Perdeu! Encerrando programa. A palavra era {palavra}")
+        return input(f"Perdeu! Encerrando programa. A palavra era {palavra}\nPressione qualquer tecla para encerrar")
     if len(palavra) == sequencia:
-        return print(f"Venceu! A palavra é {palavra}.\n\nEncerrando programa")
+        return input(f"Venceu! A palavra é {palavra}.\nPressione qualquer tecla para encerrar")
     print("\n", end="")
     return palpite(palavra, tentativa, erros, acertos, fim)
 

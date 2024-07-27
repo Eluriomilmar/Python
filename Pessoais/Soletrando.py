@@ -79,9 +79,19 @@ def palpite(palavra, tentativa=" ", erros=[], acertos=[], fim=0):
         print(" x")
         print("/|\\ ")
         print("/ \\ ")
-        return input(f"Perdeu! Encerrando programa. A palavra era {palavra}\nPressione qualquer tecla para encerrar")
+        print(f"Perdeu! A palavra era {palavra}\n")
+        cont = cont_ou_nao()
+        if cont == "N":
+            return input("Encerrando programa. Aperte ENTER para encerrar.")
+        else:
+            return palpite(cria_lista("soletrando2.txt"), " ", [], [])
     if len(palavra) == sequencia:
-        return input(f"Venceu! A palavra é {palavra}.\nPressione qualquer tecla para encerrar")
+        print(f"Venceu! A palavra é {palavra}.\n")
+        cont = cont_ou_nao()
+        if cont == "N":
+            return input("Encerrando programa. Aperte ENTER para encerrar.")
+        else:
+            return palpite(cria_lista("soletrando2.txt"), " ", [], [])
     print("\n", end="")
     return palpite(palavra, tentativa, erros, acertos, fim)
 
@@ -109,6 +119,17 @@ def desambig(desambiguacao, acerto, palavra, acertos, sequencia, tentativa, erro
             else:
                 print("_", end="")
     return desambiguacao, acerto, palavra, acertos, sequencia, tentativa, erros, fim
+
+def cont_ou_nao():
+    while True:
+        try:
+            argumento = input("Deseja jogar mais(S/N)? ").upper()
+            if argumento != "S" and argumento != "N":
+                raise ValueError
+        except:
+            print("Somente são aceitos os valores S e N.")
+        else:
+            return argumento
 
 
 def cria_lista(arq):

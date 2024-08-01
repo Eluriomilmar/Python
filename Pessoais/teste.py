@@ -1,5 +1,8 @@
 import re, codecs
 
-with open("soletrando.txt", "r", encoding="latin_1") as arquivo:
+with open("soletrando2.txt", "r") as arquivo:
+    count = 0
     for palavras in arquivo:
-        print(palavras)
+        if bool(palavras) == True:
+            count += 1
+    print(count)

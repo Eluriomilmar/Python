@@ -8,6 +8,13 @@ def palpite(palavra, tentativa=" ", erros=[], acertos=[], fim=0):
         for i in range(len(palavra)):
             print("_", end="")
         print("")
+        print("\nErros: ", end ="")
+        print("\n _______")
+        print("|      ")
+        print("|      o")
+        print("|")
+        print("|")
+        print("|")
     tentativa = str(input("\nInsira letra da tentativa: ")).upper()
     while len(tentativa) != 1 or bool(re.search("[A-ZÀ-ÿ]", tentativa)) is False:
         try:

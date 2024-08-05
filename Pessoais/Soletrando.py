@@ -4,8 +4,17 @@ import re
 
 def palpite(palavra, tentativa=" ", erros=[], acertos=[], fim=0):
     if tentativa == " ":
+        print("Palavra: ", end="")
         for i in range(len(palavra)):
             print("_", end="")
+        print("")
+        print("\nErros: ", end ="")
+        print("\n _______")
+        print("|      ")
+        print("|      o")
+        print("|")
+        print("|")
+        print("|")
     tentativa = str(input("\nInsira letra da tentativa: ")).upper()
     while len(tentativa) != 1 or bool(re.search("[A-ZÀ-ÿ]", tentativa)) is False:
         try:
@@ -16,6 +25,7 @@ def palpite(palavra, tentativa=" ", erros=[], acertos=[], fim=0):
             print("\nInsira somente um caractere alfabético.")
     sequencia = 0
     acerto = 0
+    print("\nPalavra: ", end="")
     if tentativa in ["A", "Á", "À", "Ã", "Â"]:
         desambiguacao = ["A", "Á", "À", "Ã", "Â"]
         desambiguacao, acerto, palavra, acertos, sequencia, tentativa, erros, fim = desambig(desambiguacao, acerto, palavra, acertos, sequencia, tentativa, erros, fim)
@@ -48,12 +58,12 @@ def palpite(palavra, tentativa=" ", erros=[], acertos=[], fim=0):
                 sequencia += 1
             else:
                 print("_", end="")
-    print(f"\nErros: ", end="")
+    print(f"\n\nErros: ", end="")
     for i in range(len(erros)):
         if i < len(erros)-1:
             print(f"{erros[i]}, ", end="")
         else:
-            print(f"{erros[i]}.")
+            print(f"{erros[i]}.", end="")
     if fim == 0:
         print("\n _______")
         print("|      ")

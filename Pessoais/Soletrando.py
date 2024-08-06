@@ -16,7 +16,7 @@ def palpite(palavra, tentativa=" ", erros=[], acertos=[], fim=0):
         print("|")
         print("|")
         print("|\n")
-    print("Tentativa: ", end="")
+    print("Tentativa: ", end="", flush=True)
     tentativa = keyboard.read_hotkey(suppress=False).upper()
     print(tentativa)
     while len(tentativa) != 1 or bool(re.search("[A-ZÀ-ÿ]", tentativa)) is False:
@@ -125,14 +125,14 @@ def palpite(palavra, tentativa=" ", erros=[], acertos=[], fim=0):
         print(f"Perdeu! A palavra era {palavra}\n")
         cont = cont_ou_nao()
         if cont == "N":
-            return input("\nEncerrando programa. Aperte ENTER para encerrar.")
+            return input("\nEncerrando programa. Aperte ENTER para encerrar.", flush=True)
         else:
             return palpite(cria_lista("soletrando2.txt"), " ", [], [])
     if len(palavra) == sequencia:
-        print(f"Venceu! A palavra é {palavra}.\n")
+        print(f"Venceu! A palavra é {palavra}.\n", flush=True)
         cont = cont_ou_nao()
         if cont == "N":
-            return input("\nEncerrando programa. Aperte ENTER para encerrar.")
+            return input("\nEncerrando programa. Aperte ENTER para encerrar.", flush=True)
         else:
             return palpite(cria_lista("soletrando2.txt"), " ", [], [])
     print("\n", end="")
@@ -166,7 +166,7 @@ def desambig(desambiguacao, acerto, palavra, acertos, sequencia, tentativa, erro
 def cont_ou_nao():
     while True:
         try:
-            print("Deseja jogar mais(S/N)? ", end="")
+            print("Deseja jogar mais(S/N)? ", end="", flush=True)
             argumento = keyboard.read_hotkey(suppress=False).upper()
             if argumento != "S" and argumento != "N":
                 raise ValueError

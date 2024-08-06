@@ -177,7 +177,7 @@ def cont_ou_nao():
 
 
 def cria_lista(arq):
-    with open(arq, "r") as dicionario:
+    with open(arq, "r", encoding="latin-1") as dicionario:
         vetor = dicionario.read().upper().split("\n")
         return choice(vetor)
 

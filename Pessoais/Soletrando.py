@@ -32,19 +32,24 @@ def palpite(palavra, tentativa=" ", erros=[], acertos=[], fim=0):
     print("\nPalavra: ", end="")
     if tentativa in ["A", "Á", "À", "Ã", "Â"]:
         desambiguacao = ["A", "Á", "À", "Ã", "Â"]
-        desambiguacao, acerto, palavra, acertos, sequencia, tentativa, erros, fim = desambig(desambiguacao, acerto, palavra, acertos, sequencia, tentativa, erros, fim)
+        desambiguacao, acerto, palavra, acertos, sequencia, tentativa, erros, fim = desambig(
+            desambiguacao, acerto, palavra, acertos, sequencia, tentativa, erros, fim)
     elif tentativa in ["E", "É", "È", "Ê"]:
         desambiguacao = ["E", "É", "È", "Ê"]
-        desambiguacao, acerto, palavra, acertos, sequencia, tentativa, erros, fim = desambig(desambiguacao, acerto, palavra, acertos, sequencia, tentativa, erros, fim)
+        desambiguacao, acerto, palavra, acertos, sequencia, tentativa, erros, fim = desambig(
+            desambiguacao, acerto, palavra, acertos, sequencia, tentativa, erros, fim)
     elif tentativa in ["I", "Í", "Ì", "Î", "Ï"]:
         desambiguacao = ["I", "Í", "Ì", "Î", "Ï"]
-        desambiguacao, acerto, palavra, acertos, sequencia, tentativa, erros, fim = desambig(desambiguacao, acerto, palavra, acertos, sequencia, tentativa, erros, fim)
+        desambiguacao, acerto, palavra, acertos, sequencia, tentativa, erros, fim = desambig(
+            desambiguacao, acerto, palavra, acertos, sequencia, tentativa, erros, fim)
     elif tentativa in ["O", "Ó", "Ò", "Ô", "Õ"]:
         desambiguacao = ["O", "Ó", "Ò", "Ô", "Õ"]
-        desambiguacao, acerto, palavra, acertos, sequencia, tentativa, erros, fim = desambig(desambiguacao, acerto, palavra, acertos, sequencia, tentativa, erros, fim)
+        desambiguacao, acerto, palavra, acertos, sequencia, tentativa, erros, fim = desambig(
+            desambiguacao, acerto, palavra, acertos, sequencia, tentativa, erros, fim)
     elif tentativa in ["U", "Ú", "Ù", "Û"]:
         desambiguacao = ["U", "Ú", "Ù", "Û"]
-        desambiguacao, acerto, palavra, acertos, sequencia, tentativa, erros, fim = desambig(desambiguacao, acerto, palavra, acertos, sequencia, tentativa, erros, fim)
+        desambiguacao, acerto, palavra, acertos, sequencia, tentativa, erros, fim = desambig(
+            desambiguacao, acerto, palavra, acertos, sequencia, tentativa, erros, fim)
     elif tentativa in palavra and len(tentativa) == 1:
         acertos.append(tentativa)
         for i in palavra:

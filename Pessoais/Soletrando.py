@@ -1,7 +1,6 @@
 from random import choice
 import re
 import keyboard
-import time
 
 
 def palpite(palavra, tentativa=" ", erros=[], acertos=[], fim=0):

@@ -1,5 +1,7 @@
 from random import choice
 import re
+import keyboard
+import time
 
 
 def palpite(palavra, tentativa=" ", erros=[], acertos=[], fim=0):
@@ -14,11 +16,14 @@ def palpite(palavra, tentativa=" ", erros=[], acertos=[], fim=0):
         print("|      o")
         print("|")
         print("|")
-        print("|")
-    tentativa = str(input("\nInsira letra da tentativa: ")).upper()
+        print("|\n")
+    print("Tentativa: ", end="")
+    tentativa = keyboard.read_hotkey(suppress=False).upper()
+    print(tentativa)
     while len(tentativa) != 1 or bool(re.search("[A-ZÀ-ÿ]", tentativa)) is False:
         try:
-            tentativa = str(input("\nInsira letra de A a Z: ")).upper()
+            print("\nInsira letra de A a Z: ", end="")
+            tentativa = keyboard.read_hotkey(suppress=False).upper()
             if len(tentativa) != 1 or bool(re.search("[A-ZÀ-ÿ]", tentativa)) is False:
                 raise ValueError
         except:
@@ -116,14 +121,14 @@ def palpite(palavra, tentativa=" ", erros=[], acertos=[], fim=0):
         print(f"Perdeu! A palavra era {palavra}\n")
         cont = cont_ou_nao()
         if cont == "N":
-            return input("Encerrando programa. Aperte ENTER para encerrar.")
+            return input("\nEncerrando programa. Aperte ENTER para encerrar.")
         else:
             return palpite(cria_lista("soletrando2.txt"), " ", [], [])
     if len(palavra) == sequencia:
         print(f"Venceu! A palavra é {palavra}.\n")
         cont = cont_ou_nao()
         if cont == "N":
-            return input("Encerrando programa. Aperte ENTER para encerrar.")
+            return input("\nEncerrando programa. Aperte ENTER para encerrar.")
         else:
             return palpite(cria_lista("soletrando2.txt"), " ", [], [])
     print("\n", end="")
@@ -157,7 +162,8 @@ def desambig(desambiguacao, acerto, palavra, acertos, sequencia, tentativa, erro
 def cont_ou_nao():
     while True:
         try:
-            argumento = input("Deseja jogar mais(S/N)? ").upper()
+            print("Deseja jogar mais(S/N)? ", end="")
+            argumento = keyboard.read_hotkey(suppress=False).upper()
             if argumento != "S" and argumento != "N":
                 raise ValueError
         except:

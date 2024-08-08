@@ -1,8 +1,14 @@
-import re, codecs
+import curses
+from curses import wrapper
+import time
 
-with open("soletrando2.txt", "r") as arquivo:
-    count = 0
-    for palavras in arquivo:
-        if bool(palavras) == True:
-            count += 1
-    print(count)
+def main(stdscr):
+    stdscr.clear()
+    stdscr.addstr(f"{a}")
+    stdscr.refresh()
+    stdscr.clear
+    stdscr.getch()
+    stdscr.refresh()
+    time.sleep(3)
+
+wrapper(main)

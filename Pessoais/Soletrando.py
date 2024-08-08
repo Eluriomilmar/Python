@@ -1,35 +1,38 @@
 from random import choice
 import re
 import keyboard
+import curses
 
 
 def palpite(palavra, tentativa=" ", erros=[], acertos=[], fim=0):
     if tentativa == " ":
-        print("Palavra: ", end="")
+        screen.addstr(0, 0, "Palavra: ")
         for i in range(len(palavra)):
-            print("_", end="")
-        print("")
-        print("\nErros: ", end ="")
-        print("\n _______")
-        print("|      ")
-        print("|      o")
-        print("|")
-        print("|")
-        print("|\n")
-    print("Tentativa: ", end="", flush=True)
-    tentativa = keyboard.read_hotkey(suppress=False).upper()
-    print(tentativa)
+            screen.addstr("_")
+        screen.addstr(1, 0, "Erros: ")
+        screen.addstr(3, 0, " _______")
+        screen.addstr(4, 0, "|      ")
+        screen.addstr(5, 0, "|      o")
+        screen.addstr(6, 0, "|")
+        screen.addstr(7, 0, "|")
+        screen.addstr(8, 0, "|")
+    screen.addstr(9, 0 ,"Tentativa: ")
+    screen.refresh()
+    tentativa = screen.getkey()
+    screen.addstr(9, 11, tentativa)
+    screen.refresh()
     while len(tentativa) != 1 or bool(re.search("[A-ZÀ-ÿ]", tentativa)) is False:
         try:
-            print("\nInsira letra de A a Z: ", end="")
+            screen.addstr("\nInsira letra de A a Z: ")
             tentativa = keyboard.read_hotkey(suppress=False).upper()
             if len(tentativa) != 1 or bool(re.search("[A-ZÀ-ÿ]", tentativa)) is False:
                 raise ValueError
         except:
-            print("\nInsira somente um caractere alfabético.")
+            screen.addstr("\nInsira somente um caractere alfabético.")
+    screen.clear()
     sequencia = 0
     acerto = 0
-    print("\nPalavra: ", end="")
+    screen.addstr(0, 0, "Palavra: ")
     if tentativa in ["A", "Á", "À", "Ã", "Â"]:
         desambiguacao = ["A", "Á", "À", "Ã", "Â"]
         desambiguacao, acerto, palavra, acertos, sequencia, tentativa, erros, fim = desambig(
@@ -54,88 +57,100 @@ def palpite(palavra, tentativa=" ", erros=[], acertos=[], fim=0):
         acertos.append(tentativa)
         for i in palavra:
             if i in tentativa or i in acertos:
-                print(i, end="")
+                screen.addstr(i)
                 sequencia += 1
+                screen.refresh()
             else:
-                print("_", end="")
+                screen.addstr("_")
+                screen.refresh()
     elif acerto == 0:
-        erros.append(tentativa)
-        fim += 1
+        if tentativa not in erros:
+            erros.append(tentativa)
+            fim += 1
         for i in palavra:
             if i in tentativa or i in acertos:
-                print(i, end="")
+                screen.addstr(i)
                 sequencia += 1
             else:
-                print("_", end="")
-    print(f"\n\nErros: ", end="")
+                screen.addstr("_")
+    screen.addstr(1, 0, "Erros: ")
     for i in range(len(erros)):
         if i < len(erros)-1:
-            print(f"{erros[i]}, ", end="")
+            screen.addstr(f"{erros[i]}, ")
+            screen.refresh()
         else:
-            print(f"{erros[i]}.", end="")
+            screen.addstr(f"{erros[i]}.")
+            screen.refresh()
     if fim == 0:
-        print("\n _______")
-        print("|      ")
-        print("|      o")
-        print("|")
-        print("|")
-        print("|")
+        screen.addstr(3, 0, " _______")
+        screen.addstr(4, 0, "|      ")
+        screen.addstr(5, 0, "|      o")
+        screen.addstr(6, 0, "|")
+        screen.addstr(7, 0, "|")
+        screen.addstr(8, 0, "|")
     elif fim == 1:
-        print("\n _______")
-        print("|      ")
-        print("|      o")
-        print("|      |")
-        print("|")
-        print("|")
+        screen.addstr(3, 0, " _______")
+        screen.addstr(4, 0, "|      ")
+        screen.addstr(5, 0, "|      o")
+        screen.addstr(6, 0, "|      |")
+        screen.addstr(7, 0, "|")
+        screen.addstr(8, 0, "|")
     elif fim == 2:
-        print("\n _______")
-        print("|      ")
-        print("|      o")
-        print("|      |")
-        print("|     /")
-        print("|")
+        screen.addstr(3, 0, " _______")
+        screen.addstr(4, 0, "|      ")
+        screen.addstr(5, 0, "|      o")
+        screen.addstr(6, 0, "|      |")
+        screen.addstr(7, 0, "|     /")
+        screen.addstr(8, 0, "|")
     elif fim == 3:
-        print("\n _______")
-        print("|      ")
-        print("|      o")
-        print("|      |")
-        print("|     / \\ ")
-        print("|")
+        screen.addstr(3, 0, " _______")
+        screen.addstr(4, 0, "|      ")
+        screen.addstr(5, 0, "|      o")
+        screen.addstr(6, 0, "|      |")
+        screen.addstr(7, 0, "|     / \\ ")
+        screen.addstr(8, 0, "|")
     elif fim == 4:
-        print("\n _______")
-        print("|      ")
-        print("|      o")
-        print("|     /|")
-        print("|     / \\ ")
-        print("|")
+        screen.addstr(3, 0, " _______")
+        screen.addstr(4, 0, "|      ")
+        screen.addstr(5, 0, "|      o")
+        screen.addstr(6, 0, "|     /|")
+        screen.addstr(7, 0, "|     / \\ ")
+        screen.addstr(8, 0, "|")
     if fim == 5:
-        print("\n _______")
-        print("|      ")
-        print("|      o")
-        print("|     /|\\ ")
-        print("|     / \\ ")
-        print("|")
+        screen.addstr(3, 0, " _______")
+        screen.addstr(4, 0, "|      ")
+        screen.addstr(5, 0, "|      o")
+        screen.addstr(6, 0, "|     /|\\ ")
+        screen.addstr(7, 0, "|     / \\ ")
+        screen.addstr(8, 0, "|")
     if fim == 6:
-        print("\n _______")
-        print("|      |")
-        print("|      x")
-        print("|     /|\\ ")
-        print("|     / \\ ")
-        print("|")
-        print(f"Perdeu! A palavra era {palavra}\n")
+        screen.addstr(3, 0, " _______")
+        screen.addstr(4, 0, "|      |")
+        screen.addstr(5, 0, "|      x")
+        screen.addstr(6, 0, "|     /|\\ ")
+        screen.addstr(7, 0, "|     / \\ ")
+        screen.addstr(8, 0, "|")
+        screen.addstr(9, 0, f"Perdeu! A palavra era {palavra}\n")
+        screen.refresh()
         cont = cont_ou_nao()
+        screen.addstr(cont)
         if cont == "N":
-            return input("\nEncerrando programa. Aperte ENTER para encerrar.", flush=True)
+            screen.addstr(11, 0, "\nEncerrando programa. Aperte ENTER para encerrar.")
+            screen.getch()
+            return 0
         else:
+            screen.clear()
             return palpite(cria_lista("soletrando2.txt"), " ", [], [])
     if len(palavra) == sequencia:
-        print(f"Venceu! A palavra é {palavra}.\n", flush=True)
+        screen.addstr(10, 0, f"Venceu! A palavra é {palavra}.")
         cont = cont_ou_nao()
         if cont == "N":
-            return input("\nEncerrando programa. Aperte ENTER para encerrar.", flush=True)
+            screen.addstr(11, 0, "\nEncerrando programa. Aperte ENTER para encerrar.")
+            screen.getch()
+            return 0
         else:
             return palpite(cria_lista("soletrando2.txt"), " ", [], [])
-    print("\n", end="")
+    screen.addstr("\n")
     return palpite(palavra, tentativa, erros, acertos, fim)
 
 
@@ -147,26 +162,32 @@ def desambig(desambiguacao, acerto, palavra, acertos, sequencia, tentativa, erro
             if acerto == 1:
                 for i in palavra:
                     if i in desambiguacao or i in acertos:
-                        print(i, end="")
+                        screen.addstr(i)
                         sequencia += 1
+                        screen.refresh()
                     else:
-                        print("_", end="")
+                        screen.addstr("_")
+                        screen.refresh()
     if acerto == 0:
         for i in tentativa:
-            erros.append(i)
-        fim += 1
+            if i not in erros:
+                erros.append(i)
+                fim += 1
         for i in palavra:
             if i in desambiguacao or i in acertos:
-                print(i, end="")
+                screen.addstr(i)
                 sequencia += 1
+                screen.refresh()
             else:
-                print("_", end="")
+                screen.addstr("_")
+                screen.refresh()
     return desambiguacao, acerto, palavra, acertos, sequencia, tentativa, erros, fim
 
 def cont_ou_nao():
     while True:
         try:
-            print("Deseja jogar mais(S/N)? ", end="", flush=True)
+            screen.addstr(11, 0, "Deseja jogar mais(S/N)?")
+            screen.refresh()
             argumento = keyboard.read_hotkey(suppress=False).upper()
             if argumento != "S" and argumento != "N":
                 raise ValueError
@@ -182,4 +203,8 @@ def cria_lista(arq):
         return choice(vetor)
 
 
+screen = curses.initscr()
+curses.noecho()
+curses.cbreak()
 palpite(cria_lista("soletrando2.txt"), " ", [], [])
+

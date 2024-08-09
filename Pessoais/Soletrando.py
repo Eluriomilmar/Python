@@ -3,7 +3,6 @@ import re
 import keyboard
 import curses
 
-
 def palpite(palavra, tentativa=" ", erros=[], acertos=[], fim=0):
     if tentativa == " ":
         screen.addstr(0, 0, "Palavra: ")
@@ -17,14 +16,13 @@ def palpite(palavra, tentativa=" ", erros=[], acertos=[], fim=0):
         screen.addstr(7, 0, "|")
         screen.addstr(8, 0, "|")
     screen.addstr(9, 0 ,"Tentativa: ")
-    screen.refresh()
-    tentativa = screen.getkey()
+    tentativa = screen.getkey().upper()
     screen.addstr(9, 11, tentativa)
     screen.refresh()
     while len(tentativa) != 1 or bool(re.search("[A-ZÀ-ÿ]", tentativa)) is False:
         try:
             screen.addstr("\nInsira letra de A a Z: ")
-            tentativa = keyboard.read_hotkey(suppress=False).upper()
+            tentativa = screen.getkey().upper()
             if len(tentativa) != 1 or bool(re.search("[A-ZÀ-ÿ]", tentativa)) is False:
                 raise ValueError
         except:
@@ -136,7 +134,7 @@ def palpite(palavra, tentativa=" ", erros=[], acertos=[], fim=0):
         screen.addstr(cont)
         if cont == "N":
             screen.addstr(11, 0, "\nEncerrando programa. Aperte ENTER para encerrar.")
-            screen.getch()
+            screen.getkey().upper()
             return 0
         else:
             screen.clear()
@@ -146,7 +144,7 @@ def palpite(palavra, tentativa=" ", erros=[], acertos=[], fim=0):
         cont = cont_ou_nao()
         if cont == "N":
             screen.addstr(11, 0, "\nEncerrando programa. Aperte ENTER para encerrar.")
-            screen.getch()
+            screen.getkey().upper()
             return 0
         else:
             return palpite(cria_lista("soletrando2.txt"), " ", [], [])
@@ -188,7 +186,7 @@ def cont_ou_nao():
         try:
             screen.addstr(11, 0, "Deseja jogar mais(S/N)?")
             screen.refresh()
-            argumento = keyboard.read_hotkey(suppress=False).upper()
+            argumento = screen.getkey().upper()
             if argumento != "S" and argumento != "N":
                 raise ValueError
         except:
@@ -198,7 +196,7 @@ def cont_ou_nao():
 
 
 def cria_lista(arq):
-    with open(arq, "r", encoding="latin-1") as dicionario:
+    with open(arq, "r", encoding="UTF-8") as dicionario:
         vetor = dicionario.read().upper().split("\n")
         return choice(vetor)
 

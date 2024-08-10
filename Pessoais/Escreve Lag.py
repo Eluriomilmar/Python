@@ -7,7 +7,6 @@ with open("lag.txt", "a") as arquivo:
     b = input("Insira a tecla de parada: ")
     while True:
         c = keyboard.read_key()
-        sleep(0.3)
         if c == a:
             arquivo.write(str(datetime.today().day)+"-"+str(datetime.today().month)+"-"+
             str(datetime.today().year)+": "+str(datetime.today().hour)+":"+str(datetime.today().minute)+"\n")

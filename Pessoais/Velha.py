@@ -1,6 +1,4 @@
 import curses
-from win32gui import FindWindow
-from win32gui import GetWindowRect
 
 def desenha_tabuleiro():
     for i in range(11):

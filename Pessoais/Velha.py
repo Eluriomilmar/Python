@@ -19,52 +19,49 @@ def inicializa_jogo():
     return tabuleiro
 
 
-def pos_janela(nome_janela):
-    janela = FindWindow(None, nome_janela)
-    return GetWindowRect(janela)
-
-
 def verifica_jogada(x, y, jogo, jogador):
     if x <= 2 and y <= 2:
-        jogo = preenche_tabuleiro(0, 0, jogador, jogo)
-        return jogo
+        jogo, retorno = preenche_tabuleiro(0, 0, jogador, jogo)
+        return jogo, retorno
     elif x <= 2 and y <= 6:
-        jogo = preenche_tabuleiro(0, 1, jogador, jogo)
-        return jogo
+        jogo, retorno = preenche_tabuleiro(0, 1, jogador, jogo)
+        return jogo, retorno
     elif x <= 2 and y <= 10:
-        jogo = preenche_tabuleiro(0, 2, jogador, jogo)
-        return jogo
+        jogo, retorno = preenche_tabuleiro(0, 2, jogador, jogo)
+        return jogo, retorno
     elif x <= 6 and y <= 2:
-        jogo = preenche_tabuleiro(1, 0, jogador, jogo)
-        return jogo
+        jogo, retorno = preenche_tabuleiro(1, 0, jogador, jogo)
+        return jogo, retorno
     elif x <= 6 and y <= 6:
-        jogo = preenche_tabuleiro(1, 1, jogador, jogo)
-        return jogo
+        jogo, retorno = preenche_tabuleiro(1, 1, jogador, jogo)
+        return jogo, retorno
     elif x <= 6 and y <= 10:
-        jogo = preenche_tabuleiro(1, 2, jogador, jogo)
-        return jogo
+        jogo, retorno = preenche_tabuleiro(1, 2, jogador, jogo)
+        return jogo, retorno
     elif x <= 10 and y <= 2:
-        jogo = preenche_tabuleiro(2, 0, jogador, jogo)
-        return jogo
+        jogo, retorno = preenche_tabuleiro(2, 0, jogador, jogo)
+        return jogo, retorno
     elif x <= 10 and y <= 6:
-        jogo = preenche_tabuleiro(2, 1, jogador, jogo)
-        return jogo
+        jogo, retorno = preenche_tabuleiro(2, 1, jogador, jogo)
+        return jogo, retorno
     elif x <= 10 and y <= 10:
-        jogo = preenche_tabuleiro(2, 2, jogador, jogo)
-        return jogo
+        jogo, retorno = preenche_tabuleiro(2, 2, jogador, jogo)
+        return jogo, retorno
 
 def preenche_tabuleiro(cx, cy, jogador, jogo):
     if jogo[cy][cx] == 0:
-        jogo[cy][cx] += jogador
+        jogo[cy][cx] = jogador
         if jogador == 1:
             screen.addstr(cy*4+1, cx*4+1, "x")
             screen.refresh()
         elif jogador == -1:
             screen.addstr(cy*4+1, cx*4+1, "o")
             screen.refresh()
-        return jogo
+        retorno = 0
+        return jogo, retorno
     else:
-        return jogo
+        retorno = -1
+        return jogo, retorno
 
 
 def verifica_vencedor(jogo):
@@ -100,7 +97,6 @@ curses.mousemask(1)
 curses.curs_set(1)
 desenha_tabuleiro()
 jogo = inicializa_jogo()
-left, top, right, bottom = pos_janela("C:\\Users\\Lucas\\Desktop\\Python\\output\\Velha.exe")
 jogador1 = 1
 jogador2 = -1
 for i in range(9):
@@ -108,17 +104,21 @@ for i in range(9):
     _, x, y, _, _ = curses.getmouse()
     screen.refresh()
     if i%2 == 0:
-        jogo = verifica_jogada(x, y, jogo, jogador1)
-        if verifica_vencedor(jogo) != 0:
-            screen.addstr(14, 0, "Jogador 1 Venceu!")
-            screen.refresh()
-            input()
-            exit()
+        retorno = -1
+        while retorno == -1:
+            jogo, retorno = verifica_jogada(x, y, jogo, jogador1)
+            if verifica_vencedor(jogo) != 0:
+                screen.addstr(14, 0, "Jogador 1 Venceu!")
+                screen.refresh()
+                input()
+                exit()
     else:
-        jogo = verifica_jogada(x, y, jogo, jogador2)
-        if verifica_vencedor(jogo) != 0:
-            screen.addstr(14, 0, "Jogador 2 Venceu!")
-            screen.refresh()
-            input()
-            exit()
+        retorno = -1
+        while retorno == -1:
+            jogo, retorno = verifica_jogada(x, y, jogo, jogador2)
+            if verifica_vencedor(jogo) != 0:
+                screen.addstr(14, 0, "Jogador 2 Venceu!")
+                screen.refresh()
+                input()
+                exit()
 

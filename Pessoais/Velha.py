@@ -106,17 +106,21 @@ for i in range(9):
         while retorno == -1:
             jogo, retorno = verifica_jogada(x, y, jogo, jogador1)
             if verifica_vencedor(jogo) != 0:
-                screen.addstr(14, 0, "Jogador 1 Venceu!")
+                screen.addstr(14, 0, f"Jogador 2 Venceu!")
+                curses.echo()
+                screen.addstr(15, 0, f"Aperte ENTER para encerrar")
                 screen.refresh()
-                input()
+                screen.getch()
                 exit()
     else:
         retorno = -1
         while retorno == -1:
             jogo, retorno = verifica_jogada(x, y, jogo, jogador2)
             if verifica_vencedor(jogo) != 0:
-                screen.addstr(14, 0, "Jogador 2 Venceu!")
+                screen.addstr(14, 0, f"Jogador 2 Venceu!")
+                curses.echo()
+                screen.addstr(15, 0, f"Aperte ENTER para encerrar")
                 screen.refresh()
-                input()
+                screen.getch()
                 exit()
 

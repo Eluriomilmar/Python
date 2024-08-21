@@ -101,8 +101,8 @@ for i in range(9):
     screen.getch()
     _, x, y, _, _ = curses.getmouse()
     screen.refresh()
+    retorno = -1
     if i%2 == 0:
-        retorno = -1
         while retorno == -1:
             jogo, retorno = verifica_jogada(x, y, jogo, jogador1)
             if verifica_vencedor(jogo) != 0:
@@ -113,7 +113,6 @@ for i in range(9):
                 screen.getch()
                 exit()
     else:
-        retorno = -1
         while retorno == -1:
             jogo, retorno = verifica_jogada(x, y, jogo, jogador2)
             if verifica_vencedor(jogo) != 0:

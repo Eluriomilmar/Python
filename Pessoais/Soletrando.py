@@ -1,3 +1,4 @@
+#v1.12
 from random import choice
 import re
 import curses

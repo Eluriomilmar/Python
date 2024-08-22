@@ -57,7 +57,7 @@ def preenche_tabuleiro(cx, cy, jogador, jogo):
             screen.refresh()
         retorno = 0
         return jogo, retorno
-    else:
+    elif jogo[cy][cx] == 1 or jogo[cy][cx] == -1:
         retorno = -1
         return jogo, retorno
 
@@ -105,6 +105,8 @@ for i in range(9):
     if i%2 == 0:
         while retorno == -1:
             jogo, retorno = verifica_jogada(x, y, jogo, jogador1)
+            if retorno == -1:
+                i = i - 1
             if verifica_vencedor(jogo) != 0:
                 screen.addstr(14, 0, f"Jogador 2 Venceu!")
                 curses.echo()
@@ -115,6 +117,8 @@ for i in range(9):
     else:
         while retorno == -1:
             jogo, retorno = verifica_jogada(x, y, jogo, jogador2)
+            if retorno == -1:
+                i = i - 1
             if verifica_vencedor(jogo) != 0:
                 screen.addstr(14, 0, f"Jogador 2 Venceu!")
                 curses.echo()

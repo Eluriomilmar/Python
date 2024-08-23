@@ -1,4 +1,5 @@
-import curses, copy
+import curses
+from copy import deepcopy
 
 def desenha_tabuleiro():
     for i in range(11):
@@ -100,7 +101,7 @@ while i < 9:
     screen.getch()
     _, x, y, _, _ = curses.getmouse()
     screen.refresh()
-    retorno = copy.deepcopy(jogo)
+    retorno = deepcopy(jogo)
     if i%2 == 0:
         jogo = verifica_jogada(x, y, jogo, jogador1)
         i += 1

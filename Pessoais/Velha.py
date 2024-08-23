@@ -1,4 +1,4 @@
-import curses
+import curses, copy
 
 def desenha_tabuleiro():
     for i in range(11):
@@ -19,32 +19,32 @@ def inicializa_jogo():
 
 def verifica_jogada(x, y, jogo, jogador):
     if x <= 2 and y <= 2:
-        jogo, retorno = preenche_tabuleiro(0, 0, jogador, jogo)
-        return jogo, retorno
+        jogo = preenche_tabuleiro(0, 0, jogador, jogo)
+        return jogo
     elif x <= 2 and y <= 6:
-        jogo, retorno = preenche_tabuleiro(0, 1, jogador, jogo)
-        return jogo, retorno
+        jogo = preenche_tabuleiro(0, 1, jogador, jogo)
+        return jogo
     elif x <= 2 and y <= 10:
-        jogo, retorno = preenche_tabuleiro(0, 2, jogador, jogo)
-        return jogo, retorno
+        jogo = preenche_tabuleiro(0, 2, jogador, jogo)
+        return jogo
     elif x <= 6 and y <= 2:
-        jogo, retorno = preenche_tabuleiro(1, 0, jogador, jogo)
-        return jogo, retorno
+        jogo = preenche_tabuleiro(1, 0, jogador, jogo)
+        return jogo
     elif x <= 6 and y <= 6:
-        jogo, retorno = preenche_tabuleiro(1, 1, jogador, jogo)
-        return jogo, retorno
+        jogo = preenche_tabuleiro(1, 1, jogador, jogo)
+        return jogo
     elif x <= 6 and y <= 10:
-        jogo, retorno = preenche_tabuleiro(1, 2, jogador, jogo)
-        return jogo, retorno
+        jogo = preenche_tabuleiro(1, 2, jogador, jogo)
+        return jogo
     elif x <= 10 and y <= 2:
-        jogo, retorno = preenche_tabuleiro(2, 0, jogador, jogo)
-        return jogo, retorno
+        jogo = preenche_tabuleiro(2, 0, jogador, jogo)
+        return jogo
     elif x <= 10 and y <= 6:
-        jogo, retorno = preenche_tabuleiro(2, 1, jogador, jogo)
-        return jogo, retorno
+        jogo = preenche_tabuleiro(2, 1, jogador, jogo)
+        return jogo
     elif x <= 10 and y <= 10:
-        jogo, retorno = preenche_tabuleiro(2, 2, jogador, jogo)
-        return jogo, retorno
+        jogo = preenche_tabuleiro(2, 2, jogador, jogo)
+        return jogo
 
 def preenche_tabuleiro(cx, cy, jogador, jogo):
     if jogo[cy][cx] == 0:
@@ -55,11 +55,9 @@ def preenche_tabuleiro(cx, cy, jogador, jogo):
         elif jogador == -1:
             screen.addstr(cy*4+1, cx*4+1, "o")
             screen.refresh()
-        retorno = 0
-        return jogo, retorno
-    elif jogo[cy][cx] == 1 or jogo[cy][cx] == -1:
-        retorno = -1
-        return jogo, retorno
+        return jogo
+    else:
+        return jogo
 
 
 def verifica_vencedor(jogo):
@@ -97,33 +95,34 @@ desenha_tabuleiro()
 jogo = inicializa_jogo()
 jogador1 = 1
 jogador2 = -1
-for i in range(9):
+i = 0
+while i < 9:
     screen.getch()
     _, x, y, _, _ = curses.getmouse()
     screen.refresh()
-    retorno = -1
+    retorno = copy.deepcopy(jogo)
     if i%2 == 0:
-        while retorno == -1:
-            jogo, retorno = verifica_jogada(x, y, jogo, jogador1)
-            if retorno == -1:
-                i = i - 1
-            if verifica_vencedor(jogo) != 0:
-                screen.addstr(14, 0, f"Jogador 2 Venceu!")
-                curses.echo()
-                screen.addstr(15, 0, f"Aperte ENTER para encerrar")
-                screen.refresh()
-                screen.getch()
-                exit()
+        jogo = verifica_jogada(x, y, jogo, jogador1)
+        i += 1
+        if retorno == jogo:
+            i -= 1
+        if verifica_vencedor(jogo) != 0:
+            screen.addstr(14, 0, f"Jogador 1 Venceu!")
+            curses.echo()
+            screen.addstr(15, 0, f"Aperte ENTER para encerrar")
+            screen.refresh()
+            screen.getch()
+            exit()
     else:
-        while retorno == -1:
-            jogo, retorno = verifica_jogada(x, y, jogo, jogador2)
-            if retorno == -1:
-                i = i - 1
-            if verifica_vencedor(jogo) != 0:
-                screen.addstr(14, 0, f"Jogador 2 Venceu!")
-                curses.echo()
-                screen.addstr(15, 0, f"Aperte ENTER para encerrar")
-                screen.refresh()
-                screen.getch()
-                exit()
+        jogo = verifica_jogada(x, y, jogo, jogador2)
+        i += 1
+        if retorno == jogo:
+            i -= 1
+        if verifica_vencedor(jogo) != 0:
+            screen.addstr(14, 0, f"Jogador 2 Venceu!")
+            curses.echo()
+            screen.addstr(15, 0, f"Aperte ENTER para encerrar")
+            screen.refresh()
+            screen.getch()
+            exit()
 

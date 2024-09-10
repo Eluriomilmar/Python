@@ -2,10 +2,11 @@ import keyboard
 from time import sleep
 from datetime import datetime
 
-with (open("lag.txt", "a") as arquivo):
+arq = str(input("Insira mês de registro: "))
+with (open(arq + ".txt", "a") as arquivo):
     a = input("Insira a tecla de registro: ")
-    b = input("Insira a tecla de parada: ")
     c = input("Insire a tecla de pausa: ")
+    b = input("Insira a tecla de parada: ")
     while True:
         d = keyboard.read_key()
         if d == a:
@@ -13,6 +14,7 @@ with (open("lag.txt", "a") as arquivo):
             str(datetime.today().year)+": "+str(datetime.today().hour)+"h"+str(datetime.today().minute)+"m"+"\n")
             print(str(datetime.today().day)+"-"+str(datetime.today().month)+"-"+
             str(datetime.today().year)+": "+str(datetime.today().hour)+"h"+str(datetime.today().minute)+"m")
+            arquivo.flush()
             sleep(0.5)
         if d == b:
             break

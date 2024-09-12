@@ -25,7 +25,7 @@ with (open(arq + ".txt", "a") as arquivo):
             arquivo.flush()
             sleep(0.5)
         if e == c:
-            break
-        if e == d:
             input("Programa pausado, aperte enter para continuar.")
             print("Programa reinicializado.")
+        if e == d:
+            break

@@ -1,8 +1,8 @@
-import socket
-import urllib.request
+import win32gui
 
-website = "http://data.pr4e.org/romeo.txt"
-website = website.split("/")
-print(website)
-for i in website:
-    print(i, end="/")
+def pos_janela(nome_janela):
+    janela = win32gui.FindWindow(None, nome_janela)
+    return win32gui.GetWindowRect(janela)
+
+a = pos_janela("Velha")
+print(a)

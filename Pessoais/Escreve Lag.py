@@ -23,10 +23,10 @@ with (open(arq + ".txt", "a") as arquivo):
                 hora = 1
             if len(str(datetime.today().minute)) < 2:
                 minuto = 1
-            arquivo.write(str(datetime.today().day)+" "*dia+"-"+str(datetime.today().month)+" "*mes+"-"+str(datetime.today().year)+
-                          ": "+str(datetime.today().hour)+" "*hora+"h"+str(datetime.today().minute)+" "*minuto+"m"+" - Lag\n")
-            print(str(datetime.today().day)+" "*dia+"-"+str(datetime.today().month)+" "*mes+"-"+str(datetime.today().year)+
-                          ": "+str(datetime.today().hour)+" "*hora+"h"+str(datetime.today().minute)+" "*minuto+"m"+" - Lag")
+            arquivo.write(" "*dia+str(datetime.today().day)+"-"+" "*mes+str(datetime.today().month)+"-"+str(datetime.today().year)+
+                          ": "+" "*hora+str(datetime.today().hour)+"h"+" "*minuto+str(datetime.today().minute)+"m"+" - Lag\n")
+            print(" "*dia+str(datetime.today().day)+"-"+" "*mes+str(datetime.today().month)+"-"+str(datetime.today().year)+
+                          ": "+" "*hora+str(datetime.today().hour)+"h"+" "*minuto+str(datetime.today().minute)+"m"+" - Lag")
             arquivo.flush()
             sleep(0.5)
         if e == b:
@@ -39,10 +39,10 @@ with (open(arq + ".txt", "a") as arquivo):
                 hora = 1
             if len(str(datetime.today().minute)) < 2:
                 minuto = 1
-            arquivo.write(str(datetime.today().day)+" "*dia+"-"+str(datetime.today().month)+" "*mes+"-"+str(datetime.today().year)+
-                          ": "+str(datetime.today().hour)+" "*hora+"h"+str(datetime.today().minute)+" "*minuto+"m"+" - Queda\n")
-            print(str(datetime.today().day)+" "*dia+"-"+str(datetime.today().month)+" "*mes+"-"+str(datetime.today().year)+
-                          ": "+str(datetime.today().hour)+" "*hora+"h"+str(datetime.today().minute)+" "*minuto+"m"+" - Queda")
+            arquivo.write(" "*dia+str(datetime.today().day)+"-"+" "*mes+str(datetime.today().month)+"-"+str(datetime.today().year)+
+                          ": "+" "*hora+str(datetime.today().hour)+"h"+" "*minuto+str(datetime.today().minute)+"m"+" - Queda\n")
+            print(" "*dia+str(datetime.today().day)+"-"+" "*mes+str(datetime.today().month)+"-"+str(datetime.today().year)+
+                          ": "+" "*hora+str(datetime.today().hour)+"h"+" "*minuto+str(datetime.today().minute)+"m"+" - Queda")
             arquivo.flush()
             sleep(0.5)
         if e == c:

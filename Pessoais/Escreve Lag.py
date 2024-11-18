@@ -2,8 +2,9 @@ import keyboard
 from time import sleep
 from datetime import datetime
 
-arq = str(input("Insira mês de registro: "))
-with (open(arq + ".txt", "a") as arquivo):
+mes = str(input("Insira mês de registro: "))
+ano = str(input("Insira ano de registro: "))
+with (open(mes + " de " + ano + ".txt", "a") as arquivo):
     a = input("Insira a tecla de registro de lag: ")
     b = input("Insira a tecla de registro de queda: ")
     c = input("Insire a tecla de pausa: ")

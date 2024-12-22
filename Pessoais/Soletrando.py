@@ -2,7 +2,7 @@
 from random import choice
 import re
 import curses
-
+"""Programa requer que o arquivo soletrando2.txt esteja no mesmo diretório"""
 def palpite(palavra, tentativa=" ", erros=[], acertos=[], fim=0):
     if tentativa == " ":
         screen.addstr(0, 0, "Palavra: ")

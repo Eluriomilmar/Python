@@ -1,6 +1,6 @@
 import curses
 from random import choice
-
+"""programa requer que o arquivo Frases Desmotivacionaais.txt esteja no mesmo diretório"""
 def printa_menu():
     screen.addstr(0, 0, "O que deseja fazer? ")
     screen.addstr(1, 0, "1: Ler frase desmotivacional")

@@ -5,7 +5,6 @@ from time import sleep
 mes = str(input("Insira mês de registro: "))
 ano = str(input("Insira ano de registro: "))
 lag = int(input("Insira valor numérico para a tolerância de lag, em ms: "))
-queda = int(input("Insira valor numérico para a tolerância de queda, em ms: "))
 print(f"Tolerância de lag de {lag}ms")
 with (open(mes + " de " + ano + ".txt", "a") as arquivo):
     dia = 0

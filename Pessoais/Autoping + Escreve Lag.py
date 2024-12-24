@@ -16,7 +16,9 @@ with (open(mes + " de " + ano + ".txt", "a") as arquivo):
             mes = 0
             hora = 0
             minuto = 0
-            a = ping("google.com", timeout=1, count=1)
+            a = ping("google.com", timeout=1, count=1, interval=1)
+            if a.success == False:
+                raise Exception
         except:
             if len(str(datetime.today().day)) < 2:
                 dia = 1

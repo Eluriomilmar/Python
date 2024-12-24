@@ -31,7 +31,6 @@ with (open(mes + " de " + ano + ".txt", "a") as arquivo):
             arquivo.flush()
             sleep(1)
         if e == b:
-            var = 1
             if len(str(datetime.today().day)) < 2:
                 dia = 1
             if len(str(datetime.today().month)) < 2:

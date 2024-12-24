@@ -29,7 +29,7 @@ with (open(mes + " de " + ano + ".txt", "a") as arquivo):
             print(" "*dia+str(datetime.today().day)+"-"+" "*mes+str(datetime.today().month)+"-"+str(datetime.today().year)+
                           ": "+" "*hora+str(datetime.today().hour)+"h"+" "*minuto+str(datetime.today().minute)+"m"+" - Lag")
             arquivo.flush()
-            sleep(0.5)
+            sleep(1)
         if e == b:
             var = 1
             if len(str(datetime.today().day)) < 2:

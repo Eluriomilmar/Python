@@ -7,7 +7,6 @@ ano = str(input("Insira ano de registro: "))
 lag = int(input("Insira valor numérico para a tolerância de lag, em ms: "))
 queda = int(input("Insira valor numérico para a tolerância de queda, em ms: "))
 print(f"Tolerância de lag de {lag}ms")
-print(f"Tolerância de queda de {queda}ms")
 with (open(mes + " de " + ano + ".txt", "a") as arquivo):
     dia = 0
     mes = 0
@@ -18,7 +17,7 @@ with (open(mes + " de " + ano + ".txt", "a") as arquivo):
     preenchido = False
     while True:
         try:
-            a = ping("google.com", timeout=(queda/1000), interval=1, count=1)
+            a = ping("google.com", interval=1, count=1)
         except:
             arquivo.write(" "*dia+str(datetime.today().day)+"-"+" "*mes+str(datetime.today().month)+"-"+str(datetime.today().year)+
                         ": "+" "*hora+str(datetime.today().hour)+"h"+" "*minuto+str(datetime.today().minute)+"m"+" - Queda\n")
@@ -28,7 +27,7 @@ with (open(mes + " de " + ano + ".txt", "a") as arquivo):
             arquivo.flush()
             preenchido = False
             sleep(30)
-        if preenchido == True:
+        if preenchido:
             media = (vetor[0] + vetor[1] + vetor[2] + vetor[3])/4
             if a.rtt_avg > media + lag / 1000:
                 if len(str(datetime.today().day)) < 2:

@@ -1,0 +1,1111 @@
+26-12-2024: 13h19m - Lag de 12.15ms, 0.011153199990279972ms acima da tolerância
+26-12-2024: 13h19m - Lag de 12.55ms, 0.01154989999870304ms acima da tolerância
+26-12-2024: 13h19m - Lag de 19.71ms, 0.018705500002601183ms acima da tolerância
+26-12-2024: 13h19m - Lag de 11.98ms, 0.010977699992712586ms acima da tolerância
+26-12-2024: 13h19m - Lag de 13.67ms, 0.012667999999597668ms acima da tolerância
+26-12-2024: 13h19m - Lag de 14.12ms, 0.013118100007181055ms acima da tolerância
+26-12-2024: 13h19m - Lag de 13.89ms, 0.012893399998778476ms acima da tolerância
+26-12-2024: 13h19m - Queda
+26-12-2024: 13h20m - Lag de 12.18ms, 0.011175500000012106ms acima da tolerância
+26-12-2024: 13h20m - Lag de 12.02ms, 0.011017099987133405ms acima da tolerância
+26-12-2024: 13h20m - Lag de 12.14ms, 0.011135899989516473ms acima da tolerância
+26-12-2024: 13h20m - Lag de 12.03ms, 0.011026500000501982ms acima da tolerância
+26-12-2024: 13h20m - Lag de 16.31ms, 0.015308699996443464ms acima da tolerância
+26-12-2024: 13h20m - Lag de 12.31ms, 0.011305599986575543ms acima da tolerância
+26-12-2024: 13h20m - Lag de 12.11ms, 0.011114100012695416ms acima da tolerância
+26-12-2024: 13h20m - Lag de 12.2ms, 0.011197299991385079ms acima da tolerância
+26-12-2024: 13h26m - Queda
+26-12-2024: 13h26m - Lag de 16.64ms, -0.9833643000019947ms acima da tolerância
+26-12-2024: 13h27m - Lag de 12.35ms, -0.9876512000046205ms acima da tolerância
+26-12-2024: 13h27m - Lag de 14.59ms, -0.9854137000074843ms acima da tolerância
+26-12-2024: 13h27m - Lag de 16.73ms, -0.9832730000052834ms acima da tolerância
+26-12-2024: 13h27m - Lag de 12.12ms, -0.9878841000027023ms acima da tolerância
+26-12-2024: 13h27m - Lag de 12.2ms, -0.9878036999871256ms acima da tolerância
+26-12-2024: 13h27m - Lag de 12.41ms, -0.9875887999951374ms acima da tolerância
+26-12-2024: 13h27m - Lag de 12.14ms, -0.9878631999890786ms acima da tolerância
+26-12-2024: 13h27m - Lag de 12.3ms, -0.9877004000009038ms acima da tolerância
+26-12-2024: 13h27m - Lag de 13.02ms, -0.986977200009278ms acima da tolerância
+26-12-2024: 13h27m - Lag de 12.09ms, -0.9879093999916222ms acima da tolerância
+26-12-2024: 13h27m - Lag de 12.17ms, -0.987834199986537ms acima da tolerância
+26-12-2024: 13h27m - Lag de 12.21ms, -0.9877883000008296ms acima da tolerância
+26-12-2024: 13h27m - Lag de 53.79ms, -0.9462148000020534ms acima da tolerância
+26-12-2024: 13h27m - Lag de 12.29ms, -0.9877131999965059ms acima da tolerância
+26-12-2024: 13h27m - Lag de 12.18ms, -0.9878241999977035ms acima da tolerância
+26-12-2024: 13h27m - Lag de 18.64ms, -0.9813560000038706ms acima da tolerância
+26-12-2024: 13h27m - Lag de 19.22ms, -0.9807778999966104ms acima da tolerância
+26-12-2024: 13h27m - Lag de 12.19ms, -0.9878052999993088ms acima da tolerância
+26-12-2024: 13h27m - Lag de 11.96ms, -0.9880361999967135ms acima da tolerância
+26-12-2024: 13h27m - Lag de 12.19ms, -0.9878102999937255ms acima da tolerância
+26-12-2024: 13h27m - Lag de 13.21ms, -0.9867919999960577ms acima da tolerância
+26-12-2024: 13h27m - Lag de 32.44ms, -0.9675563999917358ms acima da tolerância
+26-12-2024: 13h27m - Lag de 12.15ms, -0.9878498000034597ms acima da tolerância
+26-12-2024: 13h27m - Lag de 12.22ms, -0.9877750000014203ms acima da tolerância
+26-12-2024: 13h27m - Lag de 11.96ms, -0.9880429000040749ms acima da tolerância
+26-12-2024: 13h27m - Queda
+26-12-2024: 13h28m - Lag de 13.08ms, -0.9869191000034334ms acima da tolerância
+26-12-2024: 13h28m - Lag de 12.48ms, -0.9875190999882761ms acima da tolerância
+26-12-2024: 13h28m - Lag de 12.05ms, -0.9879510999890044ms acima da tolerância
+26-12-2024: 13h28m - Lag de 14.46ms, -0.9855390000011539ms acima da tolerância
+26-12-2024: 13h28m - Lag de 13.66ms, -0.9863430999976117ms acima da tolerância
+26-12-2024: 13h31m - Lag de 12.1ms, -0.987898999999743ms acima da tolerância
+26-12-2024: 13h31m - Lag de 15.96ms, -0.98404070000106ms acima da tolerância
+26-12-2024: 13h31m - Lag de 17.55ms, -0.9824472000036621ms acima da tolerância
+26-12-2024: 13h31m - Lag de 11.98ms, -0.9880190000112634ms acima da tolerância
+26-12-2024: 13h31m - Lag de 46.86ms, -0.9531394999939948ms acima da tolerância
+26-12-2024: 13h31m - Lag de 12.08ms, -0.9879233999963617ms acima da tolerância
+26-12-2024: 13h31m - Lag de 19.86ms, -0.9801391000073636ms acima da tolerância
+26-12-2024: 13h31m - Lag de 12.17ms, -0.9878346999903442ms acima da tolerância
+26-12-2024: 13h31m - Lag de 12.33ms, -0.9876694999984466ms acima da tolerância
+26-12-2024: 13h31m - Lag de 17.51ms, -0.9824896000063745ms acima da tolerância
+26-12-2024: 13h31m - Lag de 11.99ms, -0.9880069000064395ms acima da tolerância
+26-12-2024: 13h31m - Lag de 15.8ms, -0.9841971999994712ms acima da tolerância
+26-12-2024: 13h31m - Lag de 120.31ms, -0.8796921000030125ms acima da tolerância
+26-12-2024: 13h31m - Lag de 13.45ms, -0.986553399998229ms acima da tolerância
+26-12-2024: 13h31m - Lag de 12.04ms, -0.9879593999939971ms acima da tolerância
+26-12-2024: 13h31m - Lag de 14.49ms, -0.9855058999964967ms acima da tolerância
+26-12-2024: 13h31m - Lag de 12.46ms, -0.9875380000012228ms acima da tolerância
+26-12-2024: 13h31m - Lag de 12.15ms, -0.9878461000043899ms acima da tolerância
+26-12-2024: 13h31m - Lag de 12.37ms, -0.9876327000092715ms acima da tolerância
+26-12-2024: 13h31m - Lag de 12.11ms, -0.9878862999903504ms acima da tolerância
+26-12-2024: 13h31m - Lag de 11.58ms, -0.9884164999966742ms acima da tolerância
+26-12-2024: 13h31m - Lag de 12.41ms, -0.9875853999983519ms acima da tolerância
+26-12-2024: 13h31m - Queda
+26-12-2024: 13h31m - Lag de 11.57ms, 10.57ms acima da tolerância
+26-12-2024: 13h31m - Lag de 12.08ms, 11.08ms acima da tolerância
+26-12-2024: 13h31m - Lag de 12.01ms, 11.01ms acima da tolerância
+26-12-2024: 13h31m - Lag de 14.29ms, 13.29ms acima da tolerância
+26-12-2024: 13h31m - Lag de 12.28ms, 11.28ms acima da tolerância
+26-12-2024: 13h31m - Lag de 12.16ms, 11.16ms acima da tolerância
+26-12-2024: 13h31m - Lag de 15.0ms, 14.0ms acima da tolerância
+26-12-2024: 13h31m - Lag de 12.09ms, 11.09ms acima da tolerância
+26-12-2024: 13h31m - Lag de 12.23ms, 11.23ms acima da tolerância
+26-12-2024: 13h31m - Lag de 12.22ms, 11.22ms acima da tolerância
+26-12-2024: 13h32m - Lag de 16.14ms, 15.14ms acima da tolerância
+26-12-2024: 13h32m - Lag de 17.99ms, 16.99ms acima da tolerância
+26-12-2024: 13h32m - Lag de 12.11ms, 11.11ms acima da tolerância
+26-12-2024: 13h32m - Lag de 12.0ms, 11.0ms acima da tolerância
+26-12-2024: 13h32m - Lag de 12.37ms, 11.37ms acima da tolerância
+26-12-2024: 13h32m - Lag de 15.43ms, 14.43ms acima da tolerância
+26-12-2024: 13h32m - Lag de 19.19ms, 18.19ms acima da tolerância
+26-12-2024: 13h32m - Lag de 13.41ms, 12.41ms acima da tolerância
+26-12-2024: 13h32m - Lag de 17.14ms, 16.14ms acima da tolerância
+26-12-2024: 13h32m - Lag de 12.06ms, 11.06ms acima da tolerância
+26-12-2024: 13h32m - Lag de 12.28ms, 11.28ms acima da tolerância
+26-12-2024: 13h32m - Lag de 12.25ms, 11.25ms acima da tolerância
+26-12-2024: 13h32m - Lag de 15.77ms, 14.77ms acima da tolerância
+26-12-2024: 13h32m - Lag de 17.93ms, 16.93ms acima da tolerância
+26-12-2024: 13h32m - Lag de 12.32ms, 11.32ms acima da tolerância
+26-12-2024: 13h32m - Lag de 11.57ms, 10.57ms acima da tolerância
+26-12-2024: 13h32m - Lag de 13.01ms, 12.01ms acima da tolerância
+26-12-2024: 13h32m - Lag de 12.49ms, 11.49ms acima da tolerância
+26-12-2024: 13h32m - Lag de 12.24ms, 11.24ms acima da tolerância
+26-12-2024: 13h32m - Lag de 12.28ms, 11.28ms acima da tolerância
+26-12-2024: 13h32m - Lag de 12.22ms, 11.22ms acima da tolerância
+26-12-2024: 13h32m - Lag de 12.21ms, 11.21ms acima da tolerância
+26-12-2024: 13h32m - Lag de 12.2ms, 11.2ms acima da tolerância
+26-12-2024: 13h32m - Lag de 29.24ms, 28.24ms acima da tolerância
+26-12-2024: 13h32m - Lag de 14.05ms, 13.05ms acima da tolerância
+26-12-2024: 13h32m - Lag de 23.26ms, 22.26ms acima da tolerância
+26-12-2024: 13h32m - Lag de 12.11ms, 11.11ms acima da tolerância
+26-12-2024: 13h32m - Lag de 12.42ms, 11.42ms acima da tolerância
+26-12-2024: 13h32m - Lag de 125.57ms, 124.57ms acima da tolerância
+26-12-2024: 13h32m - Lag de 12.14ms, 11.14ms acima da tolerância
+26-12-2024: 13h32m - Lag de 14.05ms, 13.05ms acima da tolerância
+26-12-2024: 13h32m - Lag de 12.16ms, 11.16ms acima da tolerância
+26-12-2024: 13h32m - Lag de 15.63ms, 14.63ms acima da tolerância
+26-12-2024: 13h32m - Lag de 12.21ms, 11.21ms acima da tolerância
+26-12-2024: 13h32m - Lag de 12.07ms, 11.07ms acima da tolerância
+26-12-2024: 13h32m - Lag de 12.38ms, 11.38ms acima da tolerância
+26-12-2024: 13h32m - Lag de 12.06ms, 11.06ms acima da tolerância
+26-12-2024: 13h32m - Lag de 12.59ms, 11.59ms acima da tolerância
+26-12-2024: 13h32m - Lag de 37.03ms, 36.03ms acima da tolerância
+26-12-2024: 13h32m - Lag de 15.72ms, 14.72ms acima da tolerância
+26-12-2024: 13h32m - Lag de 18.76ms, 17.76ms acima da tolerância
+26-12-2024: 13h32m - Lag de 15.18ms, 14.18ms acima da tolerância
+26-12-2024: 13h32m - Lag de 12.25ms, 11.25ms acima da tolerância
+26-12-2024: 13h32m - Lag de 12.3ms, 11.3ms acima da tolerância
+26-12-2024: 13h32m - Lag de 56.9ms, 55.9ms acima da tolerância
+26-12-2024: 13h32m - Lag de 12.1ms, 11.1ms acima da tolerância
+26-12-2024: 13h32m - Queda
+26-12-2024: 13h33m - Lag de 12.06ms, 11.06ms acima da tolerância
+26-12-2024: 13h33m - Lag de 15.86ms, 14.86ms acima da tolerância
+26-12-2024: 13h33m - Lag de 28.75ms, 27.75ms acima da tolerância
+26-12-2024: 13h33m - Lag de 17.69ms, 16.69ms acima da tolerância
+26-12-2024: 13h33m - Lag de 12.64ms, 11.64ms acima da tolerância
+26-12-2024: 13h33m - Lag de 15.91ms, 14.91ms acima da tolerância
+26-12-2024: 13h33m - Lag de 12.19ms, 11.19ms acima da tolerância
+26-12-2024: 13h33m - Lag de 12.08ms, 11.08ms acima da tolerância
+26-12-2024: 13h33m - Lag de 12.59ms, 11.59ms acima da tolerância
+26-12-2024: 13h33m - Lag de 11.91ms, 10.91ms acima da tolerância
+26-12-2024: 13h33m - Lag de 12.18ms, 11.18ms acima da tolerância
+26-12-2024: 13h33m - Lag de 12.13ms, 11.13ms acima da tolerância
+26-12-2024: 13h33m - Lag de 12.07ms, 11.07ms acima da tolerância
+26-12-2024: 13h33m - Lag de 12.19ms, 11.19ms acima da tolerância
+26-12-2024: 13h33m - Lag de 12.12ms, 11.12ms acima da tolerância
+26-12-2024: 13h33m - Lag de 12.5ms, 11.5ms acima da tolerância
+26-12-2024: 13h33m - Lag de 16.01ms, 15.010000000000002ms acima da tolerância
+26-12-2024: 13h33m - Lag de 12.6ms, 11.6ms acima da tolerância
+26-12-2024: 13h33m - Lag de 12.08ms, 11.08ms acima da tolerância
+26-12-2024: 13h33m - Lag de 14.0ms, 13.0ms acima da tolerância
+26-12-2024: 13h33m - Lag de 14.32ms, 13.32ms acima da tolerância
+26-12-2024: 13h33m - Lag de 12.0ms, 11.0ms acima da tolerância
+26-12-2024: 13h33m - Lag de 12.36ms, 11.36ms acima da tolerância
+26-12-2024: 13h33m - Lag de 12.11ms, 11.11ms acima da tolerância
+26-12-2024: 13h33m - Lag de 12.62ms, 11.62ms acima da tolerância
+26-12-2024: 13h33m - Lag de 12.51ms, 11.51ms acima da tolerância
+26-12-2024: 13h33m - Queda
+26-12-2024: 13h36m - Lag de 12.15ms, 11.15ms acima da tolerância
+26-12-2024: 13h36m - Lag de 26.0ms, 25.0ms acima da tolerância
+26-12-2024: 13h36m - Lag de 12.22ms, 11.22ms acima da tolerância
+26-12-2024: 13h36m - Lag de 12.59ms, 11.59ms acima da tolerância
+26-12-2024: 13h36m - Lag de 12.04ms, 11.04ms acima da tolerância
+26-12-2024: 13h36m - Lag de 12.24ms, 11.24ms acima da tolerância
+26-12-2024: 13h36m - Lag de 15.0ms, 14.0ms acima da tolerância
+26-12-2024: 13h36m - Lag de 12.01ms, 11.01ms acima da tolerância
+26-12-2024: 13h36m - Lag de 11.83ms, 10.83ms acima da tolerância
+26-12-2024: 13h36m - Lag de 12.04ms, 11.04ms acima da tolerância
+26-12-2024: 13h36m - Lag de 23.52ms, 22.52ms acima da tolerância
+26-12-2024: 13h36m - Lag de 123.39ms, 122.39ms acima da tolerância
+26-12-2024: 13h36m - Lag de 12.06ms, 11.06ms acima da tolerância
+26-12-2024: 13h36m - Lag de 12.09ms, 11.09ms acima da tolerância
+26-12-2024: 13h36m - Lag de 16.34ms, 15.34ms acima da tolerância
+26-12-2024: 13h36m - Lag de 16.82ms, 15.82ms acima da tolerância
+26-12-2024: 13h36m - Queda
+26-12-2024: 13h38m - Lag de 12.04ms, 11.04ms acima da tolerância
+26-12-2024: 13h38m - Lag de 12.03ms, 11.03ms acima da tolerância
+26-12-2024: 13h38m - Lag de 12.05ms, 11.05ms acima da tolerância
+26-12-2024: 13h38m - Lag de 12.97ms, 11.97ms acima da tolerância
+26-12-2024: 13h38m - Lag de 12.24ms, 11.24ms acima da tolerância
+26-12-2024: 13h38m - Lag de 16.21ms, 15.21ms acima da tolerância
+26-12-2024: 13h38m - Lag de 12.13ms, 11.13ms acima da tolerância
+26-12-2024: 13h38m - Lag de 12.23ms, 11.23ms acima da tolerância
+26-12-2024: 13h38m - Lag de 12.39ms, 11.39ms acima da tolerância
+26-12-2024: 13h38m - Lag de 12.14ms, 11.14ms acima da tolerância
+26-12-2024: 13h38m - Lag de 12.42ms, 11.42ms acima da tolerância
+26-12-2024: 13h38m - Lag de 26.96ms, 25.96ms acima da tolerância
+26-12-2024: 13h38m - Lag de 12.33ms, 11.33ms acima da tolerância
+26-12-2024: 13h38m - Queda
+26-12-2024: 13h41m - Lag de 12.28ms, 11.28ms acima da tolerância
+26-12-2024: 13h41m - Lag de 13.05ms, 12.05ms acima da tolerância
+26-12-2024: 13h41m - Lag de 12.11ms, 11.11ms acima da tolerância
+26-12-2024: 13h41m - Lag de 12.38ms, 11.38ms acima da tolerância
+26-12-2024: 13h41m - Lag de 13.04ms, 12.04ms acima da tolerância
+26-12-2024: 13h41m - Lag de 18.45ms, 17.45ms acima da tolerância
+26-12-2024: 13h41m - Lag de 14.21ms, 13.21ms acima da tolerância
+26-12-2024: 13h41m - Lag de 12.08ms, 11.08ms acima da tolerância
+26-12-2024: 13h41m - Lag de 1000ms, 999.0ms acima da tolerância
+26-12-2024: 13h41m - Lag de 12.0ms, 11.0ms acima da tolerância
+26-12-2024: 13h41m - Lag de 12.46ms, 11.46ms acima da tolerância
+26-12-2024: 13h41m - Lag de 12.16ms, 11.16ms acima da tolerância
+26-12-2024: 13h41m - Lag de 12.4ms, 11.4ms acima da tolerância
+26-12-2024: 13h41m - Lag de 12.08ms, 11.08ms acima da tolerância
+26-12-2024: 13h41m - Queda
+26-12-2024: 13h44m - Lag de 16.56ms, 3.3824999999999985ms acima da tolerância
+26-12-2024: 13h45m - Lag de 15.11ms, 1.8374999999999986ms acima da tolerância
+26-12-2024: 13h45m - Lag de 14.14ms, 0.990000000000002ms acima da tolerância
+26-12-2024: 13h45m - Lag de 22.56ms, 9.212499999999999ms acima da tolerância
+26-12-2024: 13h45m - Lag de 129.33ms, 116.26750000000001ms acima da tolerância
+26-12-2024: 13h45m - Lag de 1000ms, 957.64ms acima da tolerância
+26-12-2024: 13h45m - Lag de 1000ms, 710.6424999999999ms acima da tolerância
+26-12-2024: 13h45m - Lag de 1000ms, 463.63ms acima da tolerância
+26-12-2024: 13h45m - Lag de 1000ms, 216.66750000000002ms acima da tolerância
+26-12-2024: 13h45m - Lag de 16.15ms, 2.117499999999998ms acima da tolerância
+26-12-2024: 13h45m - Lag de 14.55ms, 0.0625ms acima da tolerância
+26-12-2024: 13h45m - Lag de 74.13ms, 59.144999999999996ms acima da tolerância
+26-12-2024: 13h45m - Lag de 113.23ms, 100.1025ms acima da tolerância
+26-12-2024: 13h46m - Lag de 23.37ms, 8.645ms acima da tolerância
+26-12-2024: 13h46m - Lag de 16.06ms, 2.5874999999999986ms acima da tolerância
+26-12-2024: 13h46m - Lag de 17.59ms, 3.219999999999999ms acima da tolerância
+26-12-2024: 13h46m - Lag de 15.4ms, 1.6799999999999997ms acima da tolerância
+26-12-2024: 13h46m - Lag de 1000ms, 986.05ms acima da tolerância
+26-12-2024: 13h46m - Lag de 125.1ms, 111.61999999999999ms acima da tolerância
+26-12-2024: 13h46m - Lag de 1000ms, 985.4725ms acima da tolerância
+26-12-2024: 13h46m - Lag de 15.32ms, 2.155000000000001ms acima da tolerância
+26-12-2024: 13h46m - Lag de 14.53ms, 0.8774999999999995ms acima da tolerância
+26-12-2024: 13h47m - Lag de 13.51ms, 0.38750000000000107ms acima da tolerância
+26-12-2024: 13h47m - Lag de 14.03ms, 0.5574999999999992ms acima da tolerância
+26-12-2024: 13h47m - Queda
+26-12-2024: 14h22m - Lag de 1000ms, 958.0ms acima da tolerância
+26-12-2024: 14h23m - Lag de 1000ms, 956.84ms acima da tolerância
+26-12-2024: 14h23m - Lag de 1000ms, 956.1225ms acima da tolerância
+26-12-2024: 14h24m - Queda
+26-12-2024: 14h40m - Lag de 14.27ms, 0.9299999999999997%.2fms acima da tolerância
+26-12-2024: 14h40m - Lag de 39.85ms, 26.240000000000002%.2fms acima da tolerância
+26-12-2024: 14h40m - Lag de 29.83ms, 9.7775%.2fms acima da tolerância
+26-12-2024: 14h40m - Lag de 14.18ms, 0.9100000000000001%.2fms acima da tolerância
+26-12-2024: 14h40m - Queda
+26-12-2024: 14h41m - Lag de 14.63ms, 1.5024999999999995%.2fms acima da tolerância
+26-12-2024: 14h41m - Lag de 13.71ms, 0.5975000000000001%.2fms acima da tolerância
+26-12-2024: 14h41m - Lag de 17.51ms, 4.282500000000001%.2fms acima da tolerância
+26-12-2024: 14h41m - Lag de 14.11ms, 0.5199999999999996%.2fms acima da tolerância
+26-12-2024: 14h41m - Lag de 20.66ms, 6.82%.2fms acima da tolerância
+26-12-2024: 14h41m - Lag de 1000ms, 984.0075%.2fms acima da tolerância
+26-12-2024: 14h41m - Lag de 1000ms, 737.69%.2fms acima da tolerância
+26-12-2024: 14h42m - Lag de 1000ms, 736.23%.2fms acima da tolerância
+26-12-2024: 14h42m - Lag de 1000ms, 489.385%.2fms acima da tolerância
+26-12-2024: 14h42m - Lag de 1000ms, 242.375%.2fms acima da tolerância
+26-12-2024: 14h42m - Lag de 1000ms, 242.375%.2fms acima da tolerância
+26-12-2024: 14h42m - Lag de 122.64ms, 98.595%.2fms acima da tolerância
+26-12-2024: 14h42m - Lag de 14.92ms, 1.7750000000000004%.2fms acima da tolerância
+26-12-2024: 14h42m - Lag de 13.77ms, 0.8099999999999987%.2fms acima da tolerância
+26-12-2024: 14h42m - Lag de 14.54ms, 1.1099999999999994%.2fms acima da tolerância
+26-12-2024: 14h42m - Lag de 14.35ms, 0.6649999999999991%.2fms acima da tolerância
+26-12-2024: 14h42m - Lag de 26.9ms, 13.204999999999998%.2fms acima da tolerância
+26-12-2024: 15h31m - Queda
+26-12-2024: 15h38m - Queda
+26-12-2024: 15h40m - Queda
+26-12-2024: 15h43m - Queda
+26-12-2024: 16h17m - Lag de 14.21ms, 0.95ms acima da tolerância
+26-12-2024: 16h17m - Lag de 20.88ms, 7.13ms acima da tolerância
+26-12-2024: 16h17m - Lag de 129.61ms, 114.ms acima da tolerância
+26-12-2024: 16h17m - Lag de 117.49ms, 102.ms acima da tolerância
+26-12-2024: 16h17m - Lag de 1000ms, 958.ms acima da tolerância
+26-12-2024: 16h17m - Lag de 16.05ms, 2.69ms acima da tolerância
+26-12-2024: 16h17m - Lag de 14.26ms, 0.10ms acima da tolerância
+26-12-2024: 16h18m - Lag de 45.29ms, 31.7ms acima da tolerância
+26-12-2024: 16h18m - Lag de 20.69ms, 5.00ms acima da tolerância
+26-12-2024: 16h18m - Lag de 15.89ms, 2.59ms acima da tolerância
+26-12-2024: 16h18m - Lag de 14.54ms, 0.39ms acima da tolerância
+26-12-2024: 16h18m - Lag de 219.09ms, 204.ms acima da tolerância
+26-12-2024: 16h18m - Queda
+26-12-2024: 16h19m - Lag de 124.15ms, 80.277ms acima da tolerância
+26-12-2024: 16h19m - Lag de 1000ms, 957.62ms acima da tolerância
+26-12-2024: 16h19m - Lag de 1000ms, 957.79ms acima da tolerância
+26-12-2024: 16h19m - Lag de 1000ms, 710.86ms acima da tolerância
+26-12-2024: 16h19m - Lag de 126.83ms, 83.977ms acima da tolerância
+26-12-2024: 16h19m - Lag de 48.11ms, 5.1400ms acima da tolerância
+26-12-2024: 16h20m - Lag de 125.85ms, 81.752ms acima da tolerância
+26-12-2024: 16h20m - Lag de 117.35ms, 44.847ms acima da tolerância
+26-12-2024: 16h20m - Lag de 1000ms, 931.29ms acima da tolerância
+26-12-2024: 16h20m - Lag de 119.44ms, 75.39ms acima da tolerância
+26-12-2024: 16h20m - Lag de 126.39ms, 55.535ms acima da tolerância
+26-12-2024: 16h20m - Lag de 1000ms, 900.58ms acima da tolerância
+26-12-2024: 16h21m - Lag de 1000ms, 655.52ms acima da tolerância
+26-12-2024: 16h21m - Lag de 1000ms, 435.38ms acima da tolerância
+26-12-2024: 16h21m - Lag de 1000ms, 188.40ms acima da tolerância
+26-12-2024: 16h21m - Lag de 46.96ms, 0.3950ms acima da tolerância
+26-12-2024: 16h22m - Lag de 1000ms, 956.75ms acima da tolerância
+26-12-2024: 16h22m - Lag de 62.65ms, 20.115ms acima da tolerância
+26-12-2024: 16h22m - Lag de 1000ms, 957.67ms acima da tolerância
+26-12-2024: 16h23m - Lag de 48.16ms, 2.7449ms acima da tolerância
+26-12-2024: 16h23m - Lag de 1000ms, 956.71ms acima da tolerância
+26-12-2024: 16h23m - Lag de 123.34ms, 80.892ms acima da tolerância
+26-12-2024: 16h23m - Lag de 1000ms, 930.00ms acima da tolerância
+26-12-2024: 16h23m - Lag de 1000ms, 683.09ms acima da tolerância
+26-12-2024: 16h23m - Lag de 1000ms, 463.92ms acima da tolerância
+26-12-2024: 16h23m - Lag de 1000ms, 216.96ms acima da tolerância
+26-12-2024: 16h23m - Queda
+26-12-2024: 16h24m - Queda
+26-12-2024: 16h25m - Lag de 127.27ms, 80.822ms acima da tolerância
+26-12-2024: 16h25m - Lag de 44.48ms, 1.5199ms acima da tolerância
+26-12-2024: 16h25m - Lag de 54.63ms, 10.670ms acima da tolerância
+26-12-2024: 16h25m - Lag de 1000ms, 958.13ms acima da tolerância
+26-12-2024: 16h26m - Lag de 46.72ms, 1.1974ms acima da tolerância
+26-12-2024: 16h26m - Lag de 1000ms, 953.9ms acima da tolerância
+26-12-2024: 16h26m - Lag de 1000ms, 706.93ms acima da tolerância
+26-12-2024: 16h26m - Lag de 1000ms, 665.36ms acima da tolerância
+26-12-2024: 16h26m - Lag de 51.08ms, 8.8675ms acima da tolerância
+26-12-2024: 16h26m - Lag de 1000ms, 948.00ms acima da tolerância
+26-12-2024: 16h27m - Lag de 1000ms, 956.90ms acima da tolerância
+26-12-2024: 16h28m - Lag de 1000ms, 956.18ms acima da tolerância
+26-12-2024: 16h28m - Lag de 48.93ms, 2.4575ms acima da tolerância
+26-12-2024: 16h28m - Lag de 1000ms, 951.59ms acima da tolerância
+26-12-2024: 16h28m - Lag de 49.53ms, 5.6500ms acima da tolerância
+26-12-2024: 16h28m - Lag de 1000ms, 946.88ms acima da tolerância
+26-12-2024: 16h28m - Lag de 1000ms, 701.59ms acima da tolerância
+26-12-2024: 16h28m - Lag de 1000ms, 463.97ms acima da tolerância
+26-12-2024: 16h28m - Lag de 1000ms, 216.97ms acima da tolerância
+26-12-2024: 16h29m - Lag de 1000ms, 954.66ms acima da tolerância
+26-12-2024: 16h29m - Lag de 1000ms, 707.77ms acima da tolerância
+26-12-2024: 16h29m - Lag de 1000ms, 460.77ms acima da tolerância
+26-12-2024: 16h29m - Lag de 1000ms, 957.45ms acima da tolerância
+26-12-2024: 16h29m - Lag de 1000ms, 683.34ms acima da tolerância
+26-12-2024: 16h29m - Lag de 1000ms, 436.35ms acima da tolerância
+26-12-2024: 16h29m - Lag de 1000ms, 189.83ms acima da tolerância
+26-12-2024: 16h30m - Lag de 68.59ms, 20.835ms acima da tolerância
+26-12-2024: 16h30m - Lag de 47.2ms, 0.8700ms acima da tolerância
+26-12-2024: 16h30m - Lag de 1000ms, 957.58ms acima da tolerância
+26-12-2024: 16h30m - Lag de 1000ms, 942.64ms acima da tolerância
+26-12-2024: 16h30m - Lag de 1000ms, 702.22ms acima da tolerância
+26-12-2024: 16h30m - Lag de 1000ms, 455.56ms acima da tolerância
+26-12-2024: 16h30m - Lag de 1000ms, 208.60ms acima da tolerância
+26-12-2024: 16h31m - Lag de 70.72ms, 28.407ms acima da tolerância
+26-12-2024: 16h31m - Lag de 158.63ms, 93.217ms acima da tolerância
+26-12-2024: 16h31m - Lag de 1000ms, 897.94ms acima da tolerância
+26-12-2024: 16h31m - Lag de 1000ms, 651.03ms acima da tolerância
+26-12-2024: 16h31m - Lag de 1000ms, 418.71ms acima da tolerância
+26-12-2024: 16h31m - Lag de 1000ms, 180.34ms acima da tolerância
+26-12-2024: 16h31m - Lag de 1000ms, 948.73ms acima da tolerância
+26-12-2024: 16h31m - Lag de 316.88ms, 27.555ms acima da tolerância
+26-12-2024: 16h31m - Lag de 139.07ms, 92.207ms acima da tolerância
+26-12-2024: 16h31m - Lag de 532.6ms, 454.03ms acima da tolerância
+26-12-2024: 16h32m - Lag de 197.7ms, 154.61ms acima da tolerância
+26-12-2024: 16h32m - Lag de 1000ms, 954.53ms acima da tolerância
+26-12-2024: 16h32m - Lag de 1000ms, 709.05ms acima da tolerância
+26-12-2024: 16h32m - Lag de 1000ms, 463.88ms acima da tolerância
+26-12-2024: 16h32m - Lag de 1000ms, 216.92ms acima da tolerância
+26-12-2024: 16h32m - Lag de 1000ms, 951.55ms acima da tolerância
+26-12-2024: 16h32m - Lag de 319.4ms, 24.049ms acima da tolerância
+26-12-2024: 16h32m - Lag de 1000ms, 956.18ms acima da tolerância
+26-12-2024: 16h32m - Lag de 113.97ms, 69.979ms acima da tolerância
+26-12-2024: 16h33m - Lag de 1000ms, 920.67ms acima da tolerância
+26-12-2024: 16h33m - Lag de 1000ms, 946.89ms acima da tolerância
+26-12-2024: 16h33m - Lag de 1000ms, 705.59ms acima da tolerância
+26-12-2024: 16h33m - Lag de 1000ms, 460.51ms acima da tolerância
+26-12-2024: 16h33m - Lag de 1000ms, 213.53ms acima da tolerância
+26-12-2024: 16h33m - Lag de 165.01ms, 122.81ms acima da tolerância
+26-12-2024: 16h33m - Lag de 52.45ms, 8.375ms acima da tolerância
+26-12-2024: 16h33m - Lag de 1000ms, 955.83ms acima da tolerância
+26-12-2024: 16h34m - Lag de 149.24ms, 105.34ms acima da tolerância
+26-12-2024: 16h34m - Lag de 126.48ms, 81.080ms acima da tolerância
+26-12-2024: 16h34m - Lag de 1000ms, 949.09ms acima da tolerância
+26-12-2024: 16h34m - Lag de 184.91ms, 134.67ms acima da tolerância
+26-12-2024: 16h34m - Lag de 194.75ms, 108.22ms acima da tolerância
+26-12-2024: 16h34m - Lag de 44.69ms, 1.9549ms acima da tolerância
+26-12-2024: 16h34m - Lag de 118.19ms, 69.755ms acima da tolerância
+26-12-2024: 16h35m - Lag de 122.65ms, 77.377ms acima da tolerância
+26-12-2024: 16h35m - Lag de 331.85ms, 281.50ms acima da tolerância
+26-12-2024: 16h36m - Lag de 45.05ms, 2.25ms acima da tolerância
+26-12-2024: 16h36m - Lag de 1000ms, 956.42ms acima da tolerância
+26-12-2024: 16h36m - Lag de 118.16ms, 68.195ms acima da tolerância
+26-12-2024: 16h36m - Lag de 1000ms, 952.85ms acima da tolerância
+26-12-2024: 16h36m - Lag de 1000ms, 708.13ms acima da tolerância
+26-12-2024: 16h36m - Lag de 1000ms, 952.38ms acima da tolerância
+26-12-2024: 16h36m - Lag de 1000ms, 707.21ms acima da tolerância
+26-12-2024: 16h36m - Lag de 1000ms, 460.15ms acima da tolerância
+26-12-2024: 16h36m - Lag de 57.32ms, 15.085ms acima da tolerância
+26-12-2024: 16h37m - Lag de 132.0ms, 89.172ms acima da tolerância
+26-12-2024: 16h37m - Lag de 50.52ms, 5.2800ms acima da tolerância
+26-12-2024: 16h37m - Lag de 1000ms, 949.3ms acima da tolerância
+26-12-2024: 16h38m - Lag de 410.74ms, 367.85ms acima da tolerância
+26-12-2024: 16h38m - Lag de 112.82ms, 70.52ms acima da tolerância
+26-12-2024: 16h38m - Lag de 1000ms, 952.08ms acima da tolerância
+26-12-2024: 16h38m - Lag de 1000ms, 705.07ms acima da tolerância
+26-12-2024: 16h38m - Lag de 1000ms, 458.09ms acima da tolerância
+26-12-2024: 16h38m - Lag de 1000ms, 216.94ms acima da tolerância
+26-12-2024: 16h38m - Lag de 95.6ms, 52.044ms acima da tolerância
+26-12-2024: 16h39m - Lag de 219.1ms, 168.25ms acima da tolerância
+26-12-2024: 16h39m - Lag de 117.72ms, 74.16ms acima da tolerância
+26-12-2024: 16h39m - Lag de 118.71ms, 74.137ms acima da tolerância
+26-12-2024: 16h39m - Lag de 112.92ms, 63.555ms acima da tolerância
+26-12-2024: 16h39m - Lag de 113.37ms, 59.930ms acima da tolerância
+26-12-2024: 16h39m - Lag de 118.53ms, 75.93ms acima da tolerância
+26-12-2024: 16h39m - Lag de 78.87ms, 32.362ms acima da tolerância
+26-12-2024: 16h39m - Lag de 122.66ms, 59.242ms acima da tolerância
+26-12-2024: 16h39m - Lag de 115.8ms, 46.037ms acima da tolerância
+26-12-2024: 16h39m - Lag de 141.33ms, 72.642ms acima da tolerância
+26-12-2024: 16h40m - Lag de 126.79ms, 72.460ms acima da tolerância
+26-12-2024: 16h40m - Lag de 64.6ms, 14.804ms acima da tolerância
+26-12-2024: 16h40m - Lag de 132.81ms, 77.305ms acima da tolerância
+26-12-2024: 16h40m - Lag de 116.69ms, 73.759ms acima da tolerância
+26-12-2024: 16h40m - Lag de 111.75ms, 42.7ms acima da tolerância
+26-12-2024: 16h40m - Lag de 121.18ms, 27.235ms acima da tolerância
+26-12-2024: 16h40m - Lag de 1000ms, 879.62ms acima da tolerância
+26-12-2024: 16h40m - Lag de 1000ms, 632.59ms acima da tolerância
+26-12-2024: 16h40m - Lag de 1000ms, 411.76ms acima da tolerância
+26-12-2024: 16h40m - Lag de 1000ms, 189.70ms acima da tolerância
+26-12-2024: 16h40m - Queda
+26-12-2024: 16h41m - Lag de 1000ms, 957.93ms acima da tolerância
+26-12-2024: 16h41m - Lag de 1000ms, 710.89ms acima da tolerância
+26-12-2024: 16h41m - Lag de 1000ms, 463.92ms acima da tolerância
+26-12-2024: 16h41m - Lag de 1000ms, 216.94ms acima da tolerância
+26-12-2024: 16h41m - Lag de 156.27ms, 114.05ms acima da tolerância
+26-12-2024: 16h41m - Lag de 1000ms, 915.09ms acima da tolerância
+26-12-2024: 16h41m - Lag de 1000ms, 668.14ms acima da tolerância
+26-12-2024: 16h42m - Lag de 1000ms, 421.12ms acima da tolerância
+26-12-2024: 16h42m - Lag de 1000ms, 210.18ms acima da tolerância
+26-12-2024: 16h42m - Lag de 119.14ms, 76.185ms acima da tolerância
+26-12-2024: 16h43m - Lag de 252.11ms, 205.09ms acima da tolerância
+26-12-2024: 16h43m - Lag de 156.73ms, 51.457ms acima da tolerância
+26-12-2024: 16h43m - Lag de 49.67ms, 7.2824ms acima da tolerância
+26-12-2024: 16h43m - Lag de 115.51ms, 73.262ms acima da tolerância
+26-12-2024: 16h44m - Lag de 118.77ms, 76.134ms acima da tolerância
+26-12-2024: 16h44m - Lag de 137.0ms, 92.232ms acima da tolerância
+26-12-2024: 16h44m - Lag de 174.01ms, 131.84ms acima da tolerância
+26-12-2024: 16h44m - Lag de 133.53ms, 50.900ms acima da tolerância
+26-12-2024: 16h44m - Lag de 120.02ms, 71.085ms acima da tolerância
+26-12-2024: 16h44m - Lag de 116.63ms, 40.902ms acima da tolerância
+26-12-2024: 16h44m - Lag de 50.52ms, 8.2225ms acima da tolerância
+26-12-2024: 16h44m - Lag de 126.54ms, 74.63ms acima da tolerância
+26-12-2024: 16h45m - Lag de 77.21ms, 29.464ms acima da tolerância
+26-12-2024: 16h45m - Lag de 1000ms, 940.89ms acima da tolerância
+26-12-2024: 16h45m - Lag de 116.69ms, 62.872ms acima da tolerância
+26-12-2024: 16h46m - Lag de 126.05ms, 81.267ms acima da tolerância
+26-12-2024: 16h46m - Lag de 114.25ms, 71.057ms acima da tolerância
+26-12-2024: 16h46m - Lag de 56.48ms, 12.447ms acima da tolerância
+26-12-2024: 16h46m - Lag de 115.19ms, 60.692ms acima da tolerância
+26-12-2024: 16h46m - Lag de 1000ms, 956.81ms acima da tolerância
+26-12-2024: 16h47m - Lag de 121.71ms, 78.387ms acima da tolerância
+26-12-2024: 16h47m - Lag de 220.1ms, 169.69ms acima da tolerância
+26-12-2024: 16h47m - Lag de 1000ms, 949.03ms acima da tolerância
+26-12-2024: 16h47m - Lag de 115.01ms, 71.615ms acima da tolerância
+26-12-2024: 16h47m - Lag de 78.71ms, 30.864ms acima da tolerância
+26-12-2024: 16h47m - Lag de 71.06ms, 24.012ms acima da tolerância
+26-12-2024: 16h48m - Lag de 118.15ms, 74.687ms acima da tolerância
+26-12-2024: 16h49m - Lag de 1000ms, 957.69ms acima da tolerância
+26-12-2024: 16h49m - Lag de 119.49ms, 77.342ms acima da tolerância
+26-12-2024: 16h49m - Lag de 124.84ms, 82.587ms acima da tolerância
+26-12-2024: 16h49m - Lag de 114.44ms, 72.182ms acima da tolerância
+26-12-2024: 16h49m - Lag de 1000ms, 931.30ms acima da tolerância
+26-12-2024: 16h50m - Lag de 127.03ms, 77.425ms acima da tolerância
+26-12-2024: 16h50m - Lag de 1000ms, 922.58ms acima da tolerância
+26-12-2024: 16h50m - Lag de 133.87ms, 91.682ms acima da tolerância
+26-12-2024: 16h51m - Lag de 127.39ms, 84.457ms acima da tolerância
+26-12-2024: 16h51m - Lag de 47.63ms, 3.6499ms acima da tolerância
+26-12-2024: 16h51m - Lag de 120.65ms, 67.707ms acima da tolerância
+26-12-2024: 16h51m - Lag de 46.0ms, 2.9624ms acima da tolerância
+26-12-2024: 16h52m - Lag de 127.62ms, 80.447ms acima da tolerância
+26-12-2024: 16h52m - Lag de 60.43ms, 15.815ms acima da tolerância
+26-12-2024: 16h52m - Lag de 122.47ms, 78.87ms acima da tolerância
+26-12-2024: 16h53m - Lag de 120.32ms, 77.822ms acima da tolerância
+26-12-2024: 16h53m - Lag de 126.08ms, 82.965ms acima da tolerância
+26-12-2024: 16h53m - Lag de 94.33ms, 52.227ms acima da tolerância
+26-12-2024: 16h53m - Lag de 45.38ms, 2.7175ms acima da tolerância
+26-12-2024: 16h54m - Lag de 1000ms, 954.32ms acima da tolerância
+26-12-2024: 16h54m - Lag de 124.92ms, 81.497ms acima da tolerância
+26-12-2024: 16h54m - Lag de 42.56ms, 0.5850ms acima da tolerância
+26-12-2024: 16h54m - Lag de 51.4ms, 8.875ms acima da tolerância
+26-12-2024: 16h55m - Lag de 120.78ms, 75.11ms acima da tolerância
+26-12-2024: 16h55m - Lag de 118.79ms, 76.54ms acima da tolerância
+26-12-2024: 16h55m - Lag de 59.56ms, 17.485ms acima da tolerância
+26-12-2024: 16h55m - Lag de 128.64ms, 85.089ms acima da tolerância
+26-12-2024: 16h55m - Lag de 52.54ms, 9.3624ms acima da tolerância
+26-12-2024: 16h56m - Lag de 117.97ms, 73.047ms acima da tolerância
+26-12-2024: 16h56m - Lag de 127.42ms, 85.177ms acima da tolerância
+26-12-2024: 16h57m - Lag de 117.9ms, 71.925ms acima da tolerância
+26-12-2024: 16h58m - Lag de 129.78ms, 87.48ms acima da tolerância
+26-12-2024: 16h58m - Lag de 124.67ms, 81.457ms acima da tolerância
+26-12-2024: 16h59m - Lag de 120.42ms, 70.135ms acima da tolerância
+26-12-2024: 16h59m - Lag de 1000ms, 927.67ms acima da tolerância
+26-12-2024: 16h59m - Lag de 118.21ms, 75.937ms acima da tolerância
+26-12-2024: 17h 0m - Lag de 126.1ms, 81.285ms acima da tolerância
+26-12-2024: 17h 0m - Lag de 57.52ms, 6.4250ms acima da tolerância
+26-12-2024: 17h 0m - Lag de 112.45ms, 56.97ms acima da tolerância
+26-12-2024: 17h 0m - Lag de 119.54ms, 41.075ms acima da tolerância
+26-12-2024: 17h 0m - Lag de 101.59ms, 56.972ms acima da tolerância
+26-12-2024: 17h 3m - Lag de 1000ms, 952.11ms acima da tolerância
+26-12-2024: 17h 3m - Lag de 1000ms, 957.34ms acima da tolerância
+26-12-2024: 17h 3m - Lag de 69.95ms, 26.5ms acima da tolerância
+26-12-2024: 17h 5m - Lag de 58.16ms, 14.507ms acima da tolerância
+26-12-2024: 17h 7m - Lag de 1000ms, 949.95ms acima da tolerância
+26-12-2024: 17h 7m - Lag de 67.61ms, 23.35ms acima da tolerância
+26-12-2024: 17h 8m - Lag de 47.9ms, 5.8500ms acima da tolerância
+26-12-2024: 17h11m - Lag de 1000ms, 956.31ms acima da tolerância
+26-12-2024: 17h11m - Lag de 125.88ms, 82.63ms acima da tolerância
+26-12-2024: 17h11m - Lag de 90.18ms, 44.207ms acima da tolerância
+26-12-2024: 17h11m - Lag de 115.33ms, 50.242ms acima da tolerância
+26-12-2024: 17h12m - Lag de 1000ms, 955.58ms acima da tolerância
+26-12-2024: 17h12m - Lag de 122.32ms, 74.929ms acima da tolerância
+26-12-2024: 17h12m - Lag de 1000ms, 957.85ms acima da tolerância
+26-12-2024: 17h13m - Lag de 127.14ms, 83.217ms acima da tolerância
+26-12-2024: 17h13m - Lag de 116.63ms, 71.287ms acima da tolerância
+26-12-2024: 17h14m - Lag de 117.16ms, 74.104ms acima da tolerância
+26-12-2024: 17h14m - Lag de 120.1ms, 65.947ms acima da tolerância
+26-12-2024: 17h14m - Lag de 122.43ms, 80.042ms acima da tolerância
+26-12-2024: 17h14m - Lag de 1000ms, 953.11ms acima da tolerância
+26-12-2024: 17h14m - Lag de 1000ms, 707.30ms acima da tolerância
+26-12-2024: 17h14m - Lag de 1000ms, 460.32ms acima da tolerância
+26-12-2024: 17h14m - Lag de 1000ms, 213.36ms acima da tolerância
+26-12-2024: 17h15m - Lag de 126.61ms, 77.737ms acima da tolerância
+26-12-2024: 17h15m - Lag de 123.91ms, 81.487ms acima da tolerância
+26-12-2024: 17h15m - Lag de 1000ms, 929.74ms acima da tolerância
+26-12-2024: 17h15m - Lag de 1000ms, 682.76ms acima da tolerância
+26-12-2024: 17h16m - Lag de 43.52ms, 0.2375ms acima da tolerância
+26-12-2024: 17h16m - Lag de 131.15ms, 88.710ms acima da tolerância
+26-12-2024: 17h16m - Lag de 121.57ms, 75.852ms acima da tolerância
+26-12-2024: 17h16m - Lag de 114.39ms, 63.957ms acima da tolerância
+26-12-2024: 17h17m - Lag de 114.15ms, 68.782ms acima da tolerância
+26-12-2024: 17h17m - Lag de 116.64ms, 74.43ms acima da tolerância
+26-12-2024: 17h17m - Lag de 73.73ms, 3.2349ms acima da tolerância
+26-12-2024: 17h17m - Lag de 50.1ms, 3.8800ms acima da tolerância
+26-12-2024: 17h18m - Lag de 55.1ms, 12.792ms acima da tolerância
+26-12-2024: 17h18m - Lag de 126.62ms, 84.132ms acima da tolerância
+26-12-2024: 17h19m - Lag de 94.16ms, 51.727ms acima da tolerância
+26-12-2024: 17h19m - Lag de 50.14ms, 7.5775ms acima da tolerância
+26-12-2024: 17h20m - Lag de 67.84ms, 24.302ms acima da tolerância
+26-12-2024: 17h20m - Lag de 94.89ms, 49.277ms acima da tolerância
+26-12-2024: 17h21m - Lag de 72.62ms, 24.015ms acima da tolerância
+26-12-2024: 17h21m - Lag de 67.86ms, 15.155ms acima da tolerância
+26-12-2024: 17h21m - Lag de 60.5ms, 18.335ms acima da tolerância
+26-12-2024: 17h21m - Lag de 44.55ms, 2.3849ms acima da tolerância
+26-12-2024: 17h22m - Lag de 119.31ms, 76.9ms acima da tolerância
+26-12-2024: 17h22m - Lag de 49.66ms, 3.6074ms acima da tolerância
+26-12-2024: 17h22m - Lag de 1000ms, 953.71ms acima da tolerância
+26-12-2024: 17h23m - Lag de 123.25ms, 81.197ms acima da tolerância
+26-12-2024: 17h23m - Lag de 192.12ms, 147.40ms acima da tolerância
+26-12-2024: 17h23m - Lag de 134.23ms, 45.169ms acima da tolerância
+26-12-2024: 17h23m - Lag de 1000ms, 954.11ms acima da tolerância
+26-12-2024: 17h24m - Lag de 122.19ms, 79.782ms acima da tolerância
+26-12-2024: 17h25m - Lag de 45.84ms, 2.9350ms acima da tolerância
+26-12-2024: 17h25m - Lag de 52.94ms, 7.1400ms acima da tolerância
+26-12-2024: 17h25m - Lag de 121.61ms, 76.255ms acima da tolerância
+26-12-2024: 17h25m - Lag de 70.98ms, 27.487ms acima da tolerância
+26-12-2024: 17h26m - Lag de 139.36ms, 93.662ms acima da tolerância
+26-12-2024: 17h27m - Lag de 120.02ms, 76.619ms acima da tolerância
+26-12-2024: 17h27m - Lag de 44.33ms, 2.1400ms acima da tolerância
+26-12-2024: 17h27m - Lag de 56.76ms, 14.072ms acima da tolerância
+26-12-2024: 17h28m - Lag de 1000ms, 955.04ms acima da tolerância
+26-12-2024: 17h29m - Lag de 62.2ms, 19.58ms acima da tolerância
+26-12-2024: 17h30m - Lag de 132.21ms, 83.610ms acima da tolerância
+26-12-2024: 17h30m - Lag de 45.79ms, 3.0574ms acima da tolerância
+26-12-2024: 17h31m - Lag de 47.09ms, 0.8225ms acima da tolerância
+26-12-2024: 17h31m - Lag de 60.63ms, 13.162ms acima da tolerância
+26-12-2024: 17h32m - Lag de 44.12ms, 1.8149ms acima da tolerância
+26-12-2024: 17h32m - Lag de 47.01ms, 2.7599ms acima da tolerância
+26-12-2024: 17h33m - Lag de 48.4ms, 4.8724ms acima da tolerância
+26-12-2024: 17h33m - Lag de 68.66ms, 20.209ms acima da tolerância
+26-12-2024: 17h34m - Lag de 49.01ms, 6.6599ms acima da tolerância
+26-12-2024: 17h35m - Lag de 91.87ms, 49.655ms acima da tolerância
+26-12-2024: 17h35m - Lag de 1000ms, 957.79ms acima da tolerância
+26-12-2024: 17h36m - Lag de 142.05ms, 95.410ms acima da tolerância
+26-12-2024: 17h37m - Lag de 125.21ms, 77.117ms acima da tolerância
+26-12-2024: 17h37m - Lag de 47.13ms, 4.1875ms acima da tolerância
+26-12-2024: 17h38m - Lag de 120.17ms, 74.335ms acima da tolerância
+26-12-2024: 17h38m - Lag de 57.66ms, 14.579ms acima da tolerância
+26-12-2024: 17h39m - Lag de 1000ms, 957.04ms acima da tolerância
+26-12-2024: 17h39m - Lag de 114.04ms, 70.222ms acima da tolerância
+26-12-2024: 17h39m - Lag de 61.47ms, 13.847ms acima da tolerância
+26-12-2024: 17h39m - Lag de 124.73ms, 67.775ms acima da tolerância
+26-12-2024: 17h39m - Lag de 1000ms, 957.87ms acima da tolerância
+26-12-2024: 17h40m - Lag de 127.32ms, 83.607ms acima da tolerância
+26-12-2024: 17h40m - Lag de 119.46ms, 76.05ms acima da tolerância
+26-12-2024: 17h40m - Lag de 56.78ms, 5.7250ms acima da tolerância
+26-12-2024: 17h40m - Lag de 1000ms, 954.56ms acima da tolerância
+26-12-2024: 17h40m - Lag de 121.61ms, 68.62ms acima da tolerância
+26-12-2024: 17h42m - Lag de 1000ms, 957.02ms acima da tolerância
+26-12-2024: 17h42m - Queda
+26-12-2024: 17h43m - Lag de 44.9ms, 1.125ms acima da tolerância
+26-12-2024: 17h43m - Lag de 1000ms, 957.09ms acima da tolerância
+26-12-2024: 17h44m - Lag de 1000ms, 957.68ms acima da tolerância
+26-12-2024: 17h44m - Lag de 1000ms, 957.27ms acima da tolerância
+26-12-2024: 17h45m - Lag de 52.22ms, 8.2450ms acima da tolerância
+26-12-2024: 17h45m - Lag de 1000ms, 952.36ms acima da tolerância
+26-12-2024: 17h45m - Lag de 1000ms, 704.38ms acima da tolerância
+26-12-2024: 17h46m - Lag de 1000ms, 956.37ms acima da tolerância
+26-12-2024: 17h46m - Lag de 115.41ms, 71.402ms acima da tolerância
+26-12-2024: 17h46m - Lag de 1000ms, 957.92ms acima da tolerância
+26-12-2024: 17h47m - Lag de 124.3ms, 81.009ms acima da tolerância
+26-12-2024: 17h48m - Lag de 116.49ms, 73.039ms acima da tolerância
+26-12-2024: 17h48m - Lag de 76.46ms, 30.907ms acima da tolerância
+26-12-2024: 17h48m - Lag de 118.85ms, 76.455ms acima da tolerância
+26-12-2024: 17h48m - Lag de 1000ms, 930.44ms acima da tolerância
+26-12-2024: 17h49m - Lag de 120.32ms, 75.615ms acima da tolerância
+26-12-2024: 17h49m - Lag de 125.08ms, 82.845ms acima da tolerância
+26-12-2024: 17h49m - Lag de 42.38ms, 0.0150ms acima da tolerância
+26-12-2024: 17h50m - Lag de 122.87ms, 80.157ms acima da tolerância
+26-12-2024: 17h50m - Lag de 111.93ms, 67.712ms acima da tolerância
+26-12-2024: 17h50m - Lag de 120.21ms, 75.639ms acima da tolerância
+26-12-2024: 17h50m - Lag de 124.46ms, 80.352ms acima da tolerância
+26-12-2024: 17h50m - Lag de 117.09ms, 73.902ms acima da tolerância
+26-12-2024: 17h50m - Lag de 1000ms, 957.55ms acima da tolerância
+26-12-2024: 17h55m - Lag de 64.47ms, 22.125ms acima da tolerância
+26-12-2024: 17h56m - Lag de 119.27ms, 75.257ms acima da tolerância
+26-12-2024: 17h56m - Lag de 60.42ms, 17.035ms acima da tolerância
+26-12-2024: 17h57m - Lag de 56.74ms, 13.310ms acima da tolerância
+26-12-2024: 17h57m - Lag de 119.64ms, 76.725ms acima da tolerância
+26-12-2024: 17h57m - Lag de 94.8ms, 51.614ms acima da tolerância
+26-12-2024: 17h57m - Lag de 1000ms, 955.50ms acima da tolerância
+26-12-2024: 17h58m - Lag de 112.83ms, 70.595ms acima da tolerância
+26-12-2024: 17h58m - Lag de 120.37ms, 72.702ms acima da tolerância
+26-12-2024: 17h58m - Lag de 1000ms, 957.74ms acima da tolerância
+26-12-2024: 17h58m - Lag de 1000ms, 710.86ms acima da tolerância
+26-12-2024: 17h58m - Queda
+26-12-2024: 17h59m - Lag de 53.97ms, 7.9050ms acima da tolerância
+26-12-2024: 18h 0m - Lag de 53.13ms, 7.6775ms acima da tolerância
+26-12-2024: 18h 0m - Lag de 964.99ms, 923.04ms acima da tolerância
+26-12-2024: 18h 0m - Lag de 1000ms, 953.24ms acima da tolerância
+26-12-2024: 18h 0m - Lag de 52.16ms, 7.5775ms acima da tolerância
+26-12-2024: 18h 1m - Lag de 123.17ms, 79.447ms acima da tolerância
+26-12-2024: 18h 1m - Lag de 123.9ms, 79.967ms acima da tolerância
+26-12-2024: 18h 1m - Lag de 1000ms, 957.31ms acima da tolerância
+26-12-2024: 18h 1m - Lag de 940.38ms, 650.74ms acima da tolerância
+26-12-2024: 18h 2m - Lag de 75.34ms, 32.865ms acima da tolerância
+26-12-2024: 18h 2m - Lag de 1000ms, 955.71ms acima da tolerância
+26-12-2024: 18h 2m - Lag de 114.33ms, 65.922ms acima da tolerância
+26-12-2024: 18h 2m - Lag de 1000ms, 957.67ms acima da tolerância
+26-12-2024: 18h 2m - Lag de 54.76ms, 12.614ms acima da tolerância
+26-12-2024: 18h 3m - Lag de 123.91ms, 80.662ms acima da tolerância
+26-12-2024: 18h 3m - Lag de 57.08ms, 15.004ms acima da tolerância
+26-12-2024: 18h 3m - Lag de 52.27ms, 9.5724ms acima da tolerância
+26-12-2024: 18h 3m - Lag de 125.19ms, 79.177ms acima da tolerância
+26-12-2024: 18h 3m - Lag de 119.78ms, 46.077ms acima da tolerância
+26-12-2024: 18h 3m - Lag de 60.21ms, 13.485ms acima da tolerância
+26-12-2024: 18h 4m - Lag de 122.16ms, 74.009ms acima da tolerância
+26-12-2024: 18h 4m - Lag de 64.71ms, 14.634ms acima da tolerância
+26-12-2024: 18h 4m - Lag de 1000ms, 957.87ms acima da tolerância
+26-12-2024: 18h 4m - Lag de 1000ms, 710.87ms acima da tolerância
+26-12-2024: 18h 4m - Lag de 1000ms, 463.9ms acima da tolerância
+26-12-2024: 18h 4m - Lag de 1000ms, 216.96ms acima da tolerância
+26-12-2024: 18h 5m - Lag de 115.85ms, 71.455ms acima da tolerância
+26-12-2024: 18h 5m - Lag de 125.99ms, 82.702ms acima da tolerância
+26-12-2024: 18h 5m - Lag de 1000ms, 956.96ms acima da tolerância
+26-12-2024: 18h 5m - Lag de 144.47ms, 97.025ms acima da tolerância
+26-12-2024: 18h 5m - Lag de 1000ms, 924.58ms acima da tolerância
+26-12-2024: 18h 5m - Lag de 1000ms, 677.62ms acima da tolerância
+26-12-2024: 18h 5m - Lag de 1000ms, 430.69ms acima da tolerância
+26-12-2024: 18h 5m - Lag de 1000ms, 216.81ms acima da tolerância
+26-12-2024: 18h 6m - Queda
+26-12-2024: 18h 6m - Lag de 130.68ms, 87.585ms acima da tolerância
+26-12-2024: 18h 7m - Lag de 70.45ms, 28.290ms acima da tolerância
+26-12-2024: 18h 8m - Lag de 44.33ms, 0.4450ms acima da tolerância
+26-12-2024: 18h 8m - Lag de 83.63ms, 35.434ms acima da tolerância
+26-12-2024: 18h 8m - Lag de 50.8ms, 1.3824ms acima da tolerância
+26-12-2024: 18h 8m - Lag de 147.17ms, 94.297ms acima da tolerância
+26-12-2024: 18h 8m - Lag de 1000ms, 957.11ms acima da tolerância
+26-12-2024: 18h 9m - Lag de 220.91ms, 151.18ms acima da tolerância
+26-12-2024: 18h 9m - Lag de 115.22ms, 69.252ms acima da tolerância
+26-12-2024: 18h 9m - Lag de 114.31ms, 46.120ms acima da tolerância
+26-12-2024: 18h 9m - Lag de 119.36ms, 49.72ms acima da tolerância
+26-12-2024: 18h 9m - Lag de 1000ms, 956.94ms acima da tolerância
+26-12-2024: 18h 9m - Lag de 1000ms, 710.59ms acima da tolerância
+26-12-2024: 18h10m - Lag de 1000ms, 463.64ms acima da tolerância
+26-12-2024: 18h10m - Lag de 77.66ms, 34.934ms acima da tolerância
+26-12-2024: 18h10m - Lag de 125.87ms, 79.13ms acima da tolerância
+26-12-2024: 18h10m - Lag de 125.24ms, 72.544ms acima da tolerância
+26-12-2024: 18h10m - Lag de 157.34ms, 112.09ms acima da tolerância
+26-12-2024: 18h11m - Lag de 1000ms, 950.42ms acima da tolerância
+26-12-2024: 18h11m - Lag de 1000ms, 955.59ms acima da tolerância
+26-12-2024: 18h12m - Lag de 1000ms, 957.65ms acima da tolerância
+26-12-2024: 18h12m - Lag de 1000ms, 953.96ms acima da tolerância
+26-12-2024: 18h12m - Lag de 1000ms, 710.12ms acima da tolerância
+26-12-2024: 18h12m - Lag de 1000ms, 463.47ms acima da tolerância
+26-12-2024: 18h12m - Lag de 1000ms, 217.13ms acima da tolerância
+26-12-2024: 18h13m - Lag de 59.27ms, 14.467ms acima da tolerância
+26-12-2024: 18h14m - Lag de 45.23ms, 2.4874ms acima da tolerância
+26-12-2024: 18h15m - Lag de 62.24ms, 16.625ms acima da tolerância
+26-12-2024: 18h15m - Lag de 1000ms, 957.70ms acima da tolerância
+26-12-2024: 18h15m - Lag de 51.59ms, 8.4500ms acima da tolerância
+26-12-2024: 18h15m - Lag de 1000ms, 947.09ms acima da tolerância
+26-12-2024: 18h15m - Lag de 1000ms, 955.57ms acima da tolerância
+26-12-2024: 18h15m - Lag de 765.91ms, 475.03ms acima da tolerância
+26-12-2024: 18h16m - Lag de 60.78ms, 18.545ms acima da tolerância
+26-12-2024: 18h16m - Lag de 1000ms, 957.11ms acima da tolerância
+26-12-2024: 18h16m - Lag de 1000ms, 929.83ms acima da tolerância
+26-12-2024: 18h18m - Lag de 1000ms, 955.78ms acima da tolerância
+26-12-2024: 18h18m - Lag de 82.56ms, 39.132ms acima da tolerância
+26-12-2024: 18h19m - Lag de 1000ms, 957.36ms acima da tolerância
+26-12-2024: 18h19m - Queda
+26-12-2024: 18h21m - Lag de 157.19ms, 114.73ms acima da tolerância
+26-12-2024: 18h21m - Lag de 59.03ms, 12.722ms acima da tolerância
+26-12-2024: 18h21m - Lag de 1000ms, 945.77ms acima da tolerância
+26-12-2024: 18h21m - Lag de 1000ms, 699.00ms acima da tolerância
+26-12-2024: 18h21m - Lag de 1000ms, 463.76ms acima da tolerância
+26-12-2024: 18h21m - Lag de 1000ms, 216.83ms acima da tolerância
+26-12-2024: 18h21m - Lag de 1000ms, 957.06ms acima da tolerância
+26-12-2024: 18h22m - Lag de 50.87ms, 8.5424ms acima da tolerância
+26-12-2024: 18h22m - Lag de 1000ms, 947.85ms acima da tolerância
+26-12-2024: 18h22m - Lag de 1000ms, 957.39ms acima da tolerância
+26-12-2024: 18h22m - Lag de 60.7ms, 17.689ms acima da tolerância
+26-12-2024: 18h22m - Lag de 1000ms, 935.89ms acima da tolerância
+26-12-2024: 18h22m - Lag de 78.1ms, 35.729ms acima da tolerância
+26-12-2024: 18h23m - Lag de 58.53ms, 15.702ms acima da tolerância
+26-12-2024: 18h23m - Lag de 50.53ms, 8.625ms acima da tolerância
+26-12-2024: 18h23m - Lag de 117.33ms, 74.342ms acima da tolerância
+26-12-2024: 18h24m - Lag de 48.68ms, 1.1775ms acima da tolerância
+26-12-2024: 18h24m - Lag de 119.59ms, 67.315ms acima da tolerância
+26-12-2024: 18h24m - Lag de 1000ms, 956.86ms acima da tolerância
+26-12-2024: 18h24m - Lag de 114.1ms, 70.755ms acima da tolerância
+26-12-2024: 18h24m - Lag de 1000ms, 931.33ms acima da tolerância
+26-12-2024: 18h25m - Lag de 83.63ms, 41.009ms acima da tolerância
+26-12-2024: 18h25m - Lag de 1000ms, 939.82ms acima da tolerância
+26-12-2024: 18h25m - Lag de 111.79ms, 64.06ms acima da tolerância
+26-12-2024: 18h25m - Lag de 1000ms, 957.71ms acima da tolerância
+26-12-2024: 18h25m - Lag de 1000ms, 710.79ms acima da tolerância
+26-12-2024: 18h25m - Lag de 1000ms, 463.85ms acima da tolerância
+26-12-2024: 18h25m - Lag de 1000ms, 216.93ms acima da tolerância
+26-12-2024: 18h25m - Lag de 51.88ms, 8.0574ms acima da tolerância
+26-12-2024: 18h26m - Lag de 66.58ms, 21.144ms acima da tolerância
+26-12-2024: 18h26m - Lag de 1000ms, 937.56ms acima da tolerância
+26-12-2024: 18h26m - Lag de 1000ms, 690.52ms acima da tolerância
+26-12-2024: 18h26m - Queda
+26-12-2024: 18h27m - Lag de 1000ms, 957.67ms acima da tolerância
+26-12-2024: 18h27m - Lag de 1000ms, 710.66ms acima da tolerância
+26-12-2024: 18h27m - Lag de 1000ms, 463.86ms acima da tolerância
+26-12-2024: 18h27m - Lag de 1000ms, 216.90ms acima da tolerância
+26-12-2024: 18h29m - Lag de 56.19ms, 13.954ms acima da tolerância
+26-12-2024: 18h29m - Lag de 1000ms, 957.21ms acima da tolerância
+26-12-2024: 18h29m - Lag de 592.02ms, 302.69ms acima da tolerância
+26-12-2024: 18h30m - Lag de 59.41ms, 17.184ms acima da tolerância
+26-12-2024: 18h31m - Lag de 115.64ms, 64.052ms acima da tolerância
+26-12-2024: 18h31m - Lag de 65.14ms, 15.969ms acima da tolerância
+26-12-2024: 18h31m - Lag de 122.75ms, 67.215ms acima da tolerância
+26-12-2024: 18h31m - Lag de 45.59ms, 2.8250ms acima da tolerância
+26-12-2024: 18h32m - Lag de 115.24ms, 73.017ms acima da tolerância
+26-12-2024: 18h32m - Lag de 115.72ms, 47.099ms acima da tolerância
+26-12-2024: 18h32m - Lag de 51.25ms, 6.5625ms acima da tolerância
+26-12-2024: 18h32m - Lag de 126.8ms, 74.87ms acima da tolerância
+26-12-2024: 18h32m - Lag de 1000ms, 929.01ms acima da tolerância
+26-12-2024: 18h32m - Lag de 1000ms, 682.09ms acima da tolerância
+26-12-2024: 18h32m - Lag de 1000ms, 463.79ms acima da tolerância
+26-12-2024: 18h32m - Lag de 1000ms, 216.95ms acima da tolerância
+26-12-2024: 18h33m - Lag de 121.38ms, 77.612ms acima da tolerância
+26-12-2024: 18h33m - Lag de 114.34ms, 44.724ms acima da tolerância
+26-12-2024: 18h33m - Lag de 118.69ms, 73.472ms acima da tolerância
+26-12-2024: 18h34m - Lag de 62.05ms, 10.312ms acima da tolerância
+26-12-2024: 18h34m - Lag de 116.72ms, 74.447ms acima da tolerância
+26-12-2024: 18h34m - Lag de 112.13ms, 68.987ms acima da tolerância
+26-12-2024: 18h35m - Lag de 1000ms, 957.34ms acima da tolerância
+26-12-2024: 18h35m - Lag de 119.64ms, 76.552ms acima da tolerância
+26-12-2024: 18h36m - Lag de 46.82ms, 3.4350ms acima da tolerância
+26-12-2024: 18h37m - Lag de 61.1ms, 18.825ms acima da tolerância
+26-12-2024: 18h37m - Lag de 45.21ms, 2.4825ms acima da tolerância
+26-12-2024: 18h37m - Lag de 56.86ms, 10.382ms acima da tolerância
+26-12-2024: 18h39m - Lag de 48.54ms, 4.9074ms acima da tolerância
+26-12-2024: 18h40m - Lag de 1000ms, 957.55ms acima da tolerância
+26-12-2024: 18h41m - Lag de 46.74ms, 4.7975ms acima da tolerância
+26-12-2024: 18h41m - Lag de 80.09ms, 33.180ms acima da tolerância
+26-12-2024: 18h41m - Lag de 1000ms, 940.79ms acima da tolerância
+26-12-2024: 18h42m - Lag de 1000ms, 957.80ms acima da tolerância
+26-12-2024: 18h44m - Lag de 1000ms, 956.92ms acima da tolerância
+26-12-2024: 18h44m - Lag de 1000ms, 957.05ms acima da tolerância
+26-12-2024: 18h44m - Lag de 1000ms, 710.13ms acima da tolerância
+26-12-2024: 18h44m - Lag de 1000ms, 957.42ms acima da tolerância
+26-12-2024: 18h45m - Lag de 50.39ms, 8.0349ms acima da tolerância
+26-12-2024: 18h45m - Lag de 59.48ms, 17.422ms acima da tolerância
+26-12-2024: 18h45m - Lag de 1000ms, 957.75ms acima da tolerância
+26-12-2024: 18h46m - Lag de 131.47ms, 89.282ms acima da tolerância
+26-12-2024: 18h46m - Lag de 116.41ms, 40.31ms acima da tolerância
+26-12-2024: 18h46m - Lag de 1000ms, 957.92ms acima da tolerância
+26-12-2024: 18h46m - Lag de 118.62ms, 74.92ms acima da tolerância
+26-12-2024: 18h47m - Lag de 1000ms, 949.84ms acima da tolerância
+26-12-2024: 18h47m - Lag de 124.29ms, 76.035ms acima da tolerância
+26-12-2024: 18h47m - Lag de 120.25ms, 50.055ms acima da tolerância
+26-12-2024: 18h47m - Lag de 113.68ms, 69.18ms acima da tolerância
+26-12-2024: 18h47m - Lag de 1000ms, 952.69ms acima da tolerância
+26-12-2024: 18h48m - Lag de 1000ms, 957.63ms acima da tolerância
+26-12-2024: 18h48m - Lag de 52.72ms, 10.649ms acima da tolerância
+26-12-2024: 18h48m - Lag de 146.75ms, 104.39ms acima da tolerância
+26-12-2024: 18h48m - Lag de 124.72ms, 48.819ms acima da tolerância
+26-12-2024: 18h48m - Lag de 81.5ms, 38.372ms acima da tolerância
+26-12-2024: 18h48m - Lag de 45.07ms, 2.4375ms acima da tolerância
+26-12-2024: 18h48m - Lag de 120.12ms, 69.825ms acima da tolerância
+26-12-2024: 18h48m - Lag de 310.37ms, 262.57ms acima da tolerância
+26-12-2024: 18h49m - Lag de 124.82ms, 82.587ms acima da tolerância
+26-12-2024: 18h49m - Lag de 43.0ms, 0.2575ms acima da tolerância
+26-12-2024: 18h49m - Lag de 122.68ms, 71.932ms acima da tolerância
+26-12-2024: 18h50m - Lag de 122.35ms, 79.862ms acima da tolerância
+26-12-2024: 18h50m - Lag de 63.19ms, 15.219ms acima da tolerância
+26-12-2024: 18h51m - Lag de 1000ms, 957.88ms acima da tolerância
+26-12-2024: 18h51m - Lag de 125.08ms, 54.869ms acima da tolerância
+26-12-2024: 18h51m - Lag de 119.22ms, 75.752ms acima da tolerância
+26-12-2024: 18h52m - Lag de 118.09ms, 75.705ms acima da tolerância
+26-12-2024: 18h52m - Lag de 113.55ms, 35.292ms acima da tolerância
+26-12-2024: 18h52m - Lag de 1000ms, 952.78ms acima da tolerância
+26-12-2024: 18h52m - Lag de 121.72ms, 52.78ms acima da tolerância
+26-12-2024: 18h52m - Lag de 1000ms, 903.59ms acima da tolerância
+26-12-2024: 18h52m - Lag de 1000ms, 656.65ms acima da tolerância
+26-12-2024: 18h52m - Lag de 1000ms, 436.03ms acima da tolerância
+26-12-2024: 18h52m - Lag de 1000ms, 189.57ms acima da tolerância
+26-12-2024: 18h53m - Lag de 60.43ms, 16.397ms acima da tolerância
+26-12-2024: 18h53m - Lag de 51.6ms, 8.2400ms acima da tolerância
+26-12-2024: 18h53m - Lag de 122.41ms, 72.052ms acima da tolerância
+26-12-2024: 18h53m - Lag de 120.83ms, 49.364ms acima da tolerância
+26-12-2024: 18h53m - Lag de 112.12ms, 42.570ms acima da tolerância
+26-12-2024: 18h54m - Lag de 60.71ms, 17.0ms acima da tolerância
+26-12-2024: 18h54m - Lag de 113.09ms, 64.472ms acima da tolerância
+26-12-2024: 18h54m - Lag de 124.79ms, 71.440ms acima da tolerância
+26-12-2024: 18h54m - Lag de 74.29ms, 26.422ms acima da tolerância
+26-12-2024: 18h55m - Lag de 119.34ms, 76.465ms acima da tolerância
+26-12-2024: 18h55m - Lag de 126.99ms, 81.527ms acima da tolerância
+26-12-2024: 18h55m - Lag de 1000ms, 925.28ms acima da tolerância
+26-12-2024: 18h55m - Lag de 124.0ms, 81.777ms acima da tolerância
+26-12-2024: 18h55m - Lag de 1000ms, 929.92ms acima da tolerância
+26-12-2024: 18h56m - Lag de 53.32ms, 11.177ms acima da tolerância
+26-12-2024: 18h57m - Lag de 46.5ms, 3.2424ms acima da tolerância
+26-12-2024: 18h57m - Lag de 92.41ms, 47.627ms acima da tolerância
+26-12-2024: 18h58m - Lag de 1000ms, 955.68ms acima da tolerância
+26-12-2024: 18h58m - Lag de 1000ms, 710.64ms acima da tolerância
+26-12-2024: 18h58m - Lag de 62.45ms, 12.637ms acima da tolerância
+26-12-2024: 18h58m - Lag de 49.11ms, 6.5525ms acima da tolerância
+26-12-2024: 18h58m - Lag de 1000ms, 948.17ms acima da tolerância
+26-12-2024: 18h59m - Lag de 1000ms, 955.75ms acima da tolerância
+26-12-2024: 18h59m - Lag de 52.63ms, 2.1174ms acima da tolerância
+26-12-2024: 19h 0m - Lag de 198.66ms, 154.24ms acima da tolerância
+26-12-2024: 19h 0m - Lag de 1000ms, 908.24ms acima da tolerância
+26-12-2024: 19h 0m - Lag de 1000ms, 663.00ms acima da tolerância
+26-12-2024: 19h 0m - Queda
+26-12-2024: 19h 1m - Lag de 53.21ms, 7.5099ms acima da tolerância
+26-12-2024: 19h 1m - Lag de 61.62ms, 18.482ms acima da tolerância
+26-12-2024: 19h 1m - Lag de 49.06ms, 6.3325ms acima da tolerância
+26-12-2024: 19h 2m - Lag de 204.93ms, 154.61ms acima da tolerância
+26-12-2024: 19h 2m - Lag de 1000ms, 901.47ms acima da tolerância
+26-12-2024: 19h 3m - Lag de 1000ms, 957.87ms acima da tolerância
+26-12-2024: 19h 3m - Lag de 475.51ms, 186.35ms acima da tolerância
+26-12-2024: 19h 5m - Lag de 54.95ms, 12.577ms acima da tolerância
+26-12-2024: 19h 6m - Lag de 1000ms, 957.75ms acima da tolerância
+26-12-2024: 19h 6m - Lag de 120.51ms, 76.390ms acima da tolerância
+26-12-2024: 19h 6m - Lag de 1000ms, 956.38ms acima da tolerância
+26-12-2024: 19h 7m - Lag de 47.9ms, 5.7374ms acima da tolerância
+26-12-2024: 19h 7m - Lag de 1000ms, 956.72ms acima da tolerância
+26-12-2024: 19h 7m - Lag de 1000ms, 955.94ms acima da tolerância
+26-12-2024: 19h 8m - Lag de 116.58ms, 74.347ms acima da tolerância
+26-12-2024: 19h 8m - Lag de 120.16ms, 63.017ms acima da tolerância
+26-12-2024: 19h 8m - Lag de 60.84ms, 16.147ms acima da tolerância
+26-12-2024: 19h 8m - Lag de 49.48ms, 4.0599ms acima da tolerância
+26-12-2024: 19h 9m - Lag de 139.51ms, 90.544ms acima da tolerância
+26-12-2024: 19h 9m - Lag de 114.8ms, 71.962ms acima da tolerância
+26-12-2024: 19h 9m - Lag de 114.12ms, 70.527ms acima da tolerância
+26-12-2024: 19h10m - Lag de 1000ms, 957.32ms acima da tolerância
+26-12-2024: 19h10m - Lag de 1000ms, 949.90ms acima da tolerância
+26-12-2024: 19h10m - Lag de 129.31ms, 87.177ms acima da tolerância
+26-12-2024: 19h10m - Lag de 50.5ms, 6.7425ms acima da tolerância
+26-12-2024: 19h10m - Lag de 118.52ms, 74.259ms acima da tolerância
+26-12-2024: 19h11m - Lag de 113.4ms, 70.717ms acima da tolerância
+26-12-2024: 19h11m - Lag de 122.65ms, 79.182ms acima da tolerância
+26-12-2024: 19h12m - Lag de 48.62ms, 6.2174ms acima da tolerância
+26-12-2024: 19h12m - Lag de 1000ms, 954.19ms acima da tolerância
+26-12-2024: 19h12m - Lag de 121.25ms, 78.1ms acima da tolerância
+26-12-2024: 19h13m - Lag de 1000ms, 957.61ms acima da tolerância
+26-12-2024: 19h13m - Lag de 124.49ms, 82.185ms acima da tolerância
+26-12-2024: 19h14m - Lag de 126.58ms, 84.45ms acima da tolerância
+26-12-2024: 19h14m - Lag de 115.87ms, 73.03ms acima da tolerância
+26-12-2024: 19h15m - Lag de 120.27ms, 77.995ms acima da tolerância
+26-12-2024: 19h15m - Lag de 112.73ms, 70.805ms acima da tolerância
+26-12-2024: 19h15m - Lag de 1000ms, 957.91ms acima da tolerância
+26-12-2024: 19h15m - Lag de 121.04ms, 78.777ms acima da tolerância
+26-12-2024: 19h16m - Lag de 1000ms, 956.72ms acima da tolerância
+26-12-2024: 19h16m - Lag de 123.84ms, 79.917ms acima da tolerância
+26-12-2024: 19h16m - Lag de 46.0ms, 2.0799ms acima da tolerância
+26-12-2024: 19h16m - Lag de 57.14ms, 6.3425ms acima da tolerância
+26-12-2024: 19h16m - Lag de 127.18ms, 84.850ms acima da tolerância
+26-12-2024: 19h17m - Lag de 51.15ms, 3.1424ms acima da tolerância
+26-12-2024: 19h17m - Lag de 78.79ms, 33.105ms acima da tolerância
+26-12-2024: 19h17m - Lag de 118.74ms, 56.452ms acima da tolerância
+26-12-2024: 19h17m - Lag de 119.84ms, 30.939ms acima da tolerância
+26-12-2024: 19h17m - Lag de 1000ms, 904.30ms acima da tolerância
+26-12-2024: 19h17m - Lag de 1000ms, 657.33ms acima da tolerância
+26-12-2024: 19h17m - Lag de 1000ms, 437.02ms acima da tolerância
+26-12-2024: 19h18m - Lag de 1000ms, 957.83ms acima da tolerância
+26-12-2024: 19h18m - Lag de 56.82ms, 4.5424ms acima da tolerância
+26-12-2024: 19h18m - Lag de 1000ms, 956.33ms acima da tolerância
+26-12-2024: 19h18m - Lag de 118.79ms, 76.432ms acima da tolerância
+26-12-2024: 19h19m - Lag de 63.65ms, 21.494ms acima da tolerância
+26-12-2024: 19h19m - Lag de 1000ms, 957.91ms acima da tolerância
+26-12-2024: 19h19m - Lag de 1000ms, 957.56ms acima da tolerância
+26-12-2024: 19h19m - Lag de 63.95ms, 21.727ms acima da tolerância
+26-12-2024: 19h19m - Lag de 116.73ms, 61.297ms acima da tolerância
+26-12-2024: 19h20m - Lag de 50.95ms, 4.6375ms acima da tolerância
+26-12-2024: 19h20m - Lag de 115.02ms, 72.889ms acima da tolerância
+26-12-2024: 19h20m - Lag de 99.63ms, 55.989ms acima da tolerância
+26-12-2024: 19h20m - Lag de 45.21ms, 1.6400ms acima da tolerância
+26-12-2024: 19h20m - Lag de 126.48ms, 84.307ms acima da tolerância
+26-12-2024: 19h21m - Lag de 45.92ms, 0.3975ms acima da tolerância
+26-12-2024: 19h21m - Lag de 46.27ms, 3.5600ms acima da tolerância
+26-12-2024: 19h22m - Lag de 43.91ms, 1.5499ms acima da tolerância
+26-12-2024: 19h22m - Lag de 118.15ms, 69.192ms acima da tolerância
+26-12-2024: 19h22m - Lag de 133.6ms, 83.914ms acima da tolerância
+26-12-2024: 19h23m - Lag de 44.99ms, 0.6075ms acima da tolerância
+26-12-2024: 19h23m - Lag de 59.24ms, 16.997ms acima da tolerância
+26-12-2024: 19h23m - Lag de 129.98ms, 74.864ms acima da tolerância
+26-12-2024: 19h23m - Lag de 1000ms, 945.13ms acima da tolerância
+26-12-2024: 19h24m - Lag de 48.31ms, 4.7550ms acima da tolerância
+26-12-2024: 19h24m - Lag de 115.25ms, 59.364ms acima da tolerância
+26-12-2024: 19h24m - Lag de 1000ms, 927.38ms acima da tolerância
+26-12-2024: 19h24m - Lag de 1000ms, 956.93ms acima da tolerância
+26-12-2024: 19h24m - Lag de 1000ms, 709.96ms acima da tolerância
+26-12-2024: 19h24m - Lag de 145.54ms, 101.38ms acima da tolerância
+26-12-2024: 19h24m - Lag de 111.8ms, 68.865ms acima da tolerância
+26-12-2024: 19h25m - Lag de 1000ms, 932.64ms acima da tolerância
+26-12-2024: 19h25m - Lag de 51.75ms, 9.5075ms acima da tolerância
+26-12-2024: 19h25m - Lag de 78.38ms, 33.052ms acima da tolerância
+26-12-2024: 19h26m - Lag de 1000ms, 953.83ms acima da tolerância
+26-12-2024: 19h26m - Lag de 51.2ms, 8.5125ms acima da tolerância
+26-12-2024: 19h27m - Lag de 1000ms, 950.66ms acima da tolerância
+26-12-2024: 19h27m - Lag de 1000ms, 954.52ms acima da tolerância
+26-12-2024: 19h27m - Lag de 1000ms, 957.86ms acima da tolerância
+26-12-2024: 19h28m - Lag de 46.17ms, 3.8250ms acima da tolerância
+26-12-2024: 19h28m - Lag de 65.35ms, 22.922ms acima da tolerância
+26-12-2024: 19h28m - Lag de 49.29ms, 6.82ms acima da tolerância
+26-12-2024: 19h31m - Lag de 56.04ms, 11.71ms acima da tolerância
+26-12-2024: 19h31m - Lag de 126.0ms, 77.237ms acima da tolerância
+26-12-2024: 19h31m - Lag de 43.44ms, 0.0274ms acima da tolerância
+26-12-2024: 19h31m - Lag de 122.84ms, 75.982ms acima da tolerância
+26-12-2024: 19h32m - Lag de 1000ms, 949.06ms acima da tolerância
+26-12-2024: 19h32m - Lag de 100.34ms, 57.715ms acima da tolerância
+26-12-2024: 19h32m - Lag de 126.12ms, 79.765ms acima da tolerância
+26-12-2024: 19h33m - Lag de 1000ms, 957.56ms acima da tolerância
+26-12-2024: 19h33m - Lag de 1000ms, 706.43ms acima da tolerância
+26-12-2024: 19h33m - Lag de 139.15ms, 95.385ms acima da tolerância
+26-12-2024: 19h33m - Lag de 68.83ms, 24.125ms acima da tolerância
+26-12-2024: 19h33m - Lag de 122.61ms, 74.55ms acima da tolerância
+26-12-2024: 19h34m - Lag de 207.67ms, 165.66ms acima da tolerância
+26-12-2024: 19h34m - Lag de 46.98ms, 0.1799ms acima da tolerância
+26-12-2024: 19h34m - Lag de 120.81ms, 72.270ms acima da tolerância
+26-12-2024: 19h35m - Lag de 117.89ms, 75.132ms acima da tolerância
+26-12-2024: 19h35m - Lag de 111.85ms, 69.677ms acima da tolerância
+26-12-2024: 19h36m - Lag de 120.5ms, 77.992ms acima da tolerância
+26-12-2024: 19h37m - Lag de 44.6ms, 1.8074ms acima da tolerância
+26-12-2024: 19h38m - Lag de 53.73ms, 11.475ms acima da tolerância
+26-12-2024: 19h38m - Lag de 1000ms, 957.14ms acima da tolerância
+26-12-2024: 19h38m - Lag de 53.36ms, 4.5300ms acima da tolerância
+26-12-2024: 19h38m - Lag de 55.64ms, 11.980ms acima da tolerância
+26-12-2024: 19h39m - Lag de 61.18ms, 14.997ms acima da tolerância
+26-12-2024: 19h40m - Lag de 1000ms, 956.21ms acima da tolerância
+26-12-2024: 19h40m - Lag de 89.33ms, 46.0ms acima da tolerância
+26-12-2024: 19h40m - Lag de 54.3ms, 5.4024ms acima da tolerância
+26-12-2024: 19h41m - Lag de 53.74ms, 11.475ms acima da tolerância
+26-12-2024: 19h41m - Lag de 58.24ms, 5.5925ms acima da tolerância
+26-12-2024: 19h41m - Lag de 90.55ms, 47.272ms acima da tolerância
+26-12-2024: 19h41m - Lag de 125.04ms, 62.617ms acima da tolerância
+26-12-2024: 19h43m - Lag de 1000ms, 953.76ms acima da tolerância
+26-12-2024: 19h43m - Lag de 1000ms, 706.76ms acima da tolerância
+26-12-2024: 19h43m - Lag de 1000ms, 459.82ms acima da tolerância
+26-12-2024: 19h43m - Lag de 1000ms, 212.85ms acima da tolerância
+26-12-2024: 19h43m - Lag de 1000ms, 957.92ms acima da tolerância
+26-12-2024: 19h44m - Lag de 55.17ms, 13.049ms acima da tolerância
+26-12-2024: 19h46m - Lag de 1000ms, 957.81ms acima da tolerância
+26-12-2024: 19h46m - Lag de 1000ms, 683.60ms acima da tolerância
+26-12-2024: 19h46m - Lag de 89.66ms, 46.775ms acima da tolerância
+26-12-2024: 19h46m - Lag de 117.22ms, 74.787ms acima da tolerância
+26-12-2024: 19h47m - Lag de 126.85ms, 84.524ms acima da tolerância
+26-12-2024: 19h47m - Lag de 1000ms, 957.36ms acima da tolerância
+26-12-2024: 19h47m - Lag de 1000ms, 680.97ms acima da tolerância
+26-12-2024: 19h48m - Lag de 44.1ms, 1.8625ms acima da tolerância
+26-12-2024: 19h48m - Lag de 94.65ms, 51.487ms acima da tolerância
+26-12-2024: 19h48m - Lag de 54.53ms, 12.192ms acima da tolerância
+26-12-2024: 19h49m - Lag de 120.02ms, 77.89ms acima da tolerância
+26-12-2024: 19h49m - Lag de 127.37ms, 58.272ms acima da tolerância
+26-12-2024: 19h49m - Lag de 103.98ms, 61.53ms acima da tolerância
+26-12-2024: 19h49m - Lag de 1000ms, 957.16ms acima da tolerância
+26-12-2024: 19h49m - Lag de 1000ms, 710.05ms acima da tolerância
+26-12-2024: 19h49m - Lag de 1000ms, 454.93ms acima da tolerância
+26-12-2024: 19h50m - Lag de 1000ms, 957.19ms acima da tolerância
+26-12-2024: 19h50m - Lag de 1000ms, 955.11ms acima da tolerância
+26-12-2024: 19h50m - Lag de 72.2ms, 29.330ms acima da tolerância
+26-12-2024: 19h50m - Lag de 88.88ms, 30.942ms acima da tolerância
+26-12-2024: 19h50m - Lag de 114.94ms, 72.547ms acima da tolerância
+26-12-2024: 19h50m - Lag de 1000ms, 930.45ms acima da tolerância
+26-12-2024: 19h50m - Lag de 1000ms, 708.64ms acima da tolerância
+26-12-2024: 19h50m - Lag de 1000ms, 708.01ms acima da tolerância
+26-12-2024: 19h51m - Lag de 118.18ms, 52.932ms acima da tolerância
+26-12-2024: 19h51m - Lag de 136.83ms, 94.875ms acima da tolerância
+26-12-2024: 19h51m - Lag de 120.66ms, 78.15ms acima da tolerância
+26-12-2024: 19h51m - Lag de 1000ms, 951.85ms acima da tolerância
+26-12-2024: 19h51m - Lag de 115.57ms, 57.285ms acima da tolerância
+26-12-2024: 19h52m - Lag de 1000ms, 957.55ms acima da tolerância
+26-12-2024: 19h52m - Lag de 49.48ms, 7.3249ms acima da tolerância
+26-12-2024: 19h52m - Lag de 1000ms, 952.09ms acima da tolerância
+26-12-2024: 19h52m - Lag de 127.22ms, 83.08ms acima da tolerância
+26-12-2024: 19h52m - Lag de 1000ms, 927.14ms acima da tolerância
+26-12-2024: 19h52m - Lag de 1000ms, 680.15ms acima da tolerância
+26-12-2024: 19h52m - Lag de 1000ms, 435.16ms acima da tolerância
+26-12-2024: 19h52m - Lag de 125.84ms, 82.692ms acima da tolerância
+26-12-2024: 19h52m - Lag de 1000ms, 929.25ms acima da tolerância
+26-12-2024: 19h53m - Lag de 1000ms, 682.41ms acima da tolerância
+26-12-2024: 19h53m - Lag de 1000ms, 435.45ms acima da tolerância
+26-12-2024: 19h53m - Lag de 1000ms, 188.53ms acima da tolerância
+26-12-2024: 19h53m - Queda
+26-12-2024: 19h53m - Lag de 75.72ms, 28.087ms acima da tolerância
+26-12-2024: 19h53m - Lag de 129.0ms, 70.975ms acima da tolerância
+26-12-2024: 19h53m - Lag de 122.89ms, 51.600ms acima da tolerância
+26-12-2024: 19h54m - Lag de 115.29ms, 45.527ms acima da tolerância
+26-12-2024: 19h54m - Lag de 1000ms, 904.36ms acima da tolerância
+26-12-2024: 19h54m - Lag de 1000ms, 657.36ms acima da tolerância
+26-12-2024: 19h54m - Lag de 1000ms, 438.09ms acima da tolerância
+26-12-2024: 19h54m - Lag de 1000ms, 216.91ms acima da tolerância
+26-12-2024: 19h54m - Lag de 1000ms, 461.55ms acima da tolerância
+26-12-2024: 19h54m - Lag de 1000ms, 929.46ms acima da tolerância
+26-12-2024: 19h54m - Lag de 112.13ms, 62.817ms acima da tolerância
+26-12-2024: 19h54m - Lag de 46.81ms, 4.5525ms acima da tolerância
+26-12-2024: 19h54m - Lag de 116.17ms, 65.252ms acima da tolerância
+26-12-2024: 19h55m - Lag de 115.04ms, 72.592ms acima da tolerância
+26-12-2024: 19h55m - Lag de 63.67ms, 21.187ms acima da tolerância
+26-12-2024: 19h55m - Lag de 82.84ms, 40.507ms acima da tolerância
+26-12-2024: 19h55m - Lag de 118.66ms, 70.435ms acima da tolerância
+26-12-2024: 19h55m - Lag de 75.32ms, 24.579ms acima da tolerância
+26-12-2024: 19h55m - Lag de 1000ms, 950.32ms acima da tolerância
+26-12-2024: 19h56m - Lag de 1000ms, 957.74ms acima da tolerância
+26-12-2024: 19h56m - Lag de 120.67ms, 77.147ms acima da tolerância
+26-12-2024: 19h56m - Lag de 1000ms, 956.33ms acima da tolerância
+26-12-2024: 19h56m - Lag de 50.94ms, 7.9899ms acima da tolerância
+26-12-2024: 19h57m - Lag de 78.0ms, 35.122ms acima da tolerância
+26-12-2024: 19h57m - Lag de 47.41ms, 2.0974ms acima da tolerância
+26-12-2024: 19h57m - Lag de 1000ms, 956.33ms acima da tolerância
+26-12-2024: 19h57m - Lag de 127.94ms, 85.63ms acima da tolerância
+26-12-2024: 19h57m - Lag de 1000ms, 956.03ms acima da tolerância
+26-12-2024: 19h57m - Lag de 1000ms, 709.15ms acima da tolerância
+26-12-2024: 19h57m - Lag de 79.82ms, 27.557ms acima da tolerância
+26-12-2024: 19h58m - Lag de 119.14ms, 60.245ms acima da tolerância
+26-12-2024: 19h58m - Lag de 1000ms, 903.47ms acima da tolerância
+26-12-2024: 19h58m - Lag de 1000ms, 656.46ms acima da tolerância
+26-12-2024: 19h58m - Lag de 1000ms, 426.42ms acima da tolerância
+26-12-2024: 19h58m - Lag de 1000ms, 206.20ms acima da tolerância
+26-12-2024: 19h58m - Lag de 1000ms, 957.58ms acima da tolerância
+26-12-2024: 19h58m - Lag de 48.38ms, 1.6925ms acima da tolerância
+26-12-2024: 19h59m - Lag de 112.89ms, 70.72ms acima da tolerância
+26-12-2024: 19h59m - Lag de 119.67ms, 48.975ms acima da tolerância
+26-12-2024: 19h59m - Lag de 129.24ms, 59.035ms acima da tolerância
+26-12-2024: 20h 0m - Lag de 127.16ms, 84.002ms acima da tolerância
+26-12-2024: 20h 0m - Lag de 61.97ms, 19.682ms acima da tolerância
+26-12-2024: 20h 0m - Lag de 125.08ms, 70.262ms acima da tolerância
+26-12-2024: 20h 1m - Lag de 94.94ms, 52.742ms acima da tolerância
+26-12-2024: 20h 1m - Lag de 1000ms, 937.15ms acima da tolerância
+26-12-2024: 20h 1m - Lag de 51.2ms, 8.6525ms acima da tolerância
+26-12-2024: 20h 2m - Lag de 1000ms, 956.74ms acima da tolerância
+26-12-2024: 20h 2m - Lag de 1000ms, 957.15ms acima da tolerância
+26-12-2024: 20h 2m - Lag de 1000ms, 958.09ms acima da tolerância
+26-12-2024: 20h 2m - Lag de 1000ms, 953.09ms acima da tolerância
+26-12-2024: 20h 3m - Lag de 47.52ms, 5.5650ms acima da tolerância
+26-12-2024: 20h 3m - Lag de 1000ms, 957.29ms acima da tolerância
+26-12-2024: 20h 3m - Lag de 1000ms, 956.65ms acima da tolerância
+26-12-2024: 20h 3m - Lag de 122.01ms, 76.755ms acima da tolerância
+26-12-2024: 20h 3m - Lag de 92.28ms, 19.504ms acima da tolerância
+26-12-2024: 20h 4m - Lag de 240.48ms, 148.62ms acima da tolerância
+26-12-2024: 20h 4m - Lag de 1000ms, 851.93ms acima da tolerância
+26-12-2024: 20h 4m - Lag de 1000ms, 606.30ms acima da tolerância
+26-12-2024: 20h 4m - Lag de 1000ms, 386.80ms acima da tolerância
+26-12-2024: 20h 4m - Lag de 1000ms, 159.88ms acima da tolerância
+26-12-2024: 20h 4m - Lag de 46.98ms, 4.0099ms acima da tolerância
+26-12-2024: 20h 5m - Lag de 44.63ms, 1.2475ms acima da tolerância
+26-12-2024: 20h 5m - Lag de 49.87ms, 6.6549ms acima da tolerância
+26-12-2024: 20h 5m - Lag de 52.06ms, 8.2775ms acima da tolerância
+26-12-2024: 20h 6m - Lag de 53.34ms, 11.007ms acima da tolerância
+26-12-2024: 20h 6m - Lag de 1000ms, 957.94ms acima da tolerância
+26-12-2024: 20h 6m - Lag de 290.36ms, 242.73ms acima da tolerância
+26-12-2024: 20h 6m - Lag de 198.23ms, 86.592ms acima da tolerância
+26-12-2024: 20h 6m - Lag de 1000ms, 956.41ms acima da tolerância
+26-12-2024: 20h 6m - Lag de 119.48ms, 72.51ms acima da tolerância
+26-12-2024: 20h 7m - Lag de 1000ms, 957.63ms acima da tolerância
+26-12-2024: 20h 7m - Lag de 81.93ms, 39.517ms acima da tolerância
+26-12-2024: 20h 7m - Lag de 123.56ms, 63.002ms acima da tolerância
+26-12-2024: 20h 7m - Lag de 126.94ms, 49.677ms acima da tolerância
+26-12-2024: 20h 7m - Lag de 114.74ms, 71.804ms acima da tolerância
+26-12-2024: 20h 7m - Lag de 45.92ms, 3.7400ms acima da tolerância
+26-12-2024: 20h 8m - Lag de 124.61ms, 82.247ms acima da tolerância
+26-12-2024: 20h 8m - Lag de 1000ms, 956.43ms acima da tolerância
+26-12-2024: 20h 9m - Lag de 59.03ms, 14.325ms acima da tolerância
+26-12-2024: 20h 9m - Lag de 115.53ms, 73.205ms acima da tolerância
+26-12-2024: 20h 9m - Lag de 153.85ms, 109.75ms acima da tolerância
+26-12-2024: 20h10m - Lag de 1000ms, 956.35ms acima da tolerância
+26-12-2024: 20h10m - Lag de 1000ms, 678.64ms acima da tolerância
+26-12-2024: 20h10m - Lag de 1000ms, 678.64ms acima da tolerância
+26-12-2024: 20h11m - Lag de 128.22ms, 85.575ms acima da tolerância
+26-12-2024: 20h11m - Lag de 121.87ms, 50.495ms acima da tolerância
+26-12-2024: 20h11m - Lag de 121.71ms, 78.524ms acima da tolerância
+26-12-2024: 20h12m - Lag de 1000ms, 957.86ms acima da tolerância
+26-12-2024: 20h12m - Lag de 118.13ms, 74.83ms acima da tolerância
+26-12-2024: 20h13m - Lag de 56.94ms, 13.344ms acima da tolerância
+26-12-2024: 20h13m - Lag de 127.89ms, 79.017ms acima da tolerância
+26-12-2024: 20h13m - Lag de 43.86ms, 1.5024ms acima da tolerância
+26-12-2024: 20h13m - Lag de 113.8ms, 71.542ms acima da tolerância
+26-12-2024: 20h13m - Lag de 1000ms, 955.08ms acima da tolerância
+26-12-2024: 20h14m - Lag de 114.16ms, 65.09ms acima da tolerância
+26-12-2024: 20h14m - Lag de 43.76ms, 1.6699ms acima da tolerância
+26-12-2024: 20h14m - Lag de 116.91ms, 66.877ms acima da tolerância
+26-12-2024: 20h15m - Lag de 1000ms, 957.87ms acima da tolerância
+26-12-2024: 20h15m - Lag de 123.14ms, 80.82ms acima da tolerância
+26-12-2024: 20h15m - Lag de 158.89ms, 88.909ms acima da tolerância
+26-12-2024: 20h15m - Lag de 122.73ms, 79.397ms acima da tolerância
+26-12-2024: 20h18m - Lag de 62.32ms, 19.482ms acima da tolerância
+26-12-2024: 20h18m - Lag de 58.0ms, 15.692ms acima da tolerância
+26-12-2024: 20h18m - Lag de 1000ms, 957.03ms acima da tolerância
+26-12-2024: 20h18m - Lag de 46.61ms, 1.8400ms acima da tolerância
+26-12-2024: 20h20m - Lag de 46.08ms, 3.6599ms acima da tolerância
+26-12-2024: 20h20m - Lag de 56.99ms, 4.25ms acima da tolerância
+26-12-2024: 20h21m - Lag de 54.77ms, 11.782ms acima da tolerância
+26-12-2024: 20h21m - Lag de 1000ms, 957.46ms acima da tolerância
+26-12-2024: 20h22m - Lag de 96.71ms, 54.144ms acima da tolerância
+26-12-2024: 20h22m - Lag de 54.59ms, 11.792ms acima da tolerância
+26-12-2024: 20h24m - Lag de 43.91ms, 1.7025ms acima da tolerância
+26-12-2024: 20h25m - Lag de 53.41ms, 7.7549ms acima da tolerância
+26-12-2024: 20h25m - Queda

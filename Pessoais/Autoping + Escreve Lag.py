@@ -4,8 +4,8 @@ from time import sleep
 
 mes = str(input("Insira mês de registro: "))
 ano = str(input("Insira ano de registro: "))
-lag = int(input("Insira valor numérico para a tolerância de lag, em ms: "))
-print(f"Tolerância de lag de {lag}ms")
+tolerancia = int(input("Insira valor numérico para a tolerância de lag, em ms: "))
+print(f"Tolerância de lag de {tolerancia}ms")
 with (open(mes + " de " + ano + ".txt", "a") as arquivo):
     vetor = [0, 0, 0, 0]
     indice = 0
@@ -38,7 +38,7 @@ with (open(mes + " de " + ano + ".txt", "a") as arquivo):
             sleep(30)
         if preenchido:
             media = (vetor[0] + vetor[1] + vetor[2] + vetor[3])/4
-            if a.rtt_avg > media + lag / 1000:
+            if a.rtt_avg_ms > media + tolerancia:
                 if len(str(datetime.today().day)) < 2:
                     dia = 1
                 if len(str(datetime.today().month)) < 2:
@@ -51,14 +51,18 @@ with (open(mes + " de " + ano + ".txt", "a") as arquivo):
                     " " * dia + str(datetime.today().day) + "-" + " " * mes + str(datetime.today().month) + "-" + str(
                         datetime.today().year) +
                     ": " + " " * hora + str(datetime.today().hour) + "h" + " " * minuto + str(
-                        datetime.today().minute) + "m" + " - Lag de " + str(a.rtt_avg_ms) + "ms\n")
+                        datetime.today().minute) + "m" + " - Lag de " + str(a.rtt_avg_ms) + "ms, " + (str(a.rtt_avg_ms - (tolerancia + media)))[:6:]
+                      + "ms acima da tolerância\n")
                 print(" " * dia + str(datetime.today().day) + "-" + " " * mes + str(datetime.today().month) + "-" + str(
                     datetime.today().year) +
                         ": " + " " * hora + str(datetime.today().hour) + "h" + " " * minuto + str(
-                    datetime.today().minute) + "m" + " - Lag de " + str(a.rtt_avg_ms) + "ms")
+                    datetime.today().minute) + "m" + " - Lag de " + str(a.rtt_avg_ms) + "ms, " + (str(a.rtt_avg_ms - (tolerancia + media)))[:6:]
+                      + "ms acima da tolerância")
                 arquivo.flush()
         if indice == 3:
             preenchido = True
+            vetor[indice] = a.rtt_avg_ms
             indice = 0
         else:
+            vetor[indice] = a.rtt_avg_ms
             indice += 1

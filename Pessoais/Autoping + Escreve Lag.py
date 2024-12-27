@@ -55,12 +55,12 @@ with (open(mes + " de " + ano + ".txt", "a") as arquivo):
                     " " * dia + str(datetime.today().day) + "-" + " " * mes + str(datetime.today().month) + "-" + str(
                         datetime.today().year) +
                     ": " + " " * hora + str(datetime.today().hour) + "h" + " " * minuto + str(
-                        datetime.today().minute) + "m" + " - Lag de " + str(a) + "ms, " + (str(a - (tolerancia + media)))
+                        datetime.today().minute) + "m" + " - Lag de " + str(a) + "ms, " + (str(a - (tolerancia + media)))[:5:]
                       + "ms acima da tolerância.\n")
                 print(" " * dia + str(datetime.today().day) + "-" + " " * mes + str(datetime.today().month) + "-" + str(
                     datetime.today().year) +
                         ": " + " " * hora + str(datetime.today().hour) + "h" + " " * minuto + str(
-                    datetime.today().minute) + "m" + " - Lag de " + str(a) + "ms, " + (str(a - (tolerancia + media)))
+                    datetime.today().minute) + "m" + " - Lag de " + str(a) + "ms, " + (str(a - (tolerancia + media)))[:5:]
                       + "ms acima da tolerância.")
                 arquivo.flush()
         if indice == 9:

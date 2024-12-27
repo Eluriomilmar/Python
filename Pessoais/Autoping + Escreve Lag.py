@@ -29,13 +29,13 @@ with (open(mes + " de " + ano + ".txt", "a") as arquivo):
             if len(str(datetime.today().minute)) < 2:
                 minuto = 1
             arquivo.write(" "*dia+str(datetime.today().day)+"-"+" "*mes+str(datetime.today().month)+"-"+str(datetime.today().year)+
-                        ": "+" "*hora+str(datetime.today().hour)+"h"+" "*minuto+str(datetime.today().minute)+"m"+" - Queda\n")
+                        ": "+" "*hora+str(datetime.today().hour)+"h"+" "*minuto+str(datetime.today().minute)+"m"+" - Queda.\n")
             print(f" "*dia+str(datetime.today().day)+"-"+" "*mes+str(datetime.today().month)+"-"+str(datetime.today().year)+
-                        ": "+" "*hora+str(datetime.today().hour)+"h"+" "*minuto+str(datetime.today().minute)+"m"+" - Queda")
+                        ": "+" "*hora+str(datetime.today().hour)+"h"+" "*minuto+str(datetime.today().minute)+"m"+" - Queda.")
             indice = 0
             arquivo.flush()
             preenchido = False
-            sleep(30)
+            sleep(60)
         if preenchido:
             media = (vetor[0] + vetor[1] + vetor[2] + vetor[3])/4
             if a.rtt_avg_ms > media + tolerancia:
@@ -52,12 +52,12 @@ with (open(mes + " de " + ano + ".txt", "a") as arquivo):
                         datetime.today().year) +
                     ": " + " " * hora + str(datetime.today().hour) + "h" + " " * minuto + str(
                         datetime.today().minute) + "m" + " - Lag de " + str(a.rtt_avg_ms) + "ms, " + (str(a.rtt_avg_ms - (tolerancia + media)))[:6:]
-                      + "ms acima da tolerância\n")
+                      + "ms acima da tolerância.\n")
                 print(" " * dia + str(datetime.today().day) + "-" + " " * mes + str(datetime.today().month) + "-" + str(
                     datetime.today().year) +
                         ": " + " " * hora + str(datetime.today().hour) + "h" + " " * minuto + str(
                     datetime.today().minute) + "m" + " - Lag de " + str(a.rtt_avg_ms) + "ms, " + (str(a.rtt_avg_ms - (tolerancia + media)))[:6:]
-                      + "ms acima da tolerância")
+                      + "ms acima da tolerância.")
                 arquivo.flush()
         if indice == 3:
             preenchido = True

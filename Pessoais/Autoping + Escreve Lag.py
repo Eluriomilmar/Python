@@ -12,6 +12,7 @@ with (open(mes + " de " + ano + ".txt", "a") as arquivo):
     indice = 0
     preenchido = False
     while True:
+        sleep(0.1)
         try:
             dia = 0
             mes = 0
@@ -21,7 +22,6 @@ with (open(mes + " de " + ano + ".txt", "a") as arquivo):
             a = str(a)
             a = (re.search(r"Average = (\d+)", a, re.MULTILINE).group(1))
             a = float(a)
-            sleep(1)
         except:
             if len(str(datetime.today().day)) < 2:
                 dia = 1
@@ -31,17 +31,18 @@ with (open(mes + " de " + ano + ".txt", "a") as arquivo):
                 hora = 1
             if len(str(datetime.today().minute)) < 2:
                 minuto = 1
-            arquivo.write(" "*dia+str(datetime.today().day)+"-"+" "*mes+str(datetime.today().month)+"-"+str(datetime.today().year)+
-                        ": "+" "*hora+str(datetime.today().hour)+"h"+" "*minuto+str(datetime.today().minute)+"m"+" - Timeout.\n")
-            print(f" "*dia+str(datetime.today().day)+"-"+" "*mes+str(datetime.today().month)+"-"+str(datetime.today().year)+
-                        ": "+" "*hora+str(datetime.today().hour)+"h"+" "*minuto+str(datetime.today().minute)+"m"+" - Timeout.")
+            #arquivo.write(" "*dia+str(datetime.today().day)+"-"+" "*mes+str(datetime.today().month)+"-"+str(datetime.today().year)+
+                        #": "+" "*hora+str(datetime.today().hour)+"h"+" "*minuto+str(datetime.today().minute)+"m"+" - Timeout.\n")
+            #print(f" "*dia+str(datetime.today().day)+"-"+" "*mes+str(datetime.today().month)+"-"+str(datetime.today().year)+
+                        #": "+" "*hora+str(datetime.today().hour)+"h"+" "*minuto+str(datetime.today().minute)+"m"+" - Timeout.")
             indice = 0
-            arquivo.flush()
+            #arquivo.flush()
             preenchido = False
-            sleep(60)
         if preenchido:
-            media = (vetor[0] + vetor[1] + vetor[2] + vetor[3] + vetor[4] +
-                     vetor[5] + vetor[6] + vetor[7] + vetor[8] + vetor[9])/10
+            media = 0
+            for i in range(10):
+                media += vetor[i]
+            media = media/10
             if a > media + tolerancia:
                 if len(str(datetime.today().day)) < 2:
                     dia = 1
@@ -51,17 +52,14 @@ with (open(mes + " de " + ano + ".txt", "a") as arquivo):
                     hora = 1
                 if len(str(datetime.today().minute)) < 2:
                     minuto = 1
-                arquivo.write(
-                    " " * dia + str(datetime.today().day) + "-" + " " * mes + str(datetime.today().month) + "-" + str(
-                        datetime.today().year) +
-                    ": " + " " * hora + str(datetime.today().hour) + "h" + " " * minuto + str(
-                        datetime.today().minute) + "m" + " - Lag de " + str(a) + "ms, " + (str(a - (tolerancia + media)))[:5:]
-                      + "ms acima da tolerância.\n")
-                print(" " * dia + str(datetime.today().day) + "-" + " " * mes + str(datetime.today().month) + "-" + str(
-                    datetime.today().year) +
-                        ": " + " " * hora + str(datetime.today().hour) + "h" + " " * minuto + str(
-                    datetime.today().minute) + "m" + " - Lag de " + str(a) + "ms, " + (str(a - (tolerancia + media)))[:5:]
-                      + "ms acima da tolerância.")
+                arquivo.write(f" "*dia+str(datetime.today().day)+"-"+" "*mes+str(datetime.today().month)+"-"+
+                              str(datetime.today().year)+": "+" "*hora+str(datetime.today().hour)+"h"+
+                              " "*minuto+str(datetime.today().minute)+"m"+" - Lag de " + str(a) +"ms, " +
+                              (str(a - (tolerancia + media)))[:5:] + "ms acima da tolerância.\n")
+                print(f" "*dia+str(datetime.today().day)+"-"+" "*mes+str(datetime.today().month)+"-"+
+                      str(datetime.today().year)+": "+" "*hora+str(datetime.today().hour)+"h"+
+                      " "*minuto+str(datetime.today().minute)+"m"+" - Lag de " + str(a) +"ms, "+
+                      (str(a - (tolerancia + media)))[:5:] + "ms acima da tolerância.")
                 arquivo.flush()
         if indice == 9:
             preenchido = True

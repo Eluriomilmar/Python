@@ -34,12 +34,13 @@ with (open(mes + " de " + ano + ".txt", "a") as arquivo):
             if len(str(datetime.today().minute)) < 2:
                 minuto = 1
             queda += 1
-            if queda >= 4:
+            if queda == 4:
                 arquivo.write(" "*dia+str(datetime.today().day)+"-"+" "*mes+str(datetime.today().month)+"-"+str(datetime.today().year)+
                             ": "+" "*hora+str(datetime.today().hour)+"h"+" "*minuto+str(datetime.today().minute)+"m"+" - Timeout.\n")
                 print(f" "*dia+str(datetime.today().day)+"-"+" "*mes+str(datetime.today().month)+"-"+str(datetime.today().year)+
                             ": "+" "*hora+str(datetime.today().hour)+"h"+" "*minuto+str(datetime.today().minute)+"m"+" - Timeout.")
                 arquivo.flush()
+                queda = 0
                 sleep(60)
             indice = 0
             preenchido = False

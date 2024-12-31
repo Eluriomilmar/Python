@@ -12,6 +12,7 @@ with (open(mes + " de " + ano + ".txt", "a") as arquivo):
     indice = 0
     timeout = 0
     preenchido = False
+    queda = 0
     while True:
         sleep(0.1)
         try:

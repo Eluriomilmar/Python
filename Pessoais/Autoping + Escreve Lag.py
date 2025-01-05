@@ -24,6 +24,8 @@ with (open(mes + " de " + ano + ".txt", "a") as arquivo):
             a = str(a)
             a = (re.search(r"Average = (\d+)", a, re.MULTILINE).group(1))
             a = float(a)
+            if a == 1000:
+                raise Exception
         except:
             if len(str(datetime.today().day)) < 2:
                 dia = 1

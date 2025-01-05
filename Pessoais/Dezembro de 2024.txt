@@ -1,0 +1,52 @@
+28-12-2024: 13h52m - Timeout.
+28-12-2024: 13h59m - Timeout.
+28-12-2024: 14h 0m - Timeout.
+28-12-2024: 14h 2m - Timeout.
+28-12-2024: 14h 8m - Timeout.
+28-12-2024: 14h39m - Timeout.
+28-12-2024: 14h42m - Timeout.
+28-12-2024: 14h45m - Timeout.
+28-12-2024: 14h47m - Timeout.
+28-12-2024: 14h51m - Timeout.
+28-12-2024: 14h52m - Timeout.
+28-12-2024: 14h54m - Timeout.
+28-12-2024: 15h 1m - Timeout.
+28-12-2024: 15h 7m - Timeout.
+28-12-2024: 15h11m - Timeout.
+28-12-2024: 15h12m - Timeout.
+28-12-2024: 15h14m - Timeout.
+28-12-2024: 15h16m - Timeout.
+28-12-2024: 15h19m - Timeout.
+28-12-2024: 15h21m - Lag de 109.0ms, 65.9ms acima da tolerância.
+28-12-2024: 15h21m - Lag de 191.0ms, 138.8ms acima da tolerância.
+28-12-2024: 15h21m - Lag de 210.0ms, 139.8ms acima da tolerância.
+28-12-2024: 15h21m - Timeout.
+28-12-2024: 15h23m - Lag de 44.0ms, 4.200ms acima da tolerância.
+28-12-2024: 15h23m - Timeout.
+28-12-2024: 15h26m - Timeout.
+28-12-2024: 15h30m - Timeout.
+28-12-2024: 15h33m - Timeout.
+28-12-2024: 15h34m - Timeout.
+28-12-2024: 15h36m - Timeout.
+28-12-2024: 15h37m - Timeout.
+28-12-2024: 15h39m - Timeout.
+28-12-2024: 15h43m - Timeout.
+28-12-2024: 15h53m - Timeout.
+28-12-2024: 15h54m - Timeout.
+28-12-2024: 15h55m - Timeout.
+28-12-2024: 15h58m - Timeout.
+28-12-2024: 16h 0m - Timeout.
+28-12-2024: 16h 1m - Timeout.
+28-12-2024: 16h 4m - Timeout.
+28-12-2024: 16h 5m - Timeout.
+28-12-2024: 16h 8m - Lag de 14.0ms, 0.800ms acima da tolerância.
+28-12-2024: 16h 8m - Lag de 27.0ms, 13.5ms acima da tolerância.
+28-12-2024: 16h 8m - Lag de 11.0ms, 0.199ms acima da tolerância.
+28-12-2024: 16h 8m - Lag de 15.0ms, 4.5ms acima da tolerância.
+28-12-2024: 16h 8m - Lag de 25.0ms, 14.7ms acima da tolerância.
+28-12-2024: 16h 8m - Lag de 24.0ms, 12.0ms acima da tolerância.
+28-12-2024: 19h19m - Lag de 18.0ms, 7.0ms acima da tolerância.
+28-12-2024: 19h20m - Lag de 11.0ms, 0.099ms acima da tolerância.
+28-12-2024: 19h21m - Lag de 17.0ms, 6.1ms acima da tolerância.
+28-12-2024: 19h21m - Lag de 22.0ms, 10.4ms acima da tolerância.
+30-12-2024: 22h56m - Timeout.

@@ -1,8 +1,6 @@
-from pythonping import ping
+import subprocess
+import re
+from time import sleep
 
-try:
-    print(ping("google.com", timeout=1))
-except:
-    print("não rolou")
-else:
-    print("rolou")
+for i in range(9):
+    print(i)

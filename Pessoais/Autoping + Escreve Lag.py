@@ -20,7 +20,7 @@ with (open(mes + " de " + ano + ".txt", "a") as arquivo):
             mes = 0
             hora = 0
             minuto = 0
-            a = subprocess.check_output("ping google.com -n 1", shell=True)
+            a = subprocess.check_output("ping google.com -n 1",timeout=1, shell=True)
             a = str(a)
             a = (re.search(r"Average = (\d+)", a, re.MULTILINE).group(1))
             a = float(a)
@@ -34,7 +34,7 @@ with (open(mes + " de " + ano + ".txt", "a") as arquivo):
             if len(str(datetime.today().minute)) < 2:
                 minuto = 1
             queda += 1
-            if queda == 4:
+            if queda == 9:
                 arquivo.write(" "*dia+str(datetime.today().day)+"-"+" "*mes+str(datetime.today().month)+"-"+str(datetime.today().year)+
                             ": "+" "*hora+str(datetime.today().hour)+"h"+" "*minuto+str(datetime.today().minute)+"m"+" - Timeout.\n")
                 print(f" "*dia+str(datetime.today().day)+"-"+" "*mes+str(datetime.today().month)+"-"+str(datetime.today().year)+
@@ -45,6 +45,7 @@ with (open(mes + " de " + ano + ".txt", "a") as arquivo):
             indice = 0
             preenchido = False
         if preenchido:
+            queda = 0
             timeout = 0
             media = 0
             for i in range(10):

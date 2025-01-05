@@ -8,7 +8,7 @@ ano = str(input("Insira ano de registro: "))
 tolerancia = int(input("Insira valor numérico para a tolerância de lag, em ms: "))
 print(f"Tolerância de lag de {tolerancia}ms")
 with (open(mes + " de " + ano + ".txt", "a") as arquivo):
-    vetor = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    vetor = [0, 0, 0, 0, 0]
     indice = 0
     timeout = 0
     preenchido = False
@@ -36,7 +36,7 @@ with (open(mes + " de " + ano + ".txt", "a") as arquivo):
             if len(str(datetime.today().minute)) < 2:
                 minuto = 1
             queda += 1
-            if queda == 9:
+            if queda == 5:
                 arquivo.write(" "*dia+str(datetime.today().day)+"-"+" "*mes+str(datetime.today().month)+"-"+str(datetime.today().year)+
                             ": "+" "*hora+str(datetime.today().hour)+"h"+" "*minuto+str(datetime.today().minute)+"m"+" - Timeout.\n")
                 print(f" "*dia+str(datetime.today().day)+"-"+" "*mes+str(datetime.today().month)+"-"+str(datetime.today().year)+
@@ -50,9 +50,9 @@ with (open(mes + " de " + ano + ".txt", "a") as arquivo):
             queda = 0
             timeout = 0
             media = 0
-            for i in range(10):
+            for i in range(5):
                 media += vetor[i]
-            media = media/10
+            media = media/5
             if a > media + tolerancia:
                 if len(str(datetime.today().day)) < 2:
                     dia = 1
@@ -71,7 +71,7 @@ with (open(mes + " de " + ano + ".txt", "a") as arquivo):
                       " "*minuto+str(datetime.today().minute)+"m"+" - Lag de " + str(a) +"ms, "+
                       str(a - (tolerancia + media))[:5:] + "ms acima da tolerância.")
                 arquivo.flush()
-        if indice == 9:
+        if indice == 4:
             preenchido = True
             vetor[indice] = a
             indice = 0

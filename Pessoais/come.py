@@ -2,6 +2,8 @@ import curses
 from random import randint
 import keyboard
 
+posicaoComida = [0, 0]
+
 def imprimeTabuleiro(y, x):
     for i in range(y):
         for j in range(x):
@@ -20,14 +22,13 @@ def imprimeJogador(y = 1, x = 1, oldy = 1, oldx = 1):
 
 
 def imprimeComida(tamTabx = 5, tamTaby = 5 , jogadory=0, jogadorx=0):
-    comiday = jogadory
-    comidax = jogadorx
-    while comiday == jogadory and comidax == jogadorx:
-        comiday = randint(1, tamTabx - 2)
-        comidax = randint(1, tamTaby - 2)
-    screen.addstr(comiday, comidax, "o")
+    posicaoComida[0] = randint(1, tamTabx - 2)
+    posicaoComida[1] = randint(1, tamTaby - 2)
+    while posicaoComida[0] == jogadory and posicaoComida[1] == jogadorx:
+        posicaoComida[0] = randint(1, tamTabx - 2)
+        posicaoComida[1] = randint(1, tamTaby - 2)
+    screen.addstr(posicaoComida[0], posicaoComida[1], "o")
     screen.refresh()
-    return comiday, comidax
 
 def mexeJogador(y, x, comiday, comidax):
     if keyboard.read_key() == "up":
@@ -53,6 +54,6 @@ def mexeJogador(y, x, comiday, comidax):
 screen = curses.initscr()
 tamanhoTabuleiro = imprimeTabuleiro(5, 5)
 posicaoJogador = imprimeJogador()
-posicaoComida  = imprimeComida(tamanhoTabuleiro[0], tamanhoTabuleiro[1], posicaoJogador[0], posicaoJogador[1])
+imprimeComida(tamanhoTabuleiro[0], tamanhoTabuleiro[1], posicaoJogador[0], posicaoJogador[1])
 while True:
     posicaoJogador = mexeJogador(posicaoJogador[0], posicaoJogador[1], posicaoComida[0], posicaoComida[1])

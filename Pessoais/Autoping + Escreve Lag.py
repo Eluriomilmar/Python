@@ -36,7 +36,7 @@ with (open(mes + " de " + ano + ".txt", "a") as arquivo):
             if len(str(datetime.today().minute)) < 2:
                 minuto = 1
             queda += 1
-            if queda == 5:
+            if queda == 2:
                 arquivo.write(" "*dia+str(datetime.today().day)+"-"+" "*mes+str(datetime.today().month)+"-"+str(datetime.today().year)+
                             ": "+" "*hora+str(datetime.today().hour)+"h"+" "*minuto+str(datetime.today().minute)+"m"+" - Timeout.\n")
                 print(f" "*dia+str(datetime.today().day)+"-"+" "*mes+str(datetime.today().month)+"-"+str(datetime.today().year)+

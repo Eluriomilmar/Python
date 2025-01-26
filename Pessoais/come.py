@@ -2,6 +2,8 @@ import curses
 from random import randint
 import keyboard
 
+"""Esse programa só é bem visualizado se executado fora da IDE"""
+
 posicaoComida = [0, 0]
 
 def imprimeTabuleiro(y, x):
@@ -34,20 +36,32 @@ def mexeJogador(y, x, comiday, comidax):
     if keyboard.read_key() == "up":
         y, x = imprimeJogador(y - 1, x, y, x)
         if y == comiday and x == comidax:
+            rabo = [x, y + 1]
+            posicaoRabo.append(rabo)
             imprimeComida(5,5, y, x)
     if keyboard.read_key() == "down":
         y, x = imprimeJogador(y + 1, x, y, x)
         if y == comiday and x == comidax:
+            rabo = [x, y - 1]
+            posicaoRabo.append(rabo)
             imprimeComida(5,5, y, x)
     if keyboard.read_key() == "left":
         y, x = imprimeJogador(y, x - 1, y, x)
         if y == comiday and x == comidax:
+            rabo = [x + 1, y]
+            posicaoRabo.append(rabo)
             imprimeComida(5,5, y, x)
     if keyboard.read_key() == "right":
         y, x = imprimeJogador(y, x + 1, y, x)
         if y == comiday and x == comidax:
+            rabo = [x - 1, y]
+            posicaoRabo.append(rabo)
             imprimeComida(5,5, y, x)
     return y, x
+
+def imprimeRabo():
+    for i in range(len(posicaoRabo)):
+        screen.addstr(posicaoRabo[i][0], posicaoRabo[i][1], "x")
 
 
 ##gameplay init
@@ -57,3 +71,4 @@ posicaoJogador = imprimeJogador()
 imprimeComida(tamanhoTabuleiro[0], tamanhoTabuleiro[1], posicaoJogador[0], posicaoJogador[1])
 while True:
     posicaoJogador = mexeJogador(posicaoJogador[0], posicaoJogador[1], posicaoComida[0], posicaoComida[1])
+    imprimeRabo()

@@ -5,6 +5,7 @@ import keyboard
 """Esse programa só é bem visualizado se executado fora da IDE"""
 
 posicaoComida = [0, 0]
+posicaoRabo = []
 
 def imprimeTabuleiro(y, x):
     for i in range(y):
@@ -23,7 +24,7 @@ def imprimeJogador(y = 1, x = 1, oldy = 1, oldx = 1):
     return y, x
 
 
-def imprimeComida(tamTabx = 5, tamTaby = 5 , jogadory=0, jogadorx=0):
+def imprimeComida(tamTabx = 5, tamTaby = 5 , jogadory = 0, jogadorx = 0):
     posicaoComida[0] = randint(1, tamTabx - 2)
     posicaoComida[1] = randint(1, tamTaby - 2)
     while posicaoComida[0] == jogadory and posicaoComida[1] == jogadorx:
@@ -36,33 +37,57 @@ def mexeJogador(y, x, comiday, comidax):
     if keyboard.read_key() == "up":
         y, x = imprimeJogador(y - 1, x, y, x)
         if y == comiday and x == comidax:
-            rabo = [x, y + 1]
+            rabo = [y, x]
             posicaoRabo.append(rabo)
             imprimeComida(5,5, y, x)
+        else:
+            for i in range(len(posicaoRabo), 0, 1):
+                if i != 0:
+                    posicaoRabo[i] = posicaoRabo[i-1]
+                else:
+                    posicaoRabo[i] = [x, y]
     if keyboard.read_key() == "down":
         y, x = imprimeJogador(y + 1, x, y, x)
         if y == comiday and x == comidax:
-            rabo = [x, y - 1]
+            rabo = [y , x]
             posicaoRabo.append(rabo)
             imprimeComida(5,5, y, x)
+        else:
+            for i in range(len(posicaoRabo), 0, 1):
+                if i != 0:
+                    posicaoRabo[i] = posicaoRabo[i-1]
+                else:
+                    posicaoRabo[i] = [x, y]
     if keyboard.read_key() == "left":
         y, x = imprimeJogador(y, x - 1, y, x)
         if y == comiday and x == comidax:
-            rabo = [x + 1, y]
+            rabo = [y, x]
             posicaoRabo.append(rabo)
             imprimeComida(5,5, y, x)
+        else:
+            for i in range(len(posicaoRabo), 0, 1):
+                if i != 0:
+                    posicaoRabo[i] = posicaoRabo[i-1]
+                else:
+                    posicaoRabo[i] = [x, y]
     if keyboard.read_key() == "right":
         y, x = imprimeJogador(y, x + 1, y, x)
         if y == comiday and x == comidax:
-            rabo = [x - 1, y]
+            rabo = [y, x]
             posicaoRabo.append(rabo)
             imprimeComida(5,5, y, x)
+        else:
+            for i in range(len(posicaoRabo), 0, 1):
+                if i != 0:
+                    posicaoRabo[i] = posicaoRabo[i-1]
+                else:
+                    posicaoRabo[i] = [x, y]
     return y, x
 
 def imprimeRabo():
     for i in range(len(posicaoRabo)):
-        screen.addstr(posicaoRabo[i][0], posicaoRabo[i][1], "x")
-
+        screen.addstr(10, 0, str(posicaoRabo))
+        screen.refresh()
 
 ##gameplay init
 screen = curses.initscr()

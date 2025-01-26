@@ -40,6 +40,13 @@ def mexeJogador(y, x, comiday, comidax):
             rabo = [y, x]
             if len(posicaoRabo) < 9:
                 posicaoRabo.append(rabo)
+            else:
+                if len(posicaoRabo) == 9:
+                    for i in range(len(posicaoRabo)):
+                        if i == len(posicaoRabo)-1:
+                            posicaoRabo[len(posicaoRabo)-1] = rabo
+                        else:
+                            posicaoRabo[i] = posicaoRabo[i + 1]
             imprimeComida(5,5, y, x)
         else:
             rabo = [y, x]
@@ -47,9 +54,9 @@ def mexeJogador(y, x, comiday, comidax):
                 posicaoRabo.append(rabo)
             else:
                 if len(posicaoRabo) == 9:
-                    for i in range(len(posicaoRabo), 0, -1):
-                        if i == 0:
-                            posicaoRabo[len(posicaoRabo)] = rabo
+                    for i in range(len(posicaoRabo)):
+                        if i == len(posicaoRabo)-1:
+                            posicaoRabo[len(posicaoRabo)-1] = rabo
                         else:
                             posicaoRabo[i] = posicaoRabo[i + 1]
     if keyboard.read_key() == "down":
@@ -58,6 +65,13 @@ def mexeJogador(y, x, comiday, comidax):
             rabo = [y , x]
             if len(posicaoRabo) < 9:
                 posicaoRabo.append(rabo)
+            else:
+                if len(posicaoRabo) == 9:
+                    for i in range(len(posicaoRabo)):
+                        if i == len(posicaoRabo)-1:
+                            posicaoRabo[len(posicaoRabo)-1] = rabo
+                        else:
+                            posicaoRabo[i] = posicaoRabo[i + 1]
             imprimeComida(5,5, y, x)
         else:
             rabo = [y, x]
@@ -65,18 +79,23 @@ def mexeJogador(y, x, comiday, comidax):
                 posicaoRabo.append(rabo)
             else:
                 for i in range(len(posicaoRabo)):
-                    if len(posicaoRabo) == 9:
-                        for i in range(len(posicaoRabo), 0, -1):
-                            if i == 0:
-                                posicaoRabo[len(posicaoRabo)] = rabo
-                            else:
-                                posicaoRabo[i] = posicaoRabo[i + 1]
+                    if i == len(posicaoRabo) - 1:
+                        posicaoRabo[len(posicaoRabo) - 1] = rabo
+                    else:
+                        posicaoRabo[i] = posicaoRabo[i + 1]
     if keyboard.read_key() == "left":
         y, x = imprimeJogador(y, x - 1, y, x)
         if y == comiday and x == comidax:
             rabo = [y, x]
             if len(posicaoRabo) < 9:
                 posicaoRabo.append(rabo)
+            else:
+                if len(posicaoRabo) == 9:
+                    for i in range(len(posicaoRabo)):
+                        if i == len(posicaoRabo)-1:
+                            posicaoRabo[len(posicaoRabo)-1] = rabo
+                        else:
+                            posicaoRabo[i] = posicaoRabo[i + 1]
             imprimeComida(5,5, y, x)
         else:
             rabo = [y, x]
@@ -85,9 +104,9 @@ def mexeJogador(y, x, comiday, comidax):
             else:
                 for i in range(len(posicaoRabo)):
                     if len(posicaoRabo) == 9:
-                        for i in range(len(posicaoRabo), 0, -1):
-                            if i == 0:
-                                posicaoRabo[len(posicaoRabo)] = rabo
+                        for i in range(len(posicaoRabo)):
+                            if i == len(posicaoRabo) - 1:
+                                posicaoRabo[len(posicaoRabo) - 1] = rabo
                             else:
                                 posicaoRabo[i] = posicaoRabo[i + 1]
     if keyboard.read_key() == "right":
@@ -96,6 +115,13 @@ def mexeJogador(y, x, comiday, comidax):
             rabo = [y, x]
             if len(posicaoRabo) < 9:
                 posicaoRabo.append(rabo)
+            else:
+                if len(posicaoRabo) == 9:
+                    for i in range(len(posicaoRabo)):
+                        if i == len(posicaoRabo)-1:
+                            posicaoRabo[len(posicaoRabo)-1] = rabo
+                        else:
+                            posicaoRabo[i] = posicaoRabo[i + 1]
             imprimeComida(5,5, y, x)
         else:
             rabo = [y, x]
@@ -103,9 +129,9 @@ def mexeJogador(y, x, comiday, comidax):
                 posicaoRabo.append(rabo)
             else:
                 if len(posicaoRabo) == 9:
-                    for i in range(len(posicaoRabo), 0, -1):
-                        if i == 0:
-                            posicaoRabo[len(posicaoRabo)] = rabo
+                    for i in range(len(posicaoRabo)):
+                        if i == len(posicaoRabo)-1:
+                            posicaoRabo[len(posicaoRabo)-1] = rabo
                         else:
                             posicaoRabo[i] = posicaoRabo[i + 1]
     return y, x

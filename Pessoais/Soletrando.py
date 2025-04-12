@@ -1,4 +1,4 @@
-#v1.12
+#v1.13
 from random import choice
 import re
 import curses
@@ -147,6 +147,8 @@ def palpite(palavra, tentativa=" ", erros=[], acertos=[], fim=0):
             screen.getkey().upper()
             return 0
         else:
+            screen.clear()
+            screen.refresh()
             return palpite(cria_lista("soletrando2.txt"), " ", [], [])
     screen.addstr("\n")
     return palpite(palavra, tentativa, erros, acertos, fim)

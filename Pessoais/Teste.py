@@ -1,6 +1,4 @@
-import subprocess
-import re
-from time import sleep
+a = 10.0.0.0
+b = 10.0.0.50
 
-for i in range(9):
-    print(i)
+for

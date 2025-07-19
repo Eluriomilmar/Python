@@ -1,9 +1,0 @@
-11- 4-2025: 19h11m - Timeout.
-11- 4-2025: 20h 1m - Lag de 90.0ms, 25.59ms acima da tolerância.
-11- 4-2025: 20h 1m - Lag de 107.0ms, 29.79ms acima da tolerância.
-11- 4-2025: 20h 1m - Lag de 80.0ms, 25.4ms acima da tolerância.
-11- 4-2025: 20h 1m - Lag de 79.0ms, 3.200ms acima da tolerância.
-11- 4-2025: 20h 1m - Lag de 73.0ms, 6.599ms acima da tolerância.
-11- 4-2025: 20h 1m - Lag de 58.0ms, 4.399ms acima da tolerância.
-11- 4-2025: 20h 1m - Lag de 71.0ms, 14.79ms acima da tolerância.
-11- 4-2025: 20h 2m - Lag de 58.0ms, 7.399ms acima da tolerância.

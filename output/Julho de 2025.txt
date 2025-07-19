@@ -1,0 +1,28 @@
+ 4- 7-2025: 21h 0m - Timeout.
+ 4- 7-2025: 21h19m - Timeout.
+ 4- 7-2025: 21h20m - Timeout.
+ 4- 7-2025: 21h48m - Timeout.
+ 4- 7-2025: 21h51m - Timeout.
+ 4- 7-2025: 21h53m - Timeout.
+ 6- 7-2025: 17h 9m - Lag de 65.0ms, 25.79ms acima da tolerância.
+ 6- 7-2025: 17h 9m - Lag de 104.0ms, 53.8ms acima da tolerância.
+ 6- 7-2025: 17h 9m - Lag de 137.0ms, 67.8ms acima da tolerância.
+ 6- 7-2025: 17h 9m - Lag de 153.0ms, 58.2ms acima da tolerância.
+ 6- 7-2025: 17h 9m - Lag de 159.0ms, 35.40ms acima da tolerância.
+ 6- 7-2025: 17h 9m - Lag de 163.0ms, 9.400ms acima da tolerância.
+ 6- 7-2025: 17h 9m - Lag de 210.0ms, 15.19ms acima da tolerância.
+ 6- 7-2025: 17h 9m - Lag de 213.0ms, 6.800ms acima da tolerância.
+ 6- 7-2025: 17h30m - Lag de 63.0ms, 23.4ms acima da tolerância.
+ 6- 7-2025: 17h30m - Lag de 65.0ms, 14.60ms acima da tolerância.
+ 6- 7-2025: 17h30m - Lag de 63.0ms, 1.399ms acima da tolerância.
+ 6- 7-2025: 21h45m - Lag de 77.0ms, 35.4ms acima da tolerância.
+ 6- 7-2025: 21h45m - Lag de 113.0ms, 58.2ms acima da tolerância.
+ 6- 7-2025: 21h45m - Lag de 145.0ms, 69.8ms acima da tolerância.
+ 6- 7-2025: 21h45m - Lag de 171.0ms, 69.2ms acima da tolerância.
+ 6- 7-2025: 21h45m - Lag de 179.0ms, 45.19ms acima da tolerância.
+ 6- 7-2025: 21h45m - Lag de 181.0ms, 14.0ms acima da tolerância.
+ 6- 7-2025: 21h45m - Lag de 218.0ms, 34.0ms acima da tolerância.
+ 6- 7-2025: 21h45m - Lag de 218.0ms, 32.59ms acima da tolerância.
+ 6- 7-2025: 21h45m - Lag de 219.0ms, 32.40ms acima da tolerância.
+ 6- 7-2025: 21h45m - Lag de 218.0ms, 30.19ms acima da tolerância.
+ 6- 7-2025: 21h45m - Lag de 218.0ms, 5.800ms acima da tolerância.

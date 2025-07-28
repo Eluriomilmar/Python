@@ -11,14 +11,14 @@ level_map = [
     "A                                    D",
     "A                                    D",
     "A                                    D",
-    "A                                    D",
+    "A                    SSS             D",
     "A                                    D",
     "A                                    D",
     "A                                    D",
     "ASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSD",
     "ASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSD",
     "ASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSD",
-    "ASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSD",
+    "ZXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXC",
 ]
 
 player = Actor("front")
@@ -94,41 +94,34 @@ backgrounds_len = 0
 while backgrounds_len < 2048:
     backgrounds.append(background)
     backgrounds_len += background.width
-background_offset = 0
 RR = True
 LR = True
 def on_key_up(key):
     global RR, LR
     if key == keys.LEFT:
-        print("left released")
-        LR = True
+        LR = True #Left key Released
     elif key == keys.RIGHT:
-        print("right released")
-        RR = True
+        RR = True #Right key Released
 
 def on_key_down(key):
     global RR, LR
     if key == keys.LEFT:
-        print("left pressed")
         LR = False
     elif key == keys.RIGHT:
-        print("right pressed")
         RR = False
 
 
 
 
 def update():
-    global velocity, gravity,background_offset, flip, RR, LR
+    global velocity, gravity, RR, LR
     original_y = player.y
     original_x = player.x
-    previous_x = original_x
-    previous_y = original_y
     original_y += velocity
     if keyboard.up:
-        original_y -= 2
+        original_y -= 4
     if keyboard.down:
-        original_y += 2
+        original_y += 4
     if keyboard.right:
         if player.image == "front":
             player.image = "rwalk_a"
@@ -136,7 +129,7 @@ def update():
             player.image = "rwalk_b"
         elif player.image == "rwalk_b":
             player.image = "rwalk_a"
-        original_x += 2
+        original_x += 4
     if keyboard.left:
         if player.image == "front":
             player.image = "lwalk_a"
@@ -144,7 +137,7 @@ def update():
             player.image = "lwalk_b"
         elif player.image == "lwalk_b":
             player.image = "lwalk_a"
-        original_x -= 2
+        original_x -= 4
     if LR and RR:
         player.image = "front"
 
@@ -162,29 +155,24 @@ def update():
     else:
         velocity = 0
     if keyboard.space and (player.collidelist(walls) != -1):
-        velocity = -15
+        velocity = -25
     if player.collidelist(walls_left) != -1:
         for wall in walls:
-            wall.x -= 2
+            wall.x -= 4
         for wall in walls_left:
-            wall.x -= 2
+            wall.x -= 4
         for wall in walls_right:
-            wall.x -= 2
+            wall.x -= 4
     if player.collidelist(walls_right) != -1:
         for wall in walls:
-            wall.x += 2
+            wall.x += 4
         for wall in walls_left:
-            wall.x += 2
+            wall.x += 4
         for wall in walls_right:
-            wall.x += 2
-
-
-
-
+            wall.x += 4
 
 
 def draw():
-    global background_offset
     for i, background in enumerate(backgrounds):
         background.left = i * 512
         background.y = 300

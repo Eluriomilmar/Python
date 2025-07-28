@@ -1,26 +1,32 @@
+import keyboard
 import pgzrun
 from pyparsing import original_text_for
 
 WIDTH = 1600
 HEIGHT = 900
 
-# Level map (W for Wall, P for Player, G for Goal)
 level_map = [
-    "QWWWWWWWWWWE",
-    "A          D",
-    "A          D",
-    "A          D",
-    "A    P     D",
-    "A SSSSSSSS D",
-    "A          D",
-    "A          D",
-    "A          D",
-    "ZXXXXXXXXXXC"
+    "QWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWE",
+    "A                                    D",
+    "A                                    D",
+    "A                                    D",
+    "A                                    D",
+    "A                                    D",
+    "A                                    D",
+    "A                                    D",
+    "A                                    D",
+    "ASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSD",
+    "ASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSD",
+    "ASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSD",
+    "ASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSD",
 ]
 
-player = Actor('character_beige_idle') # Assuming 'player.png' exists # Assuming 'goal.png' exists
+player = Actor("front")
+
 
 walls = []
+walls_right = []
+walls_left = []
 for i in range(len(level_map)):
     for j in range(len(level_map[i])):
         if level_map[i][j] == "W":
@@ -28,7 +34,6 @@ for i in range(len(level_map)):
             wall.y = i * 64 + 32
             wall.x = j * 64
             walls.append(wall)
-            print(f"wall size: {wall.size}")
 
         if level_map[i][j] == "Q":
             wall = Actor("terrain_grass_block_top_left")
@@ -43,10 +48,10 @@ for i in range(len(level_map)):
             walls.append(wall)
 
         if level_map[i][j] == "A":
-            wall = Actor("terrain_grass_block_left")
+            wall = Actor('terrain_grass_block_left')
             wall.y = i * 64 + 32
             wall.x = j * 64
-            walls.append(wall)
+            walls_left.append(wall)
 
         if level_map[i][j] == "Z":
             wall = Actor("terrain_grass_block_bottom_left")
@@ -70,46 +75,108 @@ for i in range(len(level_map)):
             wall = Actor("terrain_grass_block_right")
             wall.y = i * 64 + 32
             wall.x = j * 64
-            walls.append(wall)
+            walls_right.append(wall)
 
         if level_map[i][j] == "S":
             wall = Actor("terrain_grass_block_center")
-            wall.y = i * 64 + 64
+            wall.y = i * 64 + 32
             wall.x = j * 64
             walls.append(wall)
 
-        if level_map[i][j] == "P":
-            player.y = i * 64 + 32
-            player.x = j * 64
+player.x = WIDTH/2
+player.y = HEIGHT/2
 velocity = 0
 gravity = 1
+background = Actor("background_color_mushrooms")
+solid = Actor("background_solid_dirt")
+backgrounds = []
+backgrounds_len = 0
+while backgrounds_len < 2048:
+    backgrounds.append(background)
+    backgrounds_len += background.width
+background_offset = 0
+RR = True
+LR = True
+def on_key_up(key):
+    global RR, LR
+    if key == keys.LEFT:
+        print("left released")
+        LR = True
+    elif key == keys.RIGHT:
+        print("right released")
+        RR = True
+
+def on_key_down(key):
+    global RR, LR
+    if key == keys.LEFT:
+        print("left pressed")
+        LR = False
+    elif key == keys.RIGHT:
+        print("right pressed")
+        RR = False
+
 
 
 
 def update():
-    global velocity, gravity
+    global velocity, gravity,background_offset, flip, RR, LR
     original_y = player.y
     original_x = player.x
+    previous_x = original_x
+    previous_y = original_y
     original_y += velocity
-    if player.collidelist(walls) == -1:
-        velocity += gravity
-    else:
-        velocity = 0
-    if keyboard.space and player.collidelist(walls) != -1:
-        velocity = -15
     if keyboard.up:
         original_y -= 2
     if keyboard.down:
         original_y += 2
     if keyboard.right:
+        if player.image == "front":
+            player.image = "rwalk_a"
+        elif player.image == "rwalk_a":
+            player.image = "rwalk_b"
+        elif player.image == "rwalk_b":
+            player.image = "rwalk_a"
         original_x += 2
     if keyboard.left:
+        if player.image == "front":
+            player.image = "lwalk_a"
+        elif player.image == "lwalk_a":
+            player.image = "lwalk_b"
+        elif player.image == "lwalk_b":
+            player.image = "lwalk_a"
         original_x -= 2
+    if LR and RR:
+        player.image = "front"
+
     for wall in walls:
         wall.x += player.x - original_x
         wall.y += player.y - original_y
-
-
+    for wall in walls_right:
+        wall.x += player.x - original_x
+        wall.y += player.y - original_y
+    for wall in walls_left:
+        wall.x += player.x - original_x
+        wall.y += player.y - original_y
+    if player.collidelist(walls) == -1:
+        velocity += gravity
+    else:
+        velocity = 0
+    if keyboard.space and (player.collidelist(walls) != -1):
+        velocity = -15
+    if player.collidelist(walls_left) != -1:
+        for wall in walls:
+            wall.x -= 2
+        for wall in walls_left:
+            wall.x -= 2
+        for wall in walls_right:
+            wall.x -= 2
+    if player.collidelist(walls_right) != -1:
+        for wall in walls:
+            wall.x += 2
+        for wall in walls_left:
+            wall.x += 2
+        for wall in walls_right:
+            wall.x += 2
 
 
 
@@ -117,10 +184,22 @@ def update():
 
 
 def draw():
-    screen.clear()
+    global background_offset
+    for i, background in enumerate(backgrounds):
+        background.left = i * 512
+        background.y = 300
+        background.draw()
+    screen.draw.filled_rect(Rect((0,0),(1600,150)),(255,255,255))
+    screen.draw.filled_rect(Rect((0,450),(1600,900)),(222,126,79))
     player.draw()
+    screen.draw.rect(Rect((player.topleft[0],player.topleft[1]),(player.bottomright[0]-player.topleft[0],player.bottomright[1]-player.topleft[1])),(0,0,255))
     for wall in walls:
         wall.draw()
+    for wall in walls_left:
+        wall.draw()
+    for wall in walls_right:
+        wall.draw()
+
 
 
 

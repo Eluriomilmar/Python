@@ -96,7 +96,32 @@ while backgrounds_len < 2048:
 background_offset = 0
 RR = True
 LR = True
-debug = 0
+original_x = player.x
+original_y = player.y
+debug1 = 0
+debug2 = 0
+
+def move_tela(ori_x, ori_y, var):
+    if var == 1:
+        for wall in walls:
+            wall.x += player.x - ori_x
+            wall.y += player.y - ori_y
+        for wall in walls_right:
+            wall.x += player.x - ori_x
+            wall.y += player.y - ori_y
+        for wall in walls_left:
+            wall.x += player.x - ori_x
+            wall.y += player.y - ori_y
+    if var == -1:
+        for wall in walls:
+            wall.x -= player.x - ori_x
+            wall.y -= player.y - ori_y
+        for wall in walls_right:
+            wall.x -= player.x - ori_x
+            wall.y -= player.y - ori_y
+        for wall in walls_left:
+            wall.x -= player.x - ori_x
+            wall.y -= player.y - ori_y
 
 
 def on_key_up(key):
@@ -118,7 +143,7 @@ def on_key_down(key):
 
 
 def update():
-    global velocity, gravity, RR, LR, debug
+    global velocity, gravity, RR, LR, debug1, debug2, original_x, original_y
     original_y = player.y
     original_x = player.x
     original_y += velocity
@@ -144,15 +169,7 @@ def update():
         original_x -= 4
     if LR and RR:
         player.image = "front"
-    for wall in walls:
-        wall.x += player.x - original_x
-        wall.y += player.y - original_y
-    for wall in walls_right:
-        wall.x += player.x - original_x
-        wall.y += player.y - original_y
-    for wall in walls_left:
-        wall.x += player.x - original_x
-        wall.y += player.y - original_y
+    move_tela(original_x, original_y, 1)
     if player.collidelist(walls) == -1 and player.collidelist(walls_left) == -1 and player.collidelist(walls_right) == -1:
         velocity += gravity
     else:
@@ -162,16 +179,7 @@ def update():
             velocity = 0
         if (player.left < walls_left[player.collidelist(walls_left)].right or
                 player.right > walls_right[player.collidelist(walls_right)].left):
-            for wall in walls:
-                wall.x -= player.x - original_x
-                wall.y -= player.y - original_y
-            for wall in walls_right:
-                wall.x -= player.x - original_x
-                wall.y -= player.y - original_y
-            for wall in walls_left:
-                wall.x -= player.x - original_x
-                wall.y -= player.y - original_y
-
+            move_tela(original_x, original_y, -1)
     if keyboard.space:
         if (player.collidelist(walls) != -1 or player.collidelist(walls_left) != -1 or
             player.collidelist(walls_right) != -1) and velocity == 0:

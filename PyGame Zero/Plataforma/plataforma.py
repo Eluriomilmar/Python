@@ -11,18 +11,17 @@ level_map = [
     "A                                    D",
     "A                                    D",
     "A                                    D",
-    "A                    SSS             D",
-    "A                                    D",
+    "A                    AD              D",
+    "A              AD                    D",
     "A                                    D",
     "A                                    D",
     "ASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSD",
     "ASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSD",
     "ASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSD",
-    "ZXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXC",
+    "ASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSD",
 ]
 
 player = Actor("front")
-
 
 walls = []
 walls_right = []
@@ -83,8 +82,8 @@ for i in range(len(level_map)):
             wall.x = j * 64
             walls.append(wall)
 
-player.x = WIDTH/2
-player.y = HEIGHT/2
+player.x = WIDTH / 2
+player.y = HEIGHT / 2
 velocity = 0
 gravity = 1
 background = Actor("background_color_mushrooms")
@@ -94,27 +93,32 @@ backgrounds_len = 0
 while backgrounds_len < 2048:
     backgrounds.append(background)
     backgrounds_len += background.width
+background_offset = 0
 RR = True
 LR = True
+debug = 0
+
+
 def on_key_up(key):
     global RR, LR
     if key == keys.LEFT:
-        LR = True #Left key Released
+        LR = True  # Left Released
     elif key == keys.RIGHT:
-        RR = True #Right key Released
+        RR = True
+
 
 def on_key_down(key):
     global RR, LR
     if key == keys.LEFT:
+        print("left pressed")
         LR = False
     elif key == keys.RIGHT:
+        print("right pressed")
         RR = False
 
 
-
-
 def update():
-    global velocity, gravity, RR, LR
+    global velocity, gravity, RR, LR, debug
     original_y = player.y
     original_x = player.x
     original_y += velocity
@@ -140,7 +144,6 @@ def update():
         original_x -= 4
     if LR and RR:
         player.image = "front"
-
     for wall in walls:
         wall.x += player.x - original_x
         wall.y += player.y - original_y
@@ -150,26 +153,29 @@ def update():
     for wall in walls_left:
         wall.x += player.x - original_x
         wall.y += player.y - original_y
-    if player.collidelist(walls) == -1:
+    if player.collidelist(walls) == -1 and player.collidelist(walls_left) == -1 and player.collidelist(walls_right) == -1:
         velocity += gravity
     else:
-        velocity = 0
-    if keyboard.space and (player.collidelist(walls) != -1):
-        velocity = -25
-    if player.collidelist(walls_left) != -1:
-        for wall in walls:
-            wall.x -= 4
-        for wall in walls_left:
-            wall.x -= 4
-        for wall in walls_right:
-            wall.x -= 4
-    if player.collidelist(walls_right) != -1:
-        for wall in walls:
-            wall.x += 4
-        for wall in walls_left:
-            wall.x += 4
-        for wall in walls_right:
-            wall.x += 4
+        if (player.bottom > walls[player.collidelist(walls)].top or
+                player.bottom > walls_left[player.collidelist(walls_left)].top or
+                player.bottom > walls_right[player.collidelist(walls_right)].top):
+            velocity = 0
+        if (player.left < walls_left[player.collidelist(walls_left)].right or
+                player.right > walls_right[player.collidelist(walls_right)].left):
+            for wall in walls:
+                wall.x -= player.x - original_x
+                wall.y -= player.y - original_y
+            for wall in walls_right:
+                wall.x -= player.x - original_x
+                wall.y -= player.y - original_y
+            for wall in walls_left:
+                wall.x -= player.x - original_x
+                wall.y -= player.y - original_y
+
+    if keyboard.space:
+        if (player.collidelist(walls) != -1 or player.collidelist(walls_left) != -1 or
+            player.collidelist(walls_right) != -1) and velocity == 0:
+            velocity = -25
 
 
 def draw():
@@ -177,20 +183,18 @@ def draw():
         background.left = i * 512
         background.y = 300
         background.draw()
-    screen.draw.filled_rect(Rect((0,0),(1600,150)),(255,255,255))
-    screen.draw.filled_rect(Rect((0,450),(1600,900)),(222,126,79))
+    screen.draw.filled_rect(Rect((0, 0), (1600, 150)), (255, 255, 255))
+    screen.draw.filled_rect(Rect((0, 450), (1600, 900)), (222, 126, 79))
     player.draw()
-    screen.draw.rect(Rect((player.topleft[0],player.topleft[1]),(player.bottomright[0]-player.topleft[0],player.bottomright[1]-player.topleft[1])),(0,0,255))
+    screen.draw.rect(Rect((player.topleft[0], player.topleft[1]),
+                          (player.bottomright[0] - player.topleft[0], player.bottomright[1] - player.topleft[1])),
+                     (0, 0, 255))
     for wall in walls:
         wall.draw()
     for wall in walls_left:
         wall.draw()
     for wall in walls_right:
         wall.draw()
-
-
-
-
 
 
 pgzrun.go()

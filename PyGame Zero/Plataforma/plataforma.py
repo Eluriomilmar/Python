@@ -100,6 +100,8 @@ original_x = player.x
 original_y = player.y
 debug1 = 0
 debug2 = 0
+on_air = False
+h_velocity = 0
 
 def move_tela(ori_x, ori_y, var):
     if var == 1:
@@ -143,15 +145,15 @@ def on_key_down(key):
 
 
 def update():
-    global velocity, gravity, RR, LR, debug1, debug2, original_x, original_y
+    global velocity, gravity, RR, LR, debug1, debug2, original_x, original_y, on_air, h_velocity
     original_y = player.y
     original_x = player.x
     original_y += velocity
-    if keyboard.up:
+    if keyboard.up and on_air == False:
         original_y -= 4
-    if keyboard.down:
+    if keyboard.down and on_air == False:
         original_y += 4
-    if keyboard.right:
+    if keyboard.right and on_air == False:
         if player.image == "front":
             player.image = "rwalk_a"
         elif player.image == "rwalk_a":
@@ -159,31 +161,38 @@ def update():
         elif player.image == "rwalk_b":
             player.image = "rwalk_a"
         original_x += 4
-    if keyboard.left:
+        h_velocity = 4
+    if keyboard.left and on_air == False:
         if player.image == "front":
             player.image = "lwalk_a"
         elif player.image == "lwalk_a":
             player.image = "lwalk_b"
         elif player.image == "lwalk_b":
             player.image = "lwalk_a"
+        h_velocity = -4
         original_x -= 4
     if LR and RR:
         player.image = "front"
-    move_tela(original_x, original_y, 1)
     if player.collidelist(walls) == -1 and player.collidelist(walls_left) == -1 and player.collidelist(walls_right) == -1:
         velocity += gravity
+        on_air = True
     else:
-        if (player.bottom > walls[player.collidelist(walls)].top or
-                player.bottom > walls_left[player.collidelist(walls_left)].top or
-                player.bottom > walls_right[player.collidelist(walls_right)].top):
-            velocity = 0
-        if (player.left < walls_left[player.collidelist(walls_left)].right or
-                player.right > walls_right[player.collidelist(walls_right)].left):
-            move_tela(original_x, original_y, -1)
+        velocity = 0
+        h_velocity = 0
+        on_air = False
     if keyboard.space:
         if (player.collidelist(walls) != -1 or player.collidelist(walls_left) != -1 or
             player.collidelist(walls_right) != -1) and velocity == 0:
             velocity = -25
+    if player.collidelist(walls_left):
+        if player.left < walls_left[player.collidelist(walls_left)].right:
+            original_x += 4
+    if player.collidelist(walls_right):
+        if player.right > walls_right[player.collidelist(walls_right)].left:
+            original_x -= 4
+    if on_air == True:
+        original_x += h_velocity
+    move_tela(original_x, original_y, 1)
 
 
 def draw():

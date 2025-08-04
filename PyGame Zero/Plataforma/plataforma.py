@@ -189,8 +189,6 @@ def update():
     if player.collidelist(walls_left):
         if player.left < walls_left[player.collidelist(walls_left)].right:
             original_x += 4
-            print(debug1)
-            debug1 += 1
     if player.collidelist(walls_right):
         if player.right > walls_right[player.collidelist(walls_right)].left:
             original_x -= 4
@@ -198,6 +196,7 @@ def update():
     if on_air == True:
         original_x += h_velocity
     move_tela(original_x, original_y, 1)
+
 
 
 def draw():

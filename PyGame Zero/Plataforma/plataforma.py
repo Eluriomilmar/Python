@@ -11,8 +11,8 @@ level_map = [
     "A                                    D",
     "A                                    D",
     "A                                    D",
-    "A                    AD              D",
-    "A              AD                    D",
+    "A                    SS              D",
+    "A              SS                    D",
     "A                                    D",
     "A                                    D",
     "ASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSD",
@@ -131,7 +131,7 @@ def on_key_up(key):
     if key == keys.LEFT:
         LR = True  # Left Released
     elif key == keys.RIGHT:
-        RR = True
+        RR = True #Right Released
 
 
 def on_key_down(key):
@@ -145,7 +145,7 @@ def on_key_down(key):
 
 
 def update():
-    global velocity, gravity, RR, LR, debug1, debug2, original_x, original_y, on_air, h_velocity
+    global velocity, gravity, RR, LR, debug1, debug2, original_x, original_y, on_air, h_velocity, debug1, debug2
     original_y = player.y
     original_x = player.x
     original_y += velocity
@@ -160,8 +160,8 @@ def update():
             player.image = "rwalk_b"
         elif player.image == "rwalk_b":
             player.image = "rwalk_a"
+        h_velocity = 6
         original_x += 4
-        h_velocity = 4
     if keyboard.left and on_air == False:
         if player.image == "front":
             player.image = "lwalk_a"
@@ -169,13 +169,15 @@ def update():
             player.image = "lwalk_b"
         elif player.image == "lwalk_b":
             player.image = "lwalk_a"
-        h_velocity = -4
+        h_velocity = -6
         original_x -= 4
     if LR and RR:
         player.image = "front"
-    if player.collidelist(walls) == -1 and player.collidelist(walls_left) == -1 and player.collidelist(walls_right) == -1:
+    if player.collidelist(walls) == -1 and (player.collidelist(walls_left) == -1 or player.collidelist(walls_right) == -1):
         velocity += gravity
         on_air = True
+        if player.collidelist(walls_left) != -1 or player.collidelist(walls_right) != -1:
+            h_velocity = 0
     else:
         velocity = 0
         h_velocity = 0
@@ -183,13 +185,16 @@ def update():
     if keyboard.space:
         if (player.collidelist(walls) != -1 or player.collidelist(walls_left) != -1 or
             player.collidelist(walls_right) != -1) and velocity == 0:
-            velocity = -25
+            velocity = -20
     if player.collidelist(walls_left):
         if player.left < walls_left[player.collidelist(walls_left)].right:
             original_x += 4
+            print(debug1)
+            debug1 += 1
     if player.collidelist(walls_right):
         if player.right > walls_right[player.collidelist(walls_right)].left:
             original_x -= 4
+            h_velocity = 0
     if on_air == True:
         original_x += h_velocity
     move_tela(original_x, original_y, 1)

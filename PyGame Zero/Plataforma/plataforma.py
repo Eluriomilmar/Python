@@ -102,28 +102,18 @@ debug1 = 0
 debug2 = 0
 on_air = False
 h_velocity = 0
+jump = True
 
-def move_tela(ori_x, ori_y, var):
-    if var == 1:
-        for wall in walls:
-            wall.x += player.x - ori_x
-            wall.y += player.y - ori_y
-        for wall in walls_right:
-            wall.x += player.x - ori_x
-            wall.y += player.y - ori_y
-        for wall in walls_left:
-            wall.x += player.x - ori_x
-            wall.y += player.y - ori_y
-    if var == -1:
-        for wall in walls:
-            wall.x -= player.x - ori_x
-            wall.y -= player.y - ori_y
-        for wall in walls_right:
-            wall.x -= player.x - ori_x
-            wall.y -= player.y - ori_y
-        for wall in walls_left:
-            wall.x -= player.x - ori_x
-            wall.y -= player.y - ori_y
+def move_tela(ori_x, ori_y):
+    for wall in walls:
+        wall.x += player.x - ori_x
+        wall.y += player.y - ori_y
+    for wall in walls_right:
+        wall.x += player.x - ori_x
+        wall.y += player.y - ori_y
+    for wall in walls_left:
+        wall.x += player.x - ori_x
+        wall.y += player.y - ori_y
 
 
 def on_key_up(key):
@@ -145,10 +135,10 @@ def on_key_down(key):
 
 
 def update():
-    global velocity, gravity, RR, LR, debug1, debug2, original_x, original_y, on_air, h_velocity, debug1, debug2
+    global velocity, gravity, RR, LR, debug1, debug2, original_x, original_y, on_air, h_velocity,\
+        jump, debug1, debug2
     original_y = player.y
     original_x = player.x
-    original_y += velocity
     if keyboard.up and on_air == False:
         original_y -= 4
     if keyboard.down and on_air == False:
@@ -160,7 +150,7 @@ def update():
             player.image = "rwalk_b"
         elif player.image == "rwalk_b":
             player.image = "rwalk_a"
-        h_velocity = 6
+        h_velocity = 8
         original_x += 4
     if keyboard.left and on_air == False:
         if player.image == "front":
@@ -169,23 +159,25 @@ def update():
             player.image = "lwalk_b"
         elif player.image == "lwalk_b":
             player.image = "lwalk_a"
-        h_velocity = -6
+        h_velocity = -8
         original_x -= 4
     if LR and RR:
         player.image = "front"
-    if player.collidelist(walls) == -1 and (player.collidelist(walls_left) == -1 or player.collidelist(walls_right) == -1):
+    if player.collidelist(walls) == -1:
         velocity += gravity
         on_air = True
         if player.collidelist(walls_left) != -1 or player.collidelist(walls_right) != -1:
             h_velocity = 0
     else:
         velocity = 0
-        h_velocity = 0
         on_air = False
-    if keyboard.space:
-        if (player.collidelist(walls) != -1 or player.collidelist(walls_left) != -1 or
-            player.collidelist(walls_right) != -1) and velocity == 0:
-            velocity = -20
+        jump = False
+    if keyboard.space and on_air == False:
+        velocity = -20
+        original_y += velocity
+        jump = True
+        print("ahoy")
+        print(velocity)
     if player.collidelist(walls_left):
         if player.left < walls_left[player.collidelist(walls_left)].right:
             original_x += 4
@@ -193,9 +185,17 @@ def update():
         if player.right > walls_right[player.collidelist(walls_right)].left:
             original_x -= 4
             h_velocity = 0
-    if on_air == True:
+    if on_air == True and jump == True:
         original_x += h_velocity
-    move_tela(original_x, original_y, 1)
+        original_y += velocity
+    if on_air == True and jump == False:
+        velocity += gravity
+        original_y += velocity
+        if keyboard.left:
+            original_x -= 4
+        if keyboard.right:
+            original_x += 4
+    move_tela(original_x, original_y)
 
 
 

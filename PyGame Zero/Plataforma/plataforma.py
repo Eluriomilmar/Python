@@ -191,10 +191,6 @@ def update():
     if on_air == True and jump == False:
         velocity += gravity
         original_y += velocity
-        if keyboard.left:
-            original_x -= 4
-        if keyboard.right:
-            original_x += 4
     move_tela(original_x, original_y)
 
 

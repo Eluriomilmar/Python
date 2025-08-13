@@ -136,7 +136,7 @@ def on_key_down(key):
 
 def update():
     global velocity, gravity, RR, LR, debug1, debug2, original_x, original_y, on_air, h_velocity,\
-        jump, debug1, debug2
+        jump
     original_y = player.y
     original_x = player.x
     prev_y = original_y
@@ -184,8 +184,6 @@ def update():
         velocity = -20
         original_y += velocity
         jump = True
-        print("ahoy")
-        print(velocity)
     if player.collidelist(walls_left):
         if player.left < walls_left[player.collidelist(walls_left)].right:
             original_x += 4
@@ -200,7 +198,6 @@ def update():
         if jump == False:
             velocity += gravity
             original_y += velocity
-
     move_tela(original_x, original_y)
 
 

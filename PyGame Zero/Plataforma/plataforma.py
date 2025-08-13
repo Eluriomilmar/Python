@@ -139,6 +139,8 @@ def update():
         jump, debug1, debug2
     original_y = player.y
     original_x = player.x
+    prev_y = original_y
+    prev_x = original_x
     if keyboard.up and on_air == False:
         original_y -= 4
     if keyboard.down and on_air == False:
@@ -169,9 +171,15 @@ def update():
         if player.collidelist(walls_left) != -1 or player.collidelist(walls_right) != -1:
             h_velocity = 0
     else:
-        velocity = 0
-        on_air = False
-        jump = False
+        if walls[player.collidelist(walls)].bottom - 40 < player.top:
+            velocity = 0
+            on_air = True
+            jump = False
+        else:
+            velocity = 0
+            on_air = False
+            jump = False
+        h_velocity = 0
     if keyboard.space and on_air == False:
         velocity = -20
         original_y += velocity
@@ -185,12 +193,14 @@ def update():
         if player.right > walls_right[player.collidelist(walls_right)].left:
             original_x -= 4
             h_velocity = 0
-    if on_air == True and jump == True:
-        original_x += h_velocity
-        original_y += velocity
-    if on_air == True and jump == False:
-        velocity += gravity
-        original_y += velocity
+    if on_air == True:
+        if jump == True:
+            original_x += h_velocity
+            original_y += velocity
+        if jump == False:
+            velocity += gravity
+            original_y += velocity
+
     move_tela(original_x, original_y)
 
 

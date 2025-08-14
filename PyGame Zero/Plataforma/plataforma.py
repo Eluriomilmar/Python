@@ -11,8 +11,8 @@ level_map = [
     "A                                    D",
     "A                                    D",
     "A                                    D",
-    "A                    SS              D",
-    "A              SS                    D",
+    "A                    AD              D",
+    "A              AD                    D",
     "A                                    D",
     "A                                    D",
     "ASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSD",
@@ -100,7 +100,7 @@ original_x = player.x
 original_y = player.y
 debug1 = 0
 debug2 = 0
-on_air = False
+on_air = True
 h_velocity = 0
 jump = True
 
@@ -136,7 +136,7 @@ def on_key_down(key):
 
 def update():
     global velocity, gravity, RR, LR, debug1, debug2, original_x, original_y, on_air, h_velocity,\
-        jump
+        jump, on_air
     original_y = player.y
     original_x = player.x
     prev_y = original_y
@@ -184,17 +184,24 @@ def update():
         velocity = -20
         original_y += velocity
         jump = True
-    if player.collidelist(walls_left):
-        if player.left < walls_left[player.collidelist(walls_left)].right:
+    if player.collidelist(walls_left) != -1:
+        if player.left - 40 < walls_left[player.collidelist(walls_left)].right:
             original_x += 4
-    if player.collidelist(walls_right):
+            h_velocity = 0
+        if player.bottom > walls_left[player.collidelist(walls_left)].top:
+            on_air = False
+            jump = False
+    if player.collidelist(walls_right) != -1:
         if player.right > walls_right[player.collidelist(walls_right)].left:
             original_x -= 4
             h_velocity = 0
+        if player.bottom > walls_right[player.collidelist(walls_right)].top:
+            on_air = False
+            jump = False
     if on_air == True:
         if jump == True:
             original_x += h_velocity
-            original_y += velocity
+            velocity += gravity
         if jump == False:
             velocity += gravity
             original_y += velocity

@@ -12,7 +12,7 @@ level_map = [
     "A                                    D",
     "A                                    D",
     "A                    AD              D",
-    "A              AD                    D",
+    "A              SS                    D",
     "A                                    D",
     "A                                    D",
     "ASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSD",
@@ -165,46 +165,43 @@ def update():
         original_x -= 4
     if LR and RR:
         player.image = "front"
-    if player.collidelist(walls) == -1:
-        velocity += gravity
-        on_air = True
-        if player.collidelist(walls_left) != -1 or player.collidelist(walls_right) != -1:
-            h_velocity = 0
-    else:
-        if walls[player.collidelist(walls)].bottom - 40 < player.top:
-            velocity = 0
-            on_air = True
-            jump = False
-        else:
-            velocity = 0
-            on_air = False
-            jump = False
         h_velocity = 0
     if keyboard.space and on_air == False:
         velocity = -20
         original_y += velocity
-        jump = True
-    if player.collidelist(walls_left) != -1:
-        if player.left - 40 < walls_left[player.collidelist(walls_left)].right:
-            original_x += 4
-            h_velocity = 0
-        if player.bottom > walls_left[player.collidelist(walls_left)].top:
-            on_air = False
-            jump = False
-    if player.collidelist(walls_right) != -1:
-        if player.right > walls_right[player.collidelist(walls_right)].left:
-            original_x -= 4
-            h_velocity = 0
-        if player.bottom > walls_right[player.collidelist(walls_right)].top:
-            on_air = False
-            jump = False
+        on_air = True
     if on_air == True:
-        if jump == True:
-            original_x += h_velocity
-            velocity += gravity
-        if jump == False:
-            velocity += gravity
-            original_y += velocity
+        velocity += gravity
+    if player.collidelist(walls) != -1:
+        if walls[player.collidelist(walls)].top > 480:
+            velocity = 0
+            on_air = False
+            h_velocity = 0
+        if walls[player.collidelist(walls)].bottom < 440:
+            if velocity < 0:
+                velocity = 0
+            on_air = True
+            h_velocity = 0
+        if walls[player.collidelist(walls)].right > 836:
+            h_velocity = 0
+        if walls[player.collidelist(walls)].left < 759:
+            h_velocity = 0
+    else:
+        on_air = True
+
+    if player.collidelist(walls_left) != -1:
+        if walls_left[player.collidelist(walls_left)].bottom > player.top:
+            on_air = True
+            h_velocity = 0
+            if velocity < 0:
+                velocity = 0
+        print(f"walls left: {walls_left[player.collidelist(walls_left)].left}\n"
+                f"walls right: {walls_left[player.collidelist(walls_left)].right}\n"
+                f"walls top: {walls_left[player.collidelist(walls_left)].top}\n"
+                f"walls bot: {walls_left[player.collidelist(walls_left)].bottom}")
+
+    original_x += h_velocity
+    original_y += velocity
     move_tela(original_x, original_y)
 
 
@@ -220,6 +217,11 @@ def draw():
     screen.draw.rect(Rect((player.topleft[0], player.topleft[1]),
                           (player.bottomright[0] - player.topleft[0], player.bottomright[1] - player.topleft[1])),
                      (0, 0, 255))
+    screen.draw.line((0, 401), (1600, 401), (0,0,0))
+    screen.draw.line((0, 497), (1600, 497), (0,0,0))
+    screen.draw.line((761, 0), (761, 900), (0,0,0))
+    screen.draw.line((838, 0), (838, 900), (0,0,0))
+
     for wall in walls:
         wall.draw()
     for wall in walls_left:

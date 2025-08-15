@@ -1,6 +1,6 @@
 import keyboard
 import pgzrun
-from pyparsing import original_text_for
+from pgzhelper import *
 
 WIDTH = 1600
 HEIGHT = 900
@@ -24,8 +24,6 @@ level_map = [
 player = Actor("front")
 
 walls = []
-walls_right = []
-walls_left = []
 for i in range(len(level_map)):
     for j in range(len(level_map[i])):
         if level_map[i][j] == "W":
@@ -50,7 +48,7 @@ for i in range(len(level_map)):
             wall = Actor('terrain_grass_block_left')
             wall.y = i * 64 + 32
             wall.x = j * 64
-            walls_left.append(wall)
+            walls.append(wall)
 
         if level_map[i][j] == "Z":
             wall = Actor("terrain_grass_block_bottom_left")
@@ -74,7 +72,7 @@ for i in range(len(level_map)):
             wall = Actor("terrain_grass_block_right")
             wall.y = i * 64 + 32
             wall.x = j * 64
-            walls_right.append(wall)
+            walls.append(wall)
 
         if level_map[i][j] == "S":
             wall = Actor("terrain_grass_block_center")
@@ -84,6 +82,7 @@ for i in range(len(level_map)):
 
 player.x = WIDTH / 2
 player.y = HEIGHT / 2
+player.scale = 0.5
 velocity = 0
 gravity = 1
 background = Actor("background_color_mushrooms")
@@ -106,12 +105,6 @@ jump = True
 
 def move_tela(ori_x, ori_y):
     for wall in walls:
-        wall.x += player.x - ori_x
-        wall.y += player.y - ori_y
-    for wall in walls_right:
-        wall.x += player.x - ori_x
-        wall.y += player.y - ori_y
-    for wall in walls_left:
         wall.x += player.x - ori_x
         wall.y += player.y - ori_y
 
@@ -154,6 +147,7 @@ def update():
             player.image = "rwalk_a"
         h_velocity = 8
         original_x += 4
+        player.scale = 0.5
     if keyboard.left and on_air == False:
         if player.image == "front":
             player.image = "lwalk_a"
@@ -163,43 +157,40 @@ def update():
             player.image = "lwalk_a"
         h_velocity = -8
         original_x -= 4
+        player.scale = 0.5
     if LR and RR:
         player.image = "front"
         h_velocity = 0
+        player.scale = 0.5
     if keyboard.space and on_air == False:
         velocity = -20
         original_y += velocity
         on_air = True
-    if on_air == True:
-        velocity += gravity
     if player.collidelist(walls) != -1:
-        if walls[player.collidelist(walls)].top > 480:
+        if walls[player.collidelist(walls)].top >= 477:
             velocity = 0
             on_air = False
             h_velocity = 0
-        if walls[player.collidelist(walls)].bottom < 440:
+            print("Top\n")
+        elif walls[player.collidelist(walls)].bottom < 421:
             if velocity < 0:
                 velocity = 0
-            on_air = True
             h_velocity = 0
-        if walls[player.collidelist(walls)].right > 836:
+            print(f"bottom: {walls[player.collidelist(walls)].bottom}")
+            print("Bottom\n")
+        elif walls[player.collidelist(walls)].right > 818:
             h_velocity = 0
-        if walls[player.collidelist(walls)].left < 759:
+            original_x -= 4
+            print("Right\n")
+        elif walls[player.collidelist(walls)].left < 741:
             h_velocity = 0
+            original_x += 4
+            print("Left\n")
     else:
         on_air = True
-
-    if player.collidelist(walls_left) != -1:
-        if walls_left[player.collidelist(walls_left)].bottom > player.top:
-            on_air = True
-            h_velocity = 0
-            if velocity < 0:
-                velocity = 0
-        print(f"walls left: {walls_left[player.collidelist(walls_left)].left}\n"
-                f"walls right: {walls_left[player.collidelist(walls_left)].right}\n"
-                f"walls top: {walls_left[player.collidelist(walls_left)].top}\n"
-                f"walls bot: {walls_left[player.collidelist(walls_left)].bottom}")
-
+        print("teste")
+    if on_air == True:
+        velocity += gravity
     original_x += h_velocity
     original_y += velocity
     move_tela(original_x, original_y)
@@ -223,10 +214,6 @@ def draw():
     screen.draw.line((838, 0), (838, 900), (0,0,0))
 
     for wall in walls:
-        wall.draw()
-    for wall in walls_left:
-        wall.draw()
-    for wall in walls_right:
         wall.draw()
 
 

@@ -167,30 +167,33 @@ def update():
         original_y += velocity
         on_air = True
     if player.collidelist(walls) != -1:
-        if walls[player.collidelist(walls)].top >= 477:
+        if walls[player.collidelist(walls)].top > 452:
             velocity = 0
             on_air = False
             h_velocity = 0
-            print("Top\n")
-        elif walls[player.collidelist(walls)].bottom < 421:
+            print(f"walls top: {walls[player.collidelist(walls)].top}")
+            if walls[player.collidelist(walls)].top < 470:
+                original_y += walls[player.collidelist(walls)].top - player.bottom
+        elif walls[player.collidelist(walls)].bottom < 445:
             if velocity < 0:
                 velocity = 0
             h_velocity = 0
+            on_air = True
             print(f"bottom: {walls[player.collidelist(walls)].bottom}")
             print("Bottom\n")
-        elif walls[player.collidelist(walls)].right > 818:
+        if walls[player.collidelist(walls)].right > 790:
             h_velocity = 0
-            original_x -= 4
             print("Right\n")
-        elif walls[player.collidelist(walls)].left < 741:
+
+        elif walls[player.collidelist(walls)].left < 808:
             h_velocity = 0
-            original_x += 4
-            print("Left\n")
     else:
         on_air = True
         print("teste")
     if on_air == True:
         velocity += gravity
+    else:
+        velocity = 0
     original_x += h_velocity
     original_y += velocity
     move_tela(original_x, original_y)
@@ -208,10 +211,10 @@ def draw():
     screen.draw.rect(Rect((player.topleft[0], player.topleft[1]),
                           (player.bottomright[0] - player.topleft[0], player.bottomright[1] - player.topleft[1])),
                      (0, 0, 255))
-    screen.draw.line((0, 401), (1600, 401), (0,0,0))
-    screen.draw.line((0, 497), (1600, 497), (0,0,0))
-    screen.draw.line((761, 0), (761, 900), (0,0,0))
-    screen.draw.line((838, 0), (838, 900), (0,0,0))
+    screen.draw.line((0, 425), (1600, 425), (0,0,0))
+    screen.draw.line((0, 472), (1600, 472), (0,0,0))
+    screen.draw.line((780, 0), (780, 900), (0,0,0))
+    screen.draw.line((818, 0), (818, 900), (0,0,0))
 
     for wall in walls:
         wall.draw()

@@ -85,6 +85,7 @@ player.y = HEIGHT / 2
 player.scale = 0.5
 velocity = 0
 gravity = 1
+horizontal = 4
 background = Actor("background_color_mushrooms")
 solid = Actor("background_solid_dirt")
 backgrounds = []
@@ -129,11 +130,12 @@ def on_key_down(key):
 
 def update():
     global velocity, gravity, RR, LR, debug1, debug2, original_x, original_y, on_air, h_velocity,\
-        jump, on_air
+        jump, on_air, horizontal
     original_y = player.y
     original_x = player.x
     prev_y = original_y
     prev_x = original_x
+    h_velocity = 0
     if keyboard.up and on_air == False:
         original_y -= 4
     if keyboard.down and on_air == False:
@@ -146,7 +148,8 @@ def update():
         elif player.image == "rwalk_b":
             player.image = "rwalk_a"
         h_velocity = 8
-        original_x += 4
+        horizontal = 4
+        original_x += horizontal
         player.scale = 0.5
     if keyboard.left and on_air == False:
         if player.image == "front":
@@ -156,45 +159,35 @@ def update():
         elif player.image == "lwalk_b":
             player.image = "lwalk_a"
         h_velocity = -8
-        original_x -= 4
+        horizontal = -4
+        original_x += horizontal
         player.scale = 0.5
     if LR and RR:
         player.image = "front"
         h_velocity = 0
         player.scale = 0.5
-    if keyboard.space and on_air == False:
-        velocity = -20
-        original_y += velocity
-        on_air = True
     if player.collidelist(walls) != -1:
-        if walls[player.collidelist(walls)].top > 452:
-            velocity = 0
+        if velocity > 0:
             on_air = False
             h_velocity = 0
-            print(f"walls top: {walls[player.collidelist(walls)].top}")
-            if walls[player.collidelist(walls)].top < 470:
-                original_y += walls[player.collidelist(walls)].top - player.bottom
-        elif walls[player.collidelist(walls)].bottom < 445:
-            if velocity < 0:
-                velocity = 0
+            original_y += walls[player.collidelist(walls)].top - player.bottom + 0.5
+        elif velocity < 0:
             h_velocity = 0
-            on_air = True
-            print(f"bottom: {walls[player.collidelist(walls)].bottom}")
-            print("Bottom\n")
-        if walls[player.collidelist(walls)].right > 790:
-            h_velocity = 0
-            print("Right\n")
-
-        elif walls[player.collidelist(walls)].left < 808:
-            h_velocity = 0
+            velocity = 0
+            original_y += walls[player.collidelist(walls)].bottom - player.top - 0.5
     else:
         on_air = True
-        print("teste")
+        original_x += h_velocity
     if on_air == True:
         velocity += gravity
     else:
         velocity = 0
-    original_x += h_velocity
+        horizontal = 0
+    if keyboard.space and on_air == False:
+        velocity = -20
+        original_y += velocity
+        on_air = True
+    original_x += horizontal
     original_y += velocity
     move_tela(original_x, original_y)
 

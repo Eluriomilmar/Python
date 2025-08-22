@@ -13,10 +13,10 @@ while isinstance(num2, float) == False:
     print("Enter a valid number!")
     num2 = float(input("Enter the second number of the equation: "))
 if operator == "+":
-    print(f"The sum of {num1} and {num2} is {num1 + num2}")
+    print(f"The sum of {num1} and {num2} is {round(num1 + num2, 3)}")
 if operator == "-":
-    print(f"The subtraction of {num1} and {num2} is {num1 - num2}")
+    print(f"The subtraction of {num1} and {num2} is {round(num1 - num2, 3)}")
 if operator == "*":
-    print(f"The multiplication of {num1} and {num2} is {num1 * num2}")
+    print(f"The multiplication of {num1} and {num2} is {round(num1 * num2, 3)}")
 if operator == "/":
-    print(f"The division of {num1} and {num2} is {num1 / num2}")
+    print(f"The division of {num1} and {num2} is {round(num1 / num2, 3)}")

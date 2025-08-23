@@ -27,7 +27,6 @@ for i in range(len(foods)):
             foods[i-1] = aux
             i -= 1
 
-total = 0
 for i in range(len(foods)):
     print(f"{foods[i]}: {prices[i]:.2f}")
     total += prices[i]

@@ -8,8 +8,8 @@ food = ""
 price = 0
 
 while True:
-    food = input("Input which food you're going to buy(end to exit): ")
-    if food == "end":
+    food = input("Input which food you're going to buy(q exit): ")
+    if food == "q":
         break
     else:
         price = float(input(f"What's the price of {food}? "))

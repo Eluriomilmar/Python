@@ -13,9 +13,10 @@ while seconds < 0:
 while seconds > 0 or minutes > 0 or hours > 0:
     if seconds == 0:
         if minutes == 0:
-            hours -= 1
-            minutes += 59
-            seconds += 60
+            if hours > 0:
+                hours -= 1
+                minutes += 59
+                seconds += 60
         else:
             minutes -= 1
             seconds += 60

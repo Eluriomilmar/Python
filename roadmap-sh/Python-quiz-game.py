@@ -1,10 +1,10 @@
 #Python quiz game
 
 questions = ("Question 1: How many elements are i nthe periodic table?",
-             "Question 2: ",
-             "Question 3: ",
-             "Question 4: ",
-             "Question 5: ")
+             "Question 2: Which animal lays the largest eggs?",
+             "Question 3: What is the most abundant gas in Earth's atmosphere?",
+             "Question 4: How many bones are in the human body?",
+             "Question 5: Which planet in the solar system is the hottest?")
 
 options = (("A. 118", "B. 116", "C. 117", "D. 119"),
            ("A. Chicken", "B. Platipus", "C. Whale", "D. Ostrich"),

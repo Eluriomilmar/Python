@@ -1,6 +1,6 @@
 #Python quiz game
 
-questions = ("Question 1: How many elements are i nthe periodic table?",
+questions = ("Question 1: How many elements are in the periodic table?",
              "Question 2: Which animal lays the largest eggs?",
              "Question 3: What is the most abundant gas in Earth's atmosphere?",
              "Question 4: How many bones are in the human body?",

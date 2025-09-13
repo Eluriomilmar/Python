@@ -21,7 +21,7 @@ def main():
     for line in range(5):
         for dice in dices:
             print(dice_art.get(dice)[line], end="")
-        print("")
+        print("", end="\n")
     for num in range(len(dices)):
         total += dices[num]
     print(f"\nTotal: {total}")

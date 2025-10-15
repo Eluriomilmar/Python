@@ -17,12 +17,12 @@ def withdraw(value):
     show_balance()
 
 balance = 0
-
+is_running = True
 def main():
+    global is_running
     print(f"_" * 30, end="")
     print(f"\nBanking Program\n")
     print(f"_" * 30, end="")
-    is_running = True
     while is_running:
         print(f"\n1. Show Balance"
               f"\n2. Deposit"

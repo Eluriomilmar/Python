@@ -1,14 +1,10 @@
-from pygame import rect
-import pgzrun
+def is_weekend(day):
+    match day:
+        case "Saturday" | "Sunday":
+            return True
+        case "Monday" | "Tuesday" | "Wednesday" | "Thursday" | "Friday":
+            return False
+        case _:
+            return False
 
-
-WIDTH = 800
-HEIGHT = 600
-
-def draw():
-    screen.clear()
-    screen.draw.line((10, 10),(790, 10),(255, 255, 255))
-    screen.draw.line((), (), ())
-
-
-pgzrun.go()
+print(is_weekend("Saturday"))

@@ -14,7 +14,7 @@ def set_alarm(alarm_time):
         if current_time == alarm_time:
             print(f"It's time! ⏰⏰")
             pygame.mixer.init()
-            pygame.mixer.music.load("Crumbling.mp3")
+            pygame.mixer.music.load(sound_file)
             pygame.mixer.music.play()
             while pygame.mixer.music.get_busy():
                 time.sleep(1)

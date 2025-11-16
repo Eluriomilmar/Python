@@ -1,7 +1,7 @@
 # PyQt5 introduction
 
 import sys
-from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel
+from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QWidget, QVBoxLayout, QHBoxLayout, QGridLayout
 from PyQt5.QtGui import QIcon, QFont, QPixmap
 from PyQt5.QtCore import Qt
 
@@ -11,18 +11,26 @@ class MainWindow(QMainWindow):
         self.setWindowTitle("Testing Stuff")
         self.setGeometry(0, 0, 400, 400)
         self.setWindowIcon(QIcon("patchouli.png"))
+        self.initUI()
 
-        label = QLabel("IDK TBH man", self)
-        label.setFont(QFont("Wingdings", 24))
-        label.setGeometry(0, 0, 400, 400)
-        label.setStyleSheet("color: #999999;"
-                            "background-color: ffffff;"
+    def initUI(self):
+        central_widget = QWidget()
+        self.setCentralWidget(central_widget)
+
+        label2 = QLabel(self)
+        label2.setGeometry(0,0, 400, 400)
+        label2.setAlignment(Qt.AlignCenter)
+        pixmap = QPixmap("patchouli.png")
+        label2.setPixmap(pixmap)
+        label1 = QLabel("IDK TBH man", self)
+        label1.setFont(QFont("Wingdings", 24))
+        label1.setGeometry(0, 0, 400, 400)
+        label1.setStyleSheet("color: #000000;"
                             "font-weight: bold;"
                             "font-style: italic;"
                             "text-decoration: underline;")
-        label.setAlignment(Qt.AlignBottom | Qt.AlignHCenter)
-        pixmap = QPixmap("patchouli.png")
-        label.setPixmap(pixmap)
+        label1.setAlignment(Qt.AlignCenter)
+
 
 
 def main():

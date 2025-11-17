@@ -28,6 +28,23 @@ class MainWindow(QMainWindow):
 
 
     def initUI(self):
+        self.buttonclear.setObjectName("buttonclear")
+        self.button1.setObjectName("button1")
+        self.button2.setObjectName("button2")
+        self.button3.setObjectName("button3")
+        self.buttonsum.setObjectName("buttonsum")
+        self.button4.setObjectName("button4")
+        self.button5.setObjectName("button5")
+        self.button6.setObjectName("button6")
+        self.buttonsubtract.setObjectName("buttonsubtract")
+        self.button7.setObjectName("button7")
+        self.button8.setObjectName("button8")
+        self.button9.setObjectName("button9")
+        self.buttonmultiply.setObjectName("buttonmultiply")
+        self.buttoncomma.setObjectName("buttoncomma")
+        self.button0.setObjectName("button0")
+        self.buttonresult.setObjectName("buttonresult")
+        self.buttondivide.setObjectName("buttondivide")
         self.line_edit.setGeometry(0, 10, 480, 90)
         self.buttonclear.setGeometry(480, 10, 160, 90)
         self.button1.setGeometry(0, 100, 160, 90)

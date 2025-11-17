@@ -64,7 +64,7 @@ class MainWindow(QMainWindow):
     def radio_button_changed(self):
         radio_button = self.sender()
         if radio_button.isChecked():
-            print(f"{radio_button.grou} is selected")
+            print(f"{radio_button.text()} is selected")
 
 
 

@@ -1,6 +1,5 @@
 # PyQt5 Radio Buttons
 
-# PyQt5 Checkboxes
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow, QRadioButton, QButtonGroup, QVBoxLayout, QWidget
 

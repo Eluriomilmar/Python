@@ -69,6 +69,7 @@ class MainWindow(QMainWindow):
         self.line_edit.setStyleSheet("font-size: 50px;")
 
         self.line_edit.setReadOnly(True)
+        # noinspection PyUnresolvedReferences
         self.button1.clicked.connect(self.on_click)
 
     def on_click(self):

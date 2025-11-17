@@ -40,7 +40,6 @@ class MainWindow(QMainWindow):
         self.bg2.addButton(self.store3)
         self.bg2.addButton(self.store4)
 
-
         self.setStyleSheet("QRadioButton{"
                            "font-size: 30px;"
                            "font-family: Arial;"

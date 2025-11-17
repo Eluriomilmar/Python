@@ -2,7 +2,7 @@
 
 # PyQt5 Checkboxes
 import sys
-from PyQt5.QtWidgets import QApplication, QMainWindow, QRadioButton, QButtonGroup, QVBoxLayout, QWidget, QPushButton
+from PyQt5.QtWidgets import QApplication, QMainWindow, QRadioButton, QButtonGroup, QVBoxLayout, QWidget
 
 
 
@@ -64,7 +64,7 @@ class MainWindow(QMainWindow):
     def radio_button_changed(self):
         radio_button = self.sender()
         if radio_button.isChecked():
-            print(f"{radio_button.text()} is selected")
+            print(f"{radio_button.grou} is selected")
 
 
 

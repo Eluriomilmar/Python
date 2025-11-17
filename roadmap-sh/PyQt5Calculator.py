@@ -166,8 +166,7 @@ class MainWindow(QMainWindow):
                     self.line_edit.setText(num2)
             case "buttondivide" | "buttonmultiply" | "buttonsum" | "buttonsubtract":
                 operacao = QApplication.focusWidget().objectName()
-                self.line_edit.setText(num2)
-                case "buttoncomma":
+            case "buttoncomma":
                 if operacao == "0":
                     if "." not in num1:
                         num1 += "."
@@ -194,21 +193,33 @@ class MainWindow(QMainWindow):
                         if float(result) == int(result):
                             result = int(result)
                         self.line_edit.setText(str(result))
+                        num1 = str(result)
+                        num2 = str("")
+                        num1 = result
                     case "buttonsubtract":
                         result = num1 - num2
                         if float(result) == int(result):
                             result = int(result)
                         self.line_edit.setText(str(result))
+                        num1 = str(result)
+                        num2 = str("")
+                        num1 = result
                     case "buttondivide":
                         result = num1 / num2
                         if float(result) == int(result):
                             result = int(result)
                         self.line_edit.setText(str(result))
+                        num1 = str(result)
+                        num2 = str("")
+                        num1 = result
                     case "buttonmultiply":
                         result = num1 * num2
                         if float(result) == int(result):
                             result = int(result)
                         self.line_edit.setText(str(result))
+                        num1 = str(result)
+                        num2 = str("")
+
 
 
 if __name__ == "__main__":

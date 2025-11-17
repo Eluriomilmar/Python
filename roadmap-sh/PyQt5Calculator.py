@@ -192,23 +192,23 @@ class MainWindow(QMainWindow):
                 match operacao:
                     case "buttonsum":
                         result = num1 + num2
-                        if result % 2 == 0:
+                        if float(result) == int(result):
                             result = int(result)
                         print(result)
                         self.line_edit.setText(str(result))
                     case "buttonsubtract":
                         result = num1 - num2
-                        if result % 2 == 0:
+                        if float(result) == int(result):
                             result = int(result)
                         self.line_edit.setText(str(result))
                     case "buttondivide":
                         result = num1 / num2
-                        if result % 2 == 0:
+                        if float(result) == int(result):
                             result = int(result)
                         self.line_edit.setText(str(result))
                     case "buttonmultiply":
                         result = num1 * num2
-                        if result % 2 == 0:
+                        if float(result) == int(result):
                             result = int(result)
                         self.line_edit.setText(str(result))
 

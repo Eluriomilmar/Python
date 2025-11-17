@@ -1,1 +1,2 @@
-print(12.)
+if int(5) == float(5):
+    print("aa")

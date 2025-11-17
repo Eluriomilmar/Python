@@ -2,6 +2,9 @@ import sys
 from PyQt5.QtWidgets import QMainWindow, QApplication, QPushButton, QLabel, QLineEdit
 from PyQt5.QtCore import Qt
 
+num1 = ""
+operacao = "0"
+num2 = ""
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -69,11 +72,145 @@ class MainWindow(QMainWindow):
         self.line_edit.setStyleSheet("font-size: 50px;")
 
         self.line_edit.setReadOnly(True)
-        # noinspection PyUnresolvedReferences
-        self.button1.clicked.connect(self.on_click)
+        self.button1.clicked.connect(self.click)
+        self.button2.clicked.connect(self.click)
+        self.button3.clicked.connect(self.click)
+        self.button4.clicked.connect(self.click)
+        self.button5.clicked.connect(self.click)
+        self.button6.clicked.connect(self.click)
+        self.button7.clicked.connect(self.click)
+        self.button8.clicked.connect(self.click)
+        self.button9.clicked.connect(self.click)
+        self.button0.clicked.connect(self.click)
 
-    def on_click(self):
-        self.button1.setText("Clicked!")
+        self.buttonsum.clicked.connect(self.click)
+        self.buttonsubtract.clicked.connect(self.click)
+        self.buttonmultiply.clicked.connect(self.click)
+        self.buttondivide.clicked.connect(self.click)
+        self.buttoncomma.clicked.connect(self.click)
+        self.buttonclear.clicked.connect(self.click)
+        self.buttonresult.clicked.connect(self.click)
+
+    def click(self):
+        global num1, operacao, num2
+        match QApplication.focusWidget().objectName():
+            case "button0":
+                if operacao == "0":
+                    num1 += "0"
+                    self.line_edit.setText(num1)
+                else:
+                    num2 += "0"
+                    self.line_edit.setText(num2)
+            case "button1":
+                if operacao == "0":
+                    num1 += "1"
+                    self.line_edit.setText(num1)
+                else:
+                    num2 += "1"
+                    self.line_edit.setText(num2)
+            case "button2":
+                if operacao == "0":
+                    num1 += "2"
+                    self.line_edit.setText(num1)
+                else:
+                    num2 += "2"
+                    self.line_edit.setText(num2)
+            case "button3":
+                if operacao == "0":
+                    num1 += "3"
+                    self.line_edit.setText(num1)
+                else:
+                    num2 += "3"
+                    self.line_edit.setText(num2)
+            case "button4":
+                if operacao == "0":
+                    num1 += "4"
+                    self.line_edit.setText(num1)
+                else:
+                    num2 += "4"
+                    self.line_edit.setText(num2)
+            case "button5":
+                if operacao == "0":
+                    num1 += "5"
+                    self.line_edit.setText(num1)
+                else:
+                    num2 += "5"
+                    self.line_edit.setText(num2)
+            case "button6":
+                if operacao == "0":
+                    num1 += "6"
+                    self.line_edit.setText(num1)
+                else:
+                    num2 += "6"
+                    self.line_edit.setText(num2)
+            case "button7":
+                if operacao == "0":
+                    num1 += "7"
+                    self.line_edit.setText(num1)
+                else:
+                    num2 += "7"
+                    self.line_edit.setText(num2)
+            case "button8":
+                if operacao == "0":
+                    num1 += "8"
+                    self.line_edit.setText(num1)
+                else:
+                    num2 += "8"
+                    self.line_edit.setText(num2)
+            case "button9":
+                if operacao == "0":
+                    num1 += "9"
+                    self.line_edit.setText(num1)
+                else:
+                    num2 += "9"
+                    self.line_edit.setText(num2)
+            case "buttondivide" | "buttonmultiply" | "buttonsum" | "buttonsubtract":
+                operacao = QApplication.focusWidget().objectName()
+                self.line_edit.setText(num2)
+                print(operacao)
+            case "buttoncomma":
+                if operacao == "0":
+                    if "." not in num1:
+                        num1 += "."
+                        self.line_edit.setText(num1)
+                    else:
+                        num1 = num1
+                else:
+                    if "." not in num2:
+                        num2 += "."
+                        self.line_edit.setText(num2)
+                    else:
+                        num2 = num2
+            case "buttonclear":
+                operacao = "0"
+                num1 = ""
+                num2 = ""
+                self.line_edit.setText(num1)
+            case "buttonresult":
+                num1 = float(num1)
+                num2 = float(num2)
+                match operacao:
+                    case "buttonsum":
+                        result = num1 + num2
+                        if result % 2 == 0:
+                            result = int(result)
+                        print(result)
+                        self.line_edit.setText(str(result))
+                    case "buttonsubtract":
+                        result = num1 - num2
+                        if result % 2 == 0:
+                            result = int(result)
+                        self.line_edit.setText(str(result))
+                    case "buttondivide":
+                        result = num1 / num2
+                        if result % 2 == 0:
+                            result = int(result)
+                        self.line_edit.setText(str(result))
+                    case "buttonmultiply":
+                        result = num1 * num2
+                        if result % 2 == 0:
+                            result = int(result)
+                        self.line_edit.setText(str(result))
 
 
 if __name__ == "__main__":

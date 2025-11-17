@@ -1,11 +1,12 @@
 import sys
-from PyQt5.QtWidgets import QMainWindow, QApplication, QPushButton, QLabel
+from PyQt5.QtWidgets import QMainWindow, QApplication, QPushButton, QLabel, QLineEdit
 from PyQt5.QtCore import Qt
 
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setGeometry(0, 0, 640, 450)
+        self.line_edit = QLineEdit(self)
         self.button0 = QPushButton("0", self)
         self.button1 = QPushButton("1", self)
         self.button2 = QPushButton("2", self)
@@ -27,7 +28,7 @@ class MainWindow(QMainWindow):
 
 
     def initUI(self):
-        fontSize = 50
+        self.line_edit.setGeometry(0, 10, 480, 90)
         self.buttonclear.setGeometry(480, 10, 160, 90)
         self.button1.setGeometry(0, 100, 160, 90)
         self.button2.setGeometry(160,100, 160, 90)
@@ -45,23 +46,9 @@ class MainWindow(QMainWindow):
         self.button0.setGeometry(160, 370, 160, 90)
         self.buttonresult.setGeometry(320, 370, 160, 90)
         self.buttondivide.setGeometry(480, 370, 160, 90)
-        self.buttonclear.setStyleSheet(f"font-size: {fontSize}px;")
-        self.button1.setStyleSheet(f"font-size: {fontSize}px;")
-        self.button2.setStyleSheet(f"font-size: {fontSize}px;")
-        self.button3.setStyleSheet(f"font-size: {fontSize}px;")
-        self.buttonsum.setStyleSheet(f"font-size: {fontSize}px;")
-        self.button4.setStyleSheet(f"font-size: {fontSize}px;")
-        self.button5.setStyleSheet(f"font-size: {fontSize}px;")
-        self.button6.setStyleSheet(f"font-size: {fontSize}px;")
-        self.buttonsubtract.setStyleSheet(f"font-size: {fontSize}px;")
-        self.button7.setStyleSheet(f"font-size: {fontSize}px;")
-        self.button8.setStyleSheet(f"font-size: {fontSize}px;")
-        self.button9.setStyleSheet(f"font-size: {fontSize}px;")
-        self.buttonmultiply.setStyleSheet(f"font-size: {fontSize}px;")
-        self.buttoncomma.setStyleSheet(f"font-size: {fontSize}px;")
-        self.button0.setStyleSheet(f"font-size: {fontSize}px;")
-        self.buttonresult.setStyleSheet(f"font-size: {fontSize}px;")
-        self.buttondivide.setStyleSheet(f"font-size: {fontSize}px;")
+        self.setStyleSheet("QPushButton{font-size: 50px};")
+        self.line_edit.setStyleSheet("font-size: 50px;")
+        self.line_edit.setReadOnly(True)
         self.button1.clicked.connect(self.on_click)
 
     def on_click(self):

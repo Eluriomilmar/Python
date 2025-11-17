@@ -45,6 +45,7 @@ class MainWindow(QMainWindow):
         self.button0.setObjectName("button0")
         self.buttonresult.setObjectName("buttonresult")
         self.buttondivide.setObjectName("buttondivide")
+
         self.line_edit.setGeometry(0, 10, 480, 90)
         self.buttonclear.setGeometry(480, 10, 160, 90)
         self.button1.setGeometry(0, 100, 160, 90)
@@ -63,8 +64,10 @@ class MainWindow(QMainWindow):
         self.button0.setGeometry(160, 370, 160, 90)
         self.buttonresult.setGeometry(320, 370, 160, 90)
         self.buttondivide.setGeometry(480, 370, 160, 90)
+
         self.setStyleSheet("QPushButton{font-size: 50px};")
         self.line_edit.setStyleSheet("font-size: 50px;")
+
         self.line_edit.setReadOnly(True)
         self.button1.clicked.connect(self.on_click)
 

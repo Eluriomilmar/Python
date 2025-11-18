@@ -5,6 +5,9 @@ from PyQt5.QtCore import Qt
 num1 = ""
 operacao = "0"
 num2 = ""
+
+
+# noinspection PyUnresolvedReferences
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -70,6 +73,7 @@ class MainWindow(QMainWindow):
 
         self.setStyleSheet("QPushButton{font-size: 50px};")
         self.line_edit.setStyleSheet("font-size: 50px;")
+
 
         self.line_edit.setReadOnly(True)
         self.button1.clicked.connect(self.click)

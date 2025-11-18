@@ -4,7 +4,7 @@ from PyQt5.QtWidgets import QMainWindow, QApplication, QPushButton,  QLineEdit
 num1 = ""
 operacao = "0"
 num2 = ""
-
+last = ""
 
 # noinspection PyUnresolvedReferences
 class MainWindow(QMainWindow):
@@ -95,7 +95,7 @@ class MainWindow(QMainWindow):
         self.buttonresult.clicked.connect(self.click)
 
     def click(self):
-        global num1, operacao, num2
+        global num1, operacao, num2, last
         match QApplication.focusWidget().objectName():
             case "button0":
                 if operacao == "0":
@@ -188,10 +188,14 @@ class MainWindow(QMainWindow):
                 num2 = ""
                 self.line_edit.setText(num1)
             case "buttonresult":
-                num1 = float(num1)
-                num2 = float(num2)
+                if num2:
+                    num1 = float(num1)
+                    num2 = float(num2)
+                else:
+                    num2 = last
                 match operacao:
                     case "buttonsum":
+                        last = num2
                         result = num1 + num2
                         if float(result) == int(result):
                             result = int(result)
@@ -200,6 +204,7 @@ class MainWindow(QMainWindow):
                         num2 = str("")
                         num1 = result
                     case "buttonsubtract":
+                        last = num2
                         result = num1 - num2
                         if float(result) == int(result):
                             result = int(result)
@@ -208,6 +213,7 @@ class MainWindow(QMainWindow):
                         num2 = str("")
                         num1 = result
                     case "buttondivide":
+                        last = num2
                         result = num1 / num2
                         if float(result) == int(result):
                             result = int(result)
@@ -216,12 +222,14 @@ class MainWindow(QMainWindow):
                         num2 = str("")
                         num1 = result
                     case "buttonmultiply":
+                        last = num2
                         result = num1 * num2
                         if float(result) == int(result):
                             result = int(result)
                         self.line_edit.setText(str(result))
                         num1 = str(result)
                         num2 = str("")
+                        num1 = result
 
 
 

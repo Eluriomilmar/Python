@@ -183,8 +183,8 @@ class MainWindow(QMainWindow):
                     else:
                         num2 = num2
             case "buttonclear":
-                operacao = "0"
                 num1 = ""
+                operacao = "0"
                 num2 = ""
                 self.line_edit.setText(num1)
             case "buttonresult":

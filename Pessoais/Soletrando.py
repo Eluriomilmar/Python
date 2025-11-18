@@ -2,6 +2,7 @@
 from random import choice
 import re
 import curses
+from time import sleep
 """Programa requer que o arquivo soletrando2.txt esteja no mesmo diretório"""
 def palpite(palavra, tentativa=" ", erros=[], acertos=[], fim=0):
     if tentativa == " ":
@@ -202,9 +203,12 @@ def cria_lista(arq):
         vetor = dicionario.read().upper().split("\n")
         return choice(vetor)
 
-
-screen = curses.initscr()
-curses.noecho()
-curses.cbreak()
-palpite(cria_lista("soletrando2.txt"), " ", [], [])
-
+try:
+    screen = curses.initscr()
+    curses.noecho()
+    curses.cbreak()
+    palpite(cria_lista("soletrando2.txt"), " ", [], [])
+except FileNotFoundError:
+    finalizacao = input("O programa necessita de um arquivo .txt com o nome 'soletrando2.txt' no mesmo diretório para funcionar\n"
+                        "O arquivo deve conter palavras individuais separadas por uma quebra de linha\n"
+                        "Pressione enter para finalizar.")

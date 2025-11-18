@@ -1,6 +1,5 @@
 import sys
-from PyQt5.QtWidgets import QMainWindow, QApplication, QPushButton, QLabel, QLineEdit
-from PyQt5.QtCore import Qt
+from PyQt5.QtWidgets import QMainWindow, QApplication, QPushButton,  QLineEdit
 
 num1 = ""
 operacao = "0"

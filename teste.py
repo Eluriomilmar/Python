@@ -1,2 +1,4 @@
-PI = 3.14159
-print(f"Valor de PI: {PI:.2f}")
+def funcao(*args, **kw):
+    print (f"{args} e {kw}")
+
+funcao("Python", 2022, curso="dio")

@@ -1,2 +1,2 @@
-if int(5) == float(5):
-    print("aa")
+PI = 3.14159
+print(f"Valor de PI: {PI:.2f}")

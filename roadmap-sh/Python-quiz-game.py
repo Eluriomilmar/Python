@@ -8,7 +8,7 @@ questions = ("Question 1: How many elements are in the periodic table?",
 
 options = (("A. 118", "B. 116", "C. 117", "D. 119"),
            ("A. Chicken", "B. Platipus", "C. Whale", "D. Ostrich"),
-           ("A. Ogygen", "B. Carbon", "C. Hydrogen", "D. Nitrogen"),
+           ("A. Oxygen", "B. Carbon", "C. Hydrogen", "D. Nitrogen"),
            ("A. 206", "B. 207", "C. 205", "D. 208"),
            ("A. Mercury", "B. Earth", "C. Venus", "D. Mars"))
 

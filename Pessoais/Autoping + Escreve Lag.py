@@ -4,6 +4,7 @@ import re
 import subprocess
 import threading
 
+instabilidadeGeral = [0,0,0,0,0]
 mes = str(input("Insira mês de registro: "))
 ano = str(input("Insira ano de registro: "))
 tolerancia = int(input("Insira valor numérico para a tolerância de lag, em ms: "))
@@ -54,23 +55,30 @@ def ping(ano, mes, tolerancia, servico):
                     media += vetor[i]
                 media = media/5
                 if a > media + tolerancia:
-                    if len(str(datetime.today().day)) < 2:
-                        dia = 1
-                    if len(str(datetime.today().month)) < 2:
-                        mes = 1
-                    if len(str(datetime.today().hour)) < 2:
-                        hora = 1
-                    if len(str(datetime.today().minute)) < 2:
-                        minuto = 1
-                    arquivo.write(f" "*dia+str(datetime.today().day)+"-"+" "*mes+str(datetime.today().month)+"-"+
-                                  str(datetime.today().year)+": "+" "*hora+str(datetime.today().hour)+"h"+
-                                  " "*minuto+str(datetime.today().minute)+"m"+" - Lag de " + str(a) +"ms, " +
-                                  (str(a - (tolerancia + media)))[:5:] + f"ms acima da tolerância em {servico}\n")
-                    print(f" "*dia+str(datetime.today().day)+"-"+" "*mes+str(datetime.today().month)+"-"+
-                          str(datetime.today().year)+": "+" "*hora+str(datetime.today().hour)+"h"+
-                          " "*minuto+str(datetime.today().minute)+"m"+" - Lag de " + str(a) +"ms, "+
-                          str(a - (tolerancia + media))[:5:] + f"ms acima da tolerância em {servico}")
-                    arquivo.flush()
+                    instabilidadeGeral[indice] = 1
+                    instabilidadeResultado = 0
+                    for instabilidade in instabilidadeGeral:
+                        instabilidadeResultado += instabilidade
+                    if instabilidadeResultado > 1:
+                        if len(str(datetime.today().day)) < 2:
+                            dia = 1
+                        if len(str(datetime.today().month)) < 2:
+                            mes = 1
+                        if len(str(datetime.today().hour)) < 2:
+                            hora = 1
+                        if len(str(datetime.today().minute)) < 2:
+                            minuto = 1
+                        arquivo.write(f" "*dia+str(datetime.today().day)+"-"+" "*mes+str(datetime.today().month)+"-"+
+                                      str(datetime.today().year)+": "+" "*hora+str(datetime.today().hour)+"h"+
+                                      " "*minuto+str(datetime.today().minute)+"m"+" - Lag de " + str(a) +"ms, " +
+                                      (str(a - (tolerancia + media)))[:5:] + f"ms acima da tolerância em {servico}\n")
+                        print(f" "*dia+str(datetime.today().day)+"-"+" "*mes+str(datetime.today().month)+"-"+
+                              str(datetime.today().year)+": "+" "*hora+str(datetime.today().hour)+"h"+
+                              " "*minuto+str(datetime.today().minute)+"m"+" - Lag de " + str(a) +"ms, "+
+                              str(a - (tolerancia + media))[:5:] + f"ms acima da tolerância em {servico}")
+                        arquivo.flush()
+                else:
+                    instabilidadeGeral[indice] = 0
             if indice == 4:
                 preenchido = True
                 vetor[indice] = a

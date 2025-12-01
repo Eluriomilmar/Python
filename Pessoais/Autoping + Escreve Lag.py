@@ -94,7 +94,11 @@ thread4 = threading.Thread(target=ping, args=(ano, mes, tolerancia, "threads"))
 
 thread1.start()
 thread2.start()
+thread3.start()
+thread4.start()
 
 thread1.join()
 thread2.join()
+thread3.join()
+thread4.join()
 

@@ -1,4 +1,6 @@
-a = 10.0.0.0
-b = 10.0.0.50
+a = 3
 
-for
+try:
+    print(a)
+except:
+    print("errei")

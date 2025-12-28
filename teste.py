@@ -1,46 +1,14 @@
-# Definition for singly-linked list.
-# class ListNode(object):
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
-class Solution(object):
-    def reverseKGroup(self, head, k):
-        """
-        :type head: Optional[ListNode]
-        :type k: int
-        :rtype: Optional[ListNode]
-        """
-        vetor = []
-        inicio = head
-        reverter = []
-        final = []
-        while head:
-            vetor.append(head.val)
-            head = head.next
-        espelho_tam = 0
-        espelho_k = 0
-        erro = False
-        while espelho_tam < len(vetor):
-            while espelho_k < k:
-                try:
-                    reverter.append(vetor[espelho_tam + espelho_k])
-                except IndexError:
-                    print(len(reverter))
-                    for i in reverter:
-                        final.append(i)
-                    erro = True
-                finally:
-                    espelho_k += 1
-            espelho_k = 0
-            if erro == False:
-                reverter.sort(reverse=True)
-                for i in reverter:
-                    final.append(i)
-            espelho_tam += k
-            reverter = []
-        lista = ListNode(0)
-        inicio = lista
-        for i in final:
-            lista.next = ListNode(i)
-            lista = lista.next
-        return inicio.next
+import pandas as pd
+
+dados = {
+    "Name": ["Pytherson", "Pip", "Pep"],
+    "Account": [{"Number": "00001-1", "Agency": "0001", "Balance": "0.00", "limit": "500.00"},
+                {"Number": "00002-2", "Agency": "0001", "Balance": "0.00", "limit": "500.00"},
+                {"Number": "00003-3", "Agency": "0001", "Balance": "0.00", "limit": "500.00"}],
+    "Card": [{"Number": "**** **** **** 1111", "limit": "1000.00"},
+             {"Number": "**** **** **** 2222", "limit": "1000.00"},
+             {"Number": "**** **** **** 3333", "limit": "1000.00"}]
+}
+
+df = pd.DataFrame(dados)
+df.to_csv("SDW.csv")
